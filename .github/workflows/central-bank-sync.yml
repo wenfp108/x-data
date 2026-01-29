@@ -1,10 +1,11 @@
 name: Central Bank Harvester
 
 on:
-  workflow_run:
-    workflows: ["Get Tweet ID", "Get Home Latest Timeline"]
-    types: [completed]
-  workflow_dispatch: 
+  schedule:
+    # 每天北京时间 10:18 准时启动 (UTC 02:18)
+    - cron: '18 2 * * *'  
+  # 保留手动触发，方便随时调试
+  workflow_dispatch:
 
 jobs:
   harvest:
