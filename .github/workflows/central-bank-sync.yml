@@ -1,10 +1,31 @@
-- name: Checkout Central Bank
+name: Central Bank Harvester
+
+on:
+  workflow_run:
+    workflows: ["Get Tweet ID", "Get Home Latest Timeline"]
+    types: [completed]
+  workflow_dispatch: 
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    steps:
+      - name: Checkout Source
         uses: actions/checkout@v3
         with:
-          # 请确认 Secret 中填的是 wenfp108/Central-Bank
+          token: ${{ secrets.GH_TOKEN }}
+          path: temp_src
+
+      - name: Checkout Central Bank
+        uses: actions/checkout@v3
+        with:
           repository: ${{ secrets.CENTRAL_BANK_REPO }}
           token: ${{ secrets.MY_PAT }}
-          path: central_bank 
+          path: central_bank
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
 
       - name: Sync Process
         working-directory: ./temp_src
@@ -12,12 +33,20 @@
           bun install
           bun run scripts/sync-to-bank.ts
 
-      - name: Push to Central Bank
+      - name: Push to Bank
         working-directory: ./central_bank
         run: |
           git config --global user.name 'Architect Bot'
           git config --global user.email 'bot@architect.alpha'
           git add .
-          # 这一步如果显示 1 file changed，就说明文件抓到了
-          git commit -m "Vault Update: archive tweets" || exit 0
+          git commit -m "Vault Update: archive tweets $(date +%Y-%m-%d)" || exit 0
+          git push
+
+      - name: Cleanup Source Repo
+        working-directory: ./temp_src
+        run: |
+          git config --global user.name 'Architect Bot'
+          git config --global user.email 'bot@architect.alpha'
+          git add .
+          git commit -m "chore: cleanup archived data [skip ci]" || exit 0
           git push
