@@ -1,11 +1,45 @@
 [
   {
     "user": {
+      "screenName": "cnnbrk",
+      "name": "CNN Breaking News",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/925092227667304448/fAY1HUu3_normal.jpg",
+      "description": "Breaking news from CNN Digital. Check @cnn for all things CNN, breaking and more.",
+      "followersCount": 59261908,
+      "friendsCount": 119,
+      "location": "Everywhere"
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G_2SleUWwAIvMIC.jpg"
+    ],
+    "videos": [],
+    "tweetUrl": "https://x.com/cnnbrk/status/2016929401649156440",
+    "fullText": "The Senate has blocked a massive funding bill as critical talks continue to avoid a government shutdown this weekend https://t.co/xkFRoGpU9d https://t.co/axkja1S7Q6"
+  },
+  {
+    "user": {
+      "screenName": "cnnbrk",
+      "name": "CNN Breaking News",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/925092227667304448/fAY1HUu3_normal.jpg",
+      "description": "Breaking news from CNN Digital. Check @cnn for all things CNN, breaking and more.",
+      "followersCount": 59261908,
+      "friendsCount": 119,
+      "location": "Everywhere"
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G_2I0tNWUAAX6HT.jpg"
+    ],
+    "videos": [],
+    "tweetUrl": "https://x.com/cnnbrk/status/2016918668093899162",
+    "fullText": "Former Illinois deputy sentenced to 20 years in prison for killing Sonya Massey https://t.co/pPbzzwuwu2 https://t.co/oN1bbUeRlM"
+  },
+  {
+    "user": {
       "screenName": "nntaleb",
       "name": "Nassim Nicholas Taleb",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1835982938879508480/q4-Esddn_normal.jpg",
       "description": "Flaneur: probability (philosophy), probability (mathematics), probability (real life),Phoenician wine, deadlifts & dead languages. Greco-Levantine.Canaan. #RWRI",
-      "followersCount": 1122996,
+      "followersCount": 1123003,
       "friendsCount": 1641,
       "location": ""
     },
@@ -20,7 +54,7 @@
       "name": "Michael Harris ∀p(p→◊Kp)",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1995765072648400896/27p5uLCt_normal.jpg",
       "description": "Tech | Markets | Philosophy |\nNovel: Albedo zero. \nNo advice.",
-      "followersCount": 32773,
+      "followersCount": 32774,
       "friendsCount": 1183,
       "location": "USA"
     },
@@ -35,7 +69,7 @@
       "name": "Michael Harris ∀p(p→◊Kp)",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1995765072648400896/27p5uLCt_normal.jpg",
       "description": "Tech | Markets | Philosophy |\nNovel: Albedo zero. \nNo advice.",
-      "followersCount": 32773,
+      "followersCount": 32774,
       "friendsCount": 1183,
       "location": "USA"
     },
@@ -50,7 +84,7 @@
       "name": "Nassim Nicholas Taleb",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1835982938879508480/q4-Esddn_normal.jpg",
       "description": "Flaneur: probability (philosophy), probability (mathematics), probability (real life),Phoenician wine, deadlifts & dead languages. Greco-Levantine.Canaan. #RWRI",
-      "followersCount": 1122996,
+      "followersCount": 1123003,
       "friendsCount": 1641,
       "location": ""
     },
@@ -65,7 +99,7 @@
       "name": "PolitiFact",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1286766140115517441/8rq6ZxZm_normal.jpg",
       "description": "Home of the Truth-O-Meter and independent fact-checking. Part of @Poynter. Sign up for our newsletter: https://t.co/9ygUqAw2P8",
-      "followersCount": 584969,
+      "followersCount": 584959,
       "friendsCount": 7183,
       "location": "Washington, DC"
     },
@@ -80,7 +114,7 @@
       "name": "Michael Harris ∀p(p→◊Kp)",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1995765072648400896/27p5uLCt_normal.jpg",
       "description": "Tech | Markets | Philosophy |\nNovel: Albedo zero. \nNo advice.",
-      "followersCount": 32773,
+      "followersCount": 32774,
       "friendsCount": 1183,
       "location": "USA"
     },
@@ -95,7 +129,7 @@
       "name": "Mohamed A. El-Erian",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1016847534080155648/NGnyajkE_normal.jpg",
       "description": "Rene M Kern Prof of Prac at Wharton. Allianz Advisor. Gramercy Chair. Chair of UnderArmour Board. Former Pimco CEO/co-CIO and President of Queens' Col Cambridge",
-      "followersCount": 803560,
+      "followersCount": 803590,
       "friendsCount": 1133,
       "location": "USA"
     },
@@ -112,7 +146,7 @@
       "name": "Luca Dellanna",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/2000161043490766854/DfDkDBWD_normal.jpg",
       "description": "I help leaders make change initiatives work •  Independent advisor • Author • Lecturer",
-      "followersCount": 25440,
+      "followersCount": 25442,
       "friendsCount": 1691,
       "location": "Turin 🇮🇹 "
     },
@@ -127,7 +161,7 @@
       "name": "Michael Harris ∀p(p→◊Kp)",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1995765072648400896/27p5uLCt_normal.jpg",
       "description": "Tech | Markets | Philosophy |\nNovel: Albedo zero. \nNo advice.",
-      "followersCount": 32773,
+      "followersCount": 32774,
       "friendsCount": 1183,
       "location": "USA"
     },
@@ -142,7 +176,7 @@
       "name": "Michael Harris ∀p(p→◊Kp)",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1995765072648400896/27p5uLCt_normal.jpg",
       "description": "Tech | Markets | Philosophy |\nNovel: Albedo zero. \nNo advice.",
-      "followersCount": 32773,
+      "followersCount": 32774,
       "friendsCount": 1183,
       "location": "USA"
     },
@@ -157,7 +191,7 @@
       "name": "PolitiFact",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1286766140115517441/8rq6ZxZm_normal.jpg",
       "description": "Home of the Truth-O-Meter and independent fact-checking. Part of @Poynter. Sign up for our newsletter: https://t.co/9ygUqAw2P8",
-      "followersCount": 584969,
+      "followersCount": 584959,
       "friendsCount": 7183,
       "location": "Washington, DC"
     },
@@ -172,7 +206,7 @@
       "name": "CNN Breaking News",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/925092227667304448/fAY1HUu3_normal.jpg",
       "description": "Breaking news from CNN Digital. Check @cnn for all things CNN, breaking and more.",
-      "followersCount": 59261893,
+      "followersCount": 59261908,
       "friendsCount": 119,
       "location": "Everywhere"
     },
@@ -189,7 +223,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020759,
+      "followersCount": 1020781,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -204,7 +238,7 @@
       "name": "Nassim Nicholas Taleb's Wisdom",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1111476570986893313/6r7zCbGa_normal.png",
       "description": "Sharing Nassim Nicholas Taleb's Wisdom from his books, interviews, and tweets. \n\n👇 GET YOUR FREE COPY of all awesome things about Nassim Nicholas Taleb",
-      "followersCount": 136931,
+      "followersCount": 136937,
       "friendsCount": 6,
       "location": ""
     },
@@ -221,7 +255,7 @@
       "name": "PolitiFact",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1286766140115517441/8rq6ZxZm_normal.jpg",
       "description": "Home of the Truth-O-Meter and independent fact-checking. Part of @Poynter. Sign up for our newsletter: https://t.co/9ygUqAw2P8",
-      "followersCount": 584969,
+      "followersCount": 584959,
       "friendsCount": 7183,
       "location": "Washington, DC"
     },
@@ -236,7 +270,7 @@
       "name": "Paul Portesi",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1531335215896858624/42LKL7Dh_normal.jpg",
       "description": "Comments are from a nonsensical pontificator which are unscientific, unreasonable, illogical, unacademic nonevidentiary perspective https://t.co/wAsroKIpae",
-      "followersCount": 10686,
+      "followersCount": 10687,
       "friendsCount": 0,
       "location": ""
     },
@@ -251,7 +285,7 @@
       "name": "Michael Harris ∀p(p→◊Kp)",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1995765072648400896/27p5uLCt_normal.jpg",
       "description": "Tech | Markets | Philosophy |\nNovel: Albedo zero. \nNo advice.",
-      "followersCount": 32773,
+      "followersCount": 32774,
       "friendsCount": 1183,
       "location": "USA"
     },
@@ -285,7 +319,7 @@
       "name": "CNN Breaking News",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/925092227667304448/fAY1HUu3_normal.jpg",
       "description": "Breaking news from CNN Digital. Check @cnn for all things CNN, breaking and more.",
-      "followersCount": 59261893,
+      "followersCount": 59261908,
       "friendsCount": 119,
       "location": "Everywhere"
     },
@@ -300,7 +334,7 @@
       "name": "Meb Faber",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1616559057984421888/JA46l4Zy_normal.jpg",
       "description": "Founder:@cambriafunds,@theideafarm \nPod: https://t.co/CvHIZ680Bm\nFree books: https://t.co/gm0ghO9Nji \nYoutube: https://t.co/linHiucSyE\n\nEmail: mf@cambriainvestments",
-      "followersCount": 137289,
+      "followersCount": 137290,
       "friendsCount": 2556,
       "location": "Manhattan Beach, CA"
     },
@@ -334,7 +368,7 @@
       "name": "Michael Harris ∀p(p→◊Kp)",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1995765072648400896/27p5uLCt_normal.jpg",
       "description": "Tech | Markets | Philosophy |\nNovel: Albedo zero. \nNo advice.",
-      "followersCount": 32773,
+      "followersCount": 32774,
       "friendsCount": 1183,
       "location": "USA"
     },
@@ -349,7 +383,7 @@
       "name": "Michael Harris ∀p(p→◊Kp)",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1995765072648400896/27p5uLCt_normal.jpg",
       "description": "Tech | Markets | Philosophy |\nNovel: Albedo zero. \nNo advice.",
-      "followersCount": 32773,
+      "followersCount": 32774,
       "friendsCount": 1183,
       "location": "USA"
     },
@@ -366,7 +400,7 @@
       "name": "Michael Harris ∀p(p→◊Kp)",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1995765072648400896/27p5uLCt_normal.jpg",
       "description": "Tech | Markets | Philosophy |\nNovel: Albedo zero. \nNo advice.",
-      "followersCount": 32773,
+      "followersCount": 32774,
       "friendsCount": 1183,
       "location": "USA"
     },
@@ -400,7 +434,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020759,
+      "followersCount": 1020781,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -430,7 +464,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020759,
+      "followersCount": 1020781,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -445,7 +479,7 @@
       "name": "Luca Dellanna",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/2000161043490766854/DfDkDBWD_normal.jpg",
       "description": "I help leaders make change initiatives work •  Independent advisor • Author • Lecturer",
-      "followersCount": 25440,
+      "followersCount": 25442,
       "friendsCount": 1691,
       "location": "Turin 🇮🇹 "
     },
@@ -462,7 +496,7 @@
       "name": "Mohamed A. El-Erian",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1016847534080155648/NGnyajkE_normal.jpg",
       "description": "Rene M Kern Prof of Prac at Wharton. Allianz Advisor. Gramercy Chair. Chair of UnderArmour Board. Former Pimco CEO/co-CIO and President of Queens' Col Cambridge",
-      "followersCount": 803560,
+      "followersCount": 803590,
       "friendsCount": 1133,
       "location": "USA"
     },
@@ -496,7 +530,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020759,
+      "followersCount": 1020781,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -528,7 +562,7 @@
       "name": "Mohamed A. El-Erian",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1016847534080155648/NGnyajkE_normal.jpg",
       "description": "Rene M Kern Prof of Prac at Wharton. Allianz Advisor. Gramercy Chair. Chair of UnderArmour Board. Former Pimco CEO/co-CIO and President of Queens' Col Cambridge",
-      "followersCount": 803560,
+      "followersCount": 803590,
       "friendsCount": 1133,
       "location": "USA"
     },
@@ -545,7 +579,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020759,
+      "followersCount": 1020781,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -560,7 +594,7 @@
       "name": "Mohamed A. El-Erian",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1016847534080155648/NGnyajkE_normal.jpg",
       "description": "Rene M Kern Prof of Prac at Wharton. Allianz Advisor. Gramercy Chair. Chair of UnderArmour Board. Former Pimco CEO/co-CIO and President of Queens' Col Cambridge",
-      "followersCount": 803560,
+      "followersCount": 803590,
       "friendsCount": 1133,
       "location": "USA"
     },
@@ -577,7 +611,7 @@
       "name": "CNN Breaking News",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/925092227667304448/fAY1HUu3_normal.jpg",
       "description": "Breaking news from CNN Digital. Check @cnn for all things CNN, breaking and more.",
-      "followersCount": 59261893,
+      "followersCount": 59261908,
       "friendsCount": 119,
       "location": "Everywhere"
     },
@@ -592,7 +626,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020759,
+      "followersCount": 1020781,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -607,7 +641,7 @@
       "name": "St. Louis Fed",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1908236155046236160/OGv6cHg0_normal.png",
       "description": "Official Federal Reserve Bank of St. Louis account. We share economic data and insights. Home to FRED®, @FedFRASER & @FedHistory",
-      "followersCount": 243969,
+      "followersCount": 243978,
       "friendsCount": 37,
       "location": "St. Louis, MO"
     },
@@ -624,7 +658,7 @@
       "name": "Nassim Nicholas Taleb's Wisdom",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1111476570986893313/6r7zCbGa_normal.png",
       "description": "Sharing Nassim Nicholas Taleb's Wisdom from his books, interviews, and tweets. \n\n👇 GET YOUR FREE COPY of all awesome things about Nassim Nicholas Taleb",
-      "followersCount": 136931,
+      "followersCount": 136937,
       "friendsCount": 6,
       "location": ""
     },
@@ -639,7 +673,7 @@
       "name": "Nick Timiraos",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1819946702050115584/5Gvbvs3u_normal.jpg",
       "description": "Chief economics correspondent, The Wall Street Journal • Author, \"Trillion Dollar Triage”",
-      "followersCount": 458482,
+      "followersCount": 458496,
       "friendsCount": 118,
       "location": ""
     },
@@ -654,7 +688,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020759,
+      "followersCount": 1020781,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -669,7 +703,7 @@
       "name": "Paul Portesi",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1531335215896858624/42LKL7Dh_normal.jpg",
       "description": "Comments are from a nonsensical pontificator which are unscientific, unreasonable, illogical, unacademic nonevidentiary perspective https://t.co/wAsroKIpae",
-      "followersCount": 10686,
+      "followersCount": 10687,
       "friendsCount": 0,
       "location": ""
     },
@@ -684,7 +718,7 @@
       "name": "St. Louis Fed",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1908236155046236160/OGv6cHg0_normal.png",
       "description": "Official Federal Reserve Bank of St. Louis account. We share economic data and insights. Home to FRED®, @FedFRASER & @FedHistory",
-      "followersCount": 243969,
+      "followersCount": 243978,
       "friendsCount": 37,
       "location": "St. Louis, MO"
     },
@@ -699,7 +733,7 @@
       "name": "Paul Portesi",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1531335215896858624/42LKL7Dh_normal.jpg",
       "description": "Comments are from a nonsensical pontificator which are unscientific, unreasonable, illogical, unacademic nonevidentiary perspective https://t.co/wAsroKIpae",
-      "followersCount": 10686,
+      "followersCount": 10687,
       "friendsCount": 0,
       "location": ""
     },
