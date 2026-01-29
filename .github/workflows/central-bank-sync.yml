@@ -1,0 +1,62 @@
+name: Central Bank Harvester (X-Twitter Mode)
+
+on:
+  workflow_run:
+    workflows: ["Get Tweet ID", "Get Home Latest Timeline"] # 当抓取任务完成后触发
+    types:
+      - completed
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  harvest-to-bank:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    steps:
+      - name: Checkout Source (x-data)
+        uses: actions/checkout@v3
+        with:
+          path: temp_src
+
+      - name: Checkout Central Bank
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ secrets.CENTRAL_BANK_REPO }}
+          token: ${{ secrets.MY_PAT }}
+          path: central_bank
+
+      - name: Sync and Format Data
+        run: |
+          # 创建中央银行中的目标文件夹
+          mkdir -p central_bank/bank/x-twitter/accounts/
+          mkdir -p central_bank/bank/x-twitter/tweets/
+          
+          # 同步账号数据
+          if [ -d "temp_src/accounts" ]; then
+            cp -r temp_src/accounts/* central_bank/bank/x-twitter/accounts/
+          fi
+          
+          # 同步推文数据 (保持 YYYY-MM-DD.json 格式)
+          if [ -d "temp_src/tweets" ]; then
+            cp -r temp_src/tweets/* central_bank/bank/x-twitter/tweets/
+          fi
+
+      - name: Push to Central Bank
+        cwd: central_bank
+        run: |
+          git config --global user.name 'Architect Bot'
+          git config --global user.email 'bot@architect.alpha'
+          git add .
+          git commit -m "chore: archive x-twitter data to bank" || exit 0
+          git push
+
+      - name: Cleanup Source Repo
+        cwd: temp_src
+        run: |
+          # 清理已同步的数据，保持本仓库简洁
+          rm -rf accounts/*
+          rm -rf tweets/*
+          git config --global user.name 'Architect Bot'
+          git config --global user.email 'bot@architect.alpha'
+          git add .
+          git commit -m "chore: cleanup synced data [skip ci]" || exit 0
+          git push
