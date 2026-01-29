@@ -1,6 +1,70 @@
 [
   {
     "user": {
+      "screenName": "mikeharrisNY",
+      "name": "Michael Harris ∀p(p→◊Kp)",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/1995765072648400896/27p5uLCt_normal.jpg",
+      "description": "Tech | Markets | Philosophy |\nNovel: Albedo zero. \nNo advice.",
+      "followersCount": 32775,
+      "friendsCount": 1183,
+      "location": "USA"
+    },
+    "images": [],
+    "videos": [],
+    "tweetUrl": "https://x.com/mikeharrisNY/status/2016986235902824642",
+    "fullText": "If you shorted #silver or #gold intraday due to the reversal, there is a word for such actions. 😂Our strategies are out of paper gold due to a special rule, but I am long physical, and although I will not add now, I will never sell even a small fraction."
+  },
+  {
+    "user": {
+      "screenName": "lavitalenta",
+      "name": "lavitalenta",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/1922851315157262336/pNCDdT9w_normal.jpg",
+      "description": "Investigating Leisure, what it is, how we can achieve it, and what gets in our way",
+      "followersCount": 46143,
+      "friendsCount": 380,
+      "location": ""
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G_3E1CwbcAAeFme.jpg"
+    ],
+    "videos": [],
+    "tweetUrl": "https://x.com/lavitalenta/status/2016984657607479690",
+    "fullText": "Johann Wolfgang von Goethe was right to exclaim in 1786 that — “the whole history of the world attaches itself to this spot.” https://t.co/G9zZNOMtJh"
+  },
+  {
+    "user": {
+      "screenName": "cnnbrk",
+      "name": "CNN Breaking News",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/925092227667304448/fAY1HUu3_normal.jpg",
+      "description": "Breaking news from CNN Digital. Check @cnn for all things CNN, breaking and more.",
+      "followersCount": 59263241,
+      "friendsCount": 119,
+      "location": "Everywhere"
+    },
+    "images": [],
+    "videos": [],
+    "tweetUrl": "https://x.com/cnnbrk/status/2016978247569830047",
+    "fullText": "A Minnesota man was arrested on charges of impersonating an FBI agent in an alleged attempt to free Luigi Mangione from jail\nhttps://t.co/0VLqn3PlFb"
+  },
+  {
+    "user": {
+      "screenName": "MebFaber",
+      "name": "Meb Faber",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/1616559057984421888/JA46l4Zy_normal.jpg",
+      "description": "Founder:@cambriafunds,@theideafarm \nPod: https://t.co/CvHIZ680Bm\nFree books: https://t.co/gm0ghO9Nji \nYoutube: https://t.co/linHiucSyE\n\nEmail: mf@cambriainvestments",
+      "followersCount": 137290,
+      "friendsCount": 2556,
+      "location": "Manhattan Beach, CA"
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G_27i7CbUAE-aDE.png"
+    ],
+    "videos": [],
+    "tweetUrl": "https://x.com/MebFaber/status/2016974429629403216",
+    "fullText": "👻 https://t.co/j97B9bz31e"
+  },
+  {
+    "user": {
       "screenName": "DellAnnaLuca",
       "name": "Luca Dellanna",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/2000161043490766854/DfDkDBWD_normal.jpg",
@@ -22,8 +86,8 @@
       "name": "Nassim Nicholas Taleb",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1835982938879508480/q4-Esddn_normal.jpg",
       "description": "Flaneur: probability (philosophy), probability (mathematics), probability (real life),Phoenician wine, deadlifts & dead languages. Greco-Levantine.Canaan. #RWRI",
-      "followersCount": 1123055,
-      "friendsCount": 1642,
+      "followersCount": 1123046,
+      "friendsCount": 1641,
       "location": ""
     },
     "images": [
@@ -39,7 +103,7 @@
       "name": "PolitiFact",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1286766140115517441/8rq6ZxZm_normal.jpg",
       "description": "Home of the Truth-O-Meter and independent fact-checking. Part of @Poynter. Sign up for our newsletter: https://t.co/9ygUqAw2P8",
-      "followersCount": 584960,
+      "followersCount": 584964,
       "friendsCount": 7182,
       "location": "Washington, DC"
     },
@@ -54,7 +118,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020841,
+      "followersCount": 1020864,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -69,7 +133,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020841,
+      "followersCount": 1020864,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -84,7 +148,7 @@
       "name": "CNN Breaking News",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/925092227667304448/fAY1HUu3_normal.jpg",
       "description": "Breaking news from CNN Digital. Check @cnn for all things CNN, breaking and more.",
-      "followersCount": 59263114,
+      "followersCount": 59263241,
       "friendsCount": 119,
       "location": "Everywhere"
     },
@@ -101,7 +165,7 @@
       "name": "CNN Breaking News",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/925092227667304448/fAY1HUu3_normal.jpg",
       "description": "Breaking news from CNN Digital. Check @cnn for all things CNN, breaking and more.",
-      "followersCount": 59263114,
+      "followersCount": 59263241,
       "friendsCount": 119,
       "location": "Everywhere"
     },
@@ -118,8 +182,8 @@
       "name": "Nassim Nicholas Taleb",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1835982938879508480/q4-Esddn_normal.jpg",
       "description": "Flaneur: probability (philosophy), probability (mathematics), probability (real life),Phoenician wine, deadlifts & dead languages. Greco-Levantine.Canaan. #RWRI",
-      "followersCount": 1123055,
-      "friendsCount": 1642,
+      "followersCount": 1123046,
+      "friendsCount": 1641,
       "location": ""
     },
     "images": [],
@@ -163,8 +227,8 @@
       "name": "Nassim Nicholas Taleb",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1835982938879508480/q4-Esddn_normal.jpg",
       "description": "Flaneur: probability (philosophy), probability (mathematics), probability (real life),Phoenician wine, deadlifts & dead languages. Greco-Levantine.Canaan. #RWRI",
-      "followersCount": 1123055,
-      "friendsCount": 1642,
+      "followersCount": 1123046,
+      "friendsCount": 1641,
       "location": ""
     },
     "images": [],
@@ -178,7 +242,7 @@
       "name": "PolitiFact",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1286766140115517441/8rq6ZxZm_normal.jpg",
       "description": "Home of the Truth-O-Meter and independent fact-checking. Part of @Poynter. Sign up for our newsletter: https://t.co/9ygUqAw2P8",
-      "followersCount": 584960,
+      "followersCount": 584964,
       "friendsCount": 7182,
       "location": "Washington, DC"
     },
@@ -208,7 +272,7 @@
       "name": "Mohamed A. El-Erian",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1016847534080155648/NGnyajkE_normal.jpg",
       "description": "Rene M Kern Prof of Prac at Wharton. Allianz Advisor. Gramercy Chair. Chair of UnderArmour Board. Former Pimco CEO/co-CIO and President of Queens' Col Cambridge",
-      "followersCount": 803664,
+      "followersCount": 803685,
       "friendsCount": 1133,
       "location": "USA"
     },
@@ -270,7 +334,7 @@
       "name": "PolitiFact",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1286766140115517441/8rq6ZxZm_normal.jpg",
       "description": "Home of the Truth-O-Meter and independent fact-checking. Part of @Poynter. Sign up for our newsletter: https://t.co/9ygUqAw2P8",
-      "followersCount": 584960,
+      "followersCount": 584964,
       "friendsCount": 7182,
       "location": "Washington, DC"
     },
@@ -285,7 +349,7 @@
       "name": "CNN Breaking News",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/925092227667304448/fAY1HUu3_normal.jpg",
       "description": "Breaking news from CNN Digital. Check @cnn for all things CNN, breaking and more.",
-      "followersCount": 59263114,
+      "followersCount": 59263241,
       "friendsCount": 119,
       "location": "Everywhere"
     },
@@ -302,7 +366,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020841,
+      "followersCount": 1020864,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -317,7 +381,7 @@
       "name": "Treasury Secretary Scott Bessent",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1889401757060444160/MDUd0e0g_normal.jpg",
       "description": "79th United States Secretary of the Treasury",
-      "followersCount": 805631,
+      "followersCount": 805716,
       "friendsCount": 25,
       "location": ""
     },
@@ -334,7 +398,7 @@
       "name": "The Nobel Prize",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1029729528548139009/fVPd0EwX_normal.jpg",
       "description": "The official feed of the Nobel Prize @NobelPrize #NobelPrize",
-      "followersCount": 1309797,
+      "followersCount": 1309794,
       "friendsCount": 496,
       "location": "Stockholm, Sweden"
     },
@@ -351,7 +415,7 @@
       "name": "Nassim Nicholas Taleb's Wisdom",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1111476570986893313/6r7zCbGa_normal.png",
       "description": "Sharing Nassim Nicholas Taleb's Wisdom from his books, interviews, and tweets. \n\n👇 GET YOUR FREE COPY of all awesome things about Nassim Nicholas Taleb",
-      "followersCount": 136957,
+      "followersCount": 136956,
       "friendsCount": 6,
       "location": ""
     },
@@ -368,7 +432,7 @@
       "name": "PolitiFact",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1286766140115517441/8rq6ZxZm_normal.jpg",
       "description": "Home of the Truth-O-Meter and independent fact-checking. Part of @Poynter. Sign up for our newsletter: https://t.co/9ygUqAw2P8",
-      "followersCount": 584960,
+      "followersCount": 584964,
       "friendsCount": 7182,
       "location": "Washington, DC"
     },
@@ -383,7 +447,7 @@
       "name": "Robin Roberts",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1928115994653786112/lKrs82Io_normal.jpg",
       "description": "Good Morning America Anchor",
-      "followersCount": 949026,
+      "followersCount": 949035,
       "friendsCount": 1676,
       "location": "New York"
     },
@@ -398,7 +462,7 @@
       "name": "Paul Portesi",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1531335215896858624/42LKL7Dh_normal.jpg",
       "description": "Comments are from a nonsensical pontificator which are unscientific, unreasonable, illogical, unacademic nonevidentiary perspective https://t.co/wAsroKIpae",
-      "followersCount": 10688,
+      "followersCount": 10686,
       "friendsCount": 0,
       "location": ""
     },
@@ -413,7 +477,7 @@
       "name": "Robin Roberts",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1928115994653786112/lKrs82Io_normal.jpg",
       "description": "Good Morning America Anchor",
-      "followersCount": 949026,
+      "followersCount": 949035,
       "friendsCount": 1676,
       "location": "New York"
     },
@@ -447,7 +511,7 @@
       "name": "Robin Roberts",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1928115994653786112/lKrs82Io_normal.jpg",
       "description": "Good Morning America Anchor",
-      "followersCount": 949026,
+      "followersCount": 949035,
       "friendsCount": 1676,
       "location": "New York"
     },
@@ -477,7 +541,7 @@
       "name": "CNN Breaking News",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/925092227667304448/fAY1HUu3_normal.jpg",
       "description": "Breaking news from CNN Digital. Check @cnn for all things CNN, breaking and more.",
-      "followersCount": 59263114,
+      "followersCount": 59263241,
       "friendsCount": 119,
       "location": "Everywhere"
     },
@@ -492,7 +556,7 @@
       "name": "Robin Roberts",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1928115994653786112/lKrs82Io_normal.jpg",
       "description": "Good Morning America Anchor",
-      "followersCount": 949026,
+      "followersCount": 949035,
       "friendsCount": 1676,
       "location": "New York"
     },
@@ -507,7 +571,7 @@
       "name": "Robin Roberts",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1928115994653786112/lKrs82Io_normal.jpg",
       "description": "Good Morning America Anchor",
-      "followersCount": 949026,
+      "followersCount": 949035,
       "friendsCount": 1676,
       "location": "New York"
     },
@@ -522,7 +586,7 @@
       "name": "Robin Roberts",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1928115994653786112/lKrs82Io_normal.jpg",
       "description": "Good Morning America Anchor",
-      "followersCount": 949026,
+      "followersCount": 949035,
       "friendsCount": 1676,
       "location": "New York"
     },
@@ -537,7 +601,7 @@
       "name": "Meb Faber",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1616559057984421888/JA46l4Zy_normal.jpg",
       "description": "Founder:@cambriafunds,@theideafarm \nPod: https://t.co/CvHIZ680Bm\nFree books: https://t.co/gm0ghO9Nji \nYoutube: https://t.co/linHiucSyE\n\nEmail: mf@cambriainvestments",
-      "followersCount": 137288,
+      "followersCount": 137290,
       "friendsCount": 2556,
       "location": "Manhattan Beach, CA"
     },
@@ -554,7 +618,7 @@
       "name": "Robin Roberts",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1928115994653786112/lKrs82Io_normal.jpg",
       "description": "Good Morning America Anchor",
-      "followersCount": 949026,
+      "followersCount": 949035,
       "friendsCount": 1676,
       "location": "New York"
     },
@@ -572,7 +636,7 @@
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1231545092671987712/tRXcJ07B_normal.jpg",
       "description": "WAR ECONOMY BY KRIS on SUBSTACK.\n\nSupply chains.\nStaunchly pro-USA.\nTheology. History. Finance. Money. Wars. Rûm Orthodox. Stochasticity. Krisonomics.",
       "followersCount": 12338,
-      "friendsCount": 1430,
+      "friendsCount": 1429,
       "location": ""
     },
     "images": [
@@ -620,7 +684,7 @@
       "name": "The Nobel Prize",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1029729528548139009/fVPd0EwX_normal.jpg",
       "description": "The official feed of the Nobel Prize @NobelPrize #NobelPrize",
-      "followersCount": 1309797,
+      "followersCount": 1309794,
       "friendsCount": 496,
       "location": "Stockholm, Sweden"
     },
@@ -655,7 +719,7 @@
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1231545092671987712/tRXcJ07B_normal.jpg",
       "description": "WAR ECONOMY BY KRIS on SUBSTACK.\n\nSupply chains.\nStaunchly pro-USA.\nTheology. History. Finance. Money. Wars. Rûm Orthodox. Stochasticity. Krisonomics.",
       "followersCount": 12338,
-      "friendsCount": 1430,
+      "friendsCount": 1429,
       "location": ""
     },
     "images": [
@@ -671,7 +735,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020841,
+      "followersCount": 1020864,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -687,7 +751,7 @@
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1231545092671987712/tRXcJ07B_normal.jpg",
       "description": "WAR ECONOMY BY KRIS on SUBSTACK.\n\nSupply chains.\nStaunchly pro-USA.\nTheology. History. Finance. Money. Wars. Rûm Orthodox. Stochasticity. Krisonomics.",
       "followersCount": 12338,
-      "friendsCount": 1430,
+      "friendsCount": 1429,
       "location": ""
     },
     "images": [],
