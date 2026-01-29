@@ -1,62 +1,48 @@
-name: Central Bank Harvester (X-Twitter Mode)
+import fs from 'fs';
+import path from 'path';
 
-on:
-  workflow_run:
-    workflows: ["Get Tweet ID", "Get Home Latest Timeline"]
-    types: [completed]
-  workflow_dispatch: 
+// 1. 配置路径
+const TWEETS_DIR = './tweets';
+const ACCOUNTS_DIR = './accounts';
+const BANK_TWEETS_PATH = './central_bank/bank/x-twitter/tweets';
+const BANK_ACCOUNTS_PATH = './central_bank/bank/x-twitter/accounts';
 
-jobs:
-  harvest-to-bank:
-    runs-on: ubuntu-latest
-    # 只有当前置任务成功，或手动触发时才执行
-    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
-    steps:
-      - name: Checkout Source (x-data)
-        uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.GH_TOKEN }} # 确保 token 名字正确且有写入权限
-          path: temp_src
+async function syncLogic() {
+  // 获取服务器当前日期 (例如 "2026-01-30")
+  const today = new Date().toISOString().split('T')[0];
+  console.log(`📅 服务器今日日期: ${today}`);
 
-      - name: Checkout Central Bank
-        uses: actions/checkout@v3
-        with:
-          repository: ${{ secrets.CENTRAL_BANK_REPO }}
-          token: ${{ secrets.MY_PAT }}
-          path: central_bank
+  // 2. 确保中央银行的目标目录存在
+  [BANK_TWEETS_PATH, BANK_ACCOUNTS_PATH].forEach(dir => {
+    if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  });
 
-      # --- 关键修复：在此 Job 中安装 Bun ---
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v1
-        with:
-          bun-version: latest
+  // 3. 处理 Tweets：精准搬运非今日文件
+  if (fs.existsSync(TWEETS_DIR)) {
+    const files = fs.readdirSync(TWEETS_DIR);
+    files.forEach(file => {
+      // 只要是 JSON 且文件名不包含今天的日期，就搬走归档
+      if (file.endsWith('.json') && !file.includes(today)) {
+        const src = path.join(TWEETS_DIR, file);
+        const dest = path.join(BANK_TWEETS_PATH, file);
+        
+        fs.copyFileSync(src, dest); // 拷贝到银行
+        fs.unlinkSync(src);         // 从本地删除，不销毁文件夹
+        console.log(`✅ 已收割旧数据至中央银行: ${file}`);
+      }
+    });
+  }
 
-      - name: Install Dependencies
-        working-directory: ./temp_src
-        run: bun install
+  // 4. 处理 Accounts：全量同步账号信息
+  if (fs.existsSync(ACCOUNTS_DIR)) {
+    const accounts = fs.readdirSync(ACCOUNTS_DIR);
+    accounts.forEach(file => {
+      if (file.endsWith('.json')) {
+        fs.copyFileSync(path.join(ACCOUNTS_DIR, file), path.join(BANK_ACCOUNTS_PATH, file));
+      }
+    });
+    console.log(`✅ 账号元数据同步完毕。`);
+  }
+}
 
-      - name: Sync Old Data
-        working-directory: ./temp_src
-        run: |
-          # 运行筛选同步脚本：它只搬运 1-29 的旧文件，保留 1-30 的新空间
-          bun run scripts/sync-to-bank.ts
-
-      - name: Push to Central Bank
-        working-directory: ./central_bank
-        run: |
-          git config --global user.name 'Architect Bot'
-          git config --global user.email 'bot@architect.alpha'
-          git add .
-          # 检查是否有新文件需要提交
-          git commit -m "archive: sync historical data to bank [$(date +%Y-%m-%d)]" || exit 0
-          git push
-
-      - name: Commit Source Cleanup
-        working-directory: ./temp_src
-        run: |
-          git config --global user.name 'Architect Bot'
-          git config --global user.email 'bot@architect.alpha'
-          git add .
-          # 脚本已经通过 unlink 删除了旧文件，这里提交本地仓库的变动
-          git commit -m "chore: cleanup archived data [skip ci]" || exit 0
-          git push
+syncLogic().catch(console.error);
