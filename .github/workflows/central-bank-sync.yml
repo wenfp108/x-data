@@ -1,0 +1,50 @@
+name: Central Bank Harvester (X-Twitter Mode)
+
+on:
+  workflow_run:
+    workflows: ["Get Tweet ID", "Get Home Latest Timeline"]
+    types: [completed]
+  workflow_dispatch: 
+
+jobs:
+  harvest-to-bank:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    steps:
+      - name: Checkout Source (x-data)
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          path: temp_src
+
+      - name: Checkout Central Bank
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ secrets.CENTRAL_BANK_REPO }}
+          token: ${{ secrets.MY_PAT }}
+          path: central_bank
+
+      - name: Sync and Format Data
+        working-directory: ./temp_src
+        run: |
+          # 运行我们写好的同步脚本
+          bun run scripts/sync-to-bank.ts
+
+      - name: Push to Central Bank
+        working-directory: ./central_bank
+        run: |
+          git config --global user.name 'Architect Bot'
+          git config --global user.email 'bot@architect.alpha'
+          git add .
+          git commit -m "archive: sync historical data to bank" || exit 0
+          git push
+
+      - name: Commit Source Cleanup
+        working-directory: ./temp_src
+        run: |
+          # 脚本已经删除了旧文件，这里只需提交变更
+          git config --global user.name 'Architect Bot'
+          git config --global user.email 'bot@architect.alpha'
+          git add .
+          git commit -m "chore: cleanup archived data [skip ci]" || exit 0
+          git push
