@@ -1,6 +1,20 @@
-{
-  "username": "nntaleb",
-  "twitter_url": "https://x.com/nntaleb",
-  "description": "Flaneur: probability (philosophy), probability (mathematics), probability (real life),Phoenician wine, deadlifts & dead languages. Greco-Levantine.Canaan. #RWRI",
-  "tags": ["philosophy", "mathematics", "probability"]
-}
+[
+  {
+    "username": "Nassim Nicholas Taleb",
+    "twitter_url": "https://x.com/nntaleb",
+    "description": "Flaneur: probability (philosophy), probability (mathematics), probability (real life), Phoenician wine, deadlifts & dead languages. Greco-Levantine. Canaan. #RWRI",
+    "tags": ["Probability", "Philosophy", "Mathematics", "Author"]
+  },
+  {
+    "username": "Peter Schiff",
+    "twitter_url": "https://x.com/PeterSchiff",
+    "description": "Chief Economist & Global Strategist Europac.com, Chairman SchiffGold.com, Founder SchiffSovereign.com, Host SchiffRadio.com, Best-selling Author",
+    "tags": ["Economist", "Gold", "Finance", "Strategist"]
+  },
+  {
+    "username": "Nick Timiraos",
+    "twitter_url": "https://x.com/NickTimiraos",
+    "description": "Chief economics correspondent, The Wall Street Journal • Author, \"Trillion Dollar Triage\"",
+    "tags": ["Economics", "Journalism", "WSJ", "Fed"]
+  }
+]
