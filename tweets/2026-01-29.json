@@ -1,11 +1,73 @@
 [
   {
     "user": {
+      "screenName": "nntaleb",
+      "name": "Nassim Nicholas Taleb",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/1835982938879508480/q4-Esddn_normal.jpg",
+      "description": "Flaneur: probability (philosophy), probability (mathematics), probability (real life),Phoenician wine, deadlifts & dead languages. Greco-Levantine.Canaan. #RWRI",
+      "followersCount": 1123036,
+      "friendsCount": 1642,
+      "location": ""
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G_2jJrrXkAEhyZg.jpg"
+    ],
+    "videos": [],
+    "tweetUrl": "https://x.com/nntaleb/status/2016947610272354399",
+    "fullText": "SILVER RULE &amp; AGEISM\nThere is a high probability that sociopaths like @normonics time-blind enough to not realize that they too will age, will end up 1) poor, 2) sickly, 3) bitter, 4)abandoned, 4) w/children turned woke/communists, 5) &amp; insulted by younger time-blind sociopaths https://t.co/aOCa69wqwq"
+  },
+  {
+    "user": {
+      "screenName": "PolitiFact",
+      "name": "PolitiFact",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/1286766140115517441/8rq6ZxZm_normal.jpg",
+      "description": "Home of the Truth-O-Meter and independent fact-checking. Part of @Poynter. Sign up for our newsletter: https://t.co/9ygUqAw2P8",
+      "followersCount": 584961,
+      "friendsCount": 7182,
+      "location": "Washington, DC"
+    },
+    "images": [],
+    "videos": [],
+    "tweetUrl": "https://x.com/PolitiFact/status/2016942924022305250",
+    "fullText": "¿Cuáles derechos tienes si te detiene ICE en la calle? ¿O si agentes de inmigración llegan a tu casa? ¿Puedes demandar si violan tus derechos? Expertos legales dan su opinión. https://t.co/1KNgL1gSnV"
+  },
+  {
+    "user": {
+      "screenName": "WSJmarkets",
+      "name": "WSJ Markets",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
+      "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
+      "followersCount": 1020812,
+      "friendsCount": 520,
+      "location": "New York, NY"
+    },
+    "images": [],
+    "videos": [],
+    "tweetUrl": "https://x.com/WSJmarkets/status/2016935436640239808",
+    "fullText": "A $140 million loss at BlackRock is reviving questions about the accuracy of financial disclosures to individual investors in the booming private-credit industry https://t.co/RnnijQvKdD"
+  },
+  {
+    "user": {
+      "screenName": "WSJmarkets",
+      "name": "WSJ Markets",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
+      "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
+      "followersCount": 1020812,
+      "friendsCount": 520,
+      "location": "New York, NY"
+    },
+    "images": [],
+    "videos": [],
+    "tweetUrl": "https://x.com/WSJmarkets/status/2016933105257349534",
+    "fullText": "President Trump’s regulators said they were ready to lay out rules that would help foster the crypto industry’s growth after legislation on the matter ran into an unexpected setback https://t.co/5wMWUeobhM"
+  },
+  {
+    "user": {
       "screenName": "cnnbrk",
       "name": "CNN Breaking News",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/925092227667304448/fAY1HUu3_normal.jpg",
       "description": "Breaking news from CNN Digital. Check @cnn for all things CNN, breaking and more.",
-      "followersCount": 59261908,
+      "followersCount": 59262434,
       "friendsCount": 119,
       "location": "Everywhere"
     },
@@ -22,7 +84,7 @@
       "name": "CNN Breaking News",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/925092227667304448/fAY1HUu3_normal.jpg",
       "description": "Breaking news from CNN Digital. Check @cnn for all things CNN, breaking and more.",
-      "followersCount": 59261908,
+      "followersCount": 59262434,
       "friendsCount": 119,
       "location": "Everywhere"
     },
@@ -39,8 +101,8 @@
       "name": "Nassim Nicholas Taleb",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1835982938879508480/q4-Esddn_normal.jpg",
       "description": "Flaneur: probability (philosophy), probability (mathematics), probability (real life),Phoenician wine, deadlifts & dead languages. Greco-Levantine.Canaan. #RWRI",
-      "followersCount": 1123003,
-      "friendsCount": 1641,
+      "followersCount": 1123036,
+      "friendsCount": 1642,
       "location": ""
     },
     "images": [],
@@ -84,8 +146,8 @@
       "name": "Nassim Nicholas Taleb",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1835982938879508480/q4-Esddn_normal.jpg",
       "description": "Flaneur: probability (philosophy), probability (mathematics), probability (real life),Phoenician wine, deadlifts & dead languages. Greco-Levantine.Canaan. #RWRI",
-      "followersCount": 1123003,
-      "friendsCount": 1641,
+      "followersCount": 1123036,
+      "friendsCount": 1642,
       "location": ""
     },
     "images": [],
@@ -99,8 +161,8 @@
       "name": "PolitiFact",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1286766140115517441/8rq6ZxZm_normal.jpg",
       "description": "Home of the Truth-O-Meter and independent fact-checking. Part of @Poynter. Sign up for our newsletter: https://t.co/9ygUqAw2P8",
-      "followersCount": 584959,
-      "friendsCount": 7183,
+      "followersCount": 584961,
+      "friendsCount": 7182,
       "location": "Washington, DC"
     },
     "images": [],
@@ -129,7 +191,7 @@
       "name": "Mohamed A. El-Erian",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1016847534080155648/NGnyajkE_normal.jpg",
       "description": "Rene M Kern Prof of Prac at Wharton. Allianz Advisor. Gramercy Chair. Chair of UnderArmour Board. Former Pimco CEO/co-CIO and President of Queens' Col Cambridge",
-      "followersCount": 803590,
+      "followersCount": 803616,
       "friendsCount": 1133,
       "location": "USA"
     },
@@ -191,8 +253,8 @@
       "name": "PolitiFact",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1286766140115517441/8rq6ZxZm_normal.jpg",
       "description": "Home of the Truth-O-Meter and independent fact-checking. Part of @Poynter. Sign up for our newsletter: https://t.co/9ygUqAw2P8",
-      "followersCount": 584959,
-      "friendsCount": 7183,
+      "followersCount": 584961,
+      "friendsCount": 7182,
       "location": "Washington, DC"
     },
     "images": [],
@@ -206,7 +268,7 @@
       "name": "CNN Breaking News",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/925092227667304448/fAY1HUu3_normal.jpg",
       "description": "Breaking news from CNN Digital. Check @cnn for all things CNN, breaking and more.",
-      "followersCount": 59261908,
+      "followersCount": 59262434,
       "friendsCount": 119,
       "location": "Everywhere"
     },
@@ -223,7 +285,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020781,
+      "followersCount": 1020812,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -234,11 +296,45 @@
   },
   {
     "user": {
+      "screenName": "SecScottBessent",
+      "name": "Treasury Secretary Scott Bessent",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/1889401757060444160/MDUd0e0g_normal.jpg",
+      "description": "79th United States Secretary of the Treasury",
+      "followersCount": 805513,
+      "friendsCount": 25,
+      "location": ""
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G_1lx90bUAMUByx.jpg"
+    ],
+    "videos": [],
+    "tweetUrl": "https://x.com/SecScottBessent/status/2016880123044073851",
+    "fullText": "Trump Accounts mark a singular moment in American history, in which @POTUS democratized the benefits of private ownership and compound growth for all Americans.\n\nThank you, @NICKIMINAJ, for helping us to share this opportunity with the next generation. https://t.co/g6XckJF1Hj"
+  },
+  {
+    "user": {
+      "screenName": "NobelPrize",
+      "name": "The Nobel Prize",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/1029729528548139009/fVPd0EwX_normal.jpg",
+      "description": "The official feed of the Nobel Prize @NobelPrize #NobelPrize",
+      "followersCount": 1309783,
+      "friendsCount": 496,
+      "location": "Stockholm, Sweden"
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G_1j2rNXYAAB0SK.jpg"
+    ],
+    "videos": [],
+    "tweetUrl": "https://x.com/NobelPrize/status/2016878020024242484",
+    "fullText": "\"Looking back over my life, I am struck by the good fortune I have had to be a scientist. Very few in this world have the opportunity to do everyday what they love to do, as I have.\"\n\n- medicine laureate Linda Buck, who discovered how our sense of smell works.\n\n#NobelPrize https://t.co/vTtVaYsEww"
+  },
+  {
+    "user": {
       "screenName": "TalebWisdom",
       "name": "Nassim Nicholas Taleb's Wisdom",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1111476570986893313/6r7zCbGa_normal.png",
       "description": "Sharing Nassim Nicholas Taleb's Wisdom from his books, interviews, and tweets. \n\n👇 GET YOUR FREE COPY of all awesome things about Nassim Nicholas Taleb",
-      "followersCount": 136937,
+      "followersCount": 136952,
       "friendsCount": 6,
       "location": ""
     },
@@ -255,8 +351,8 @@
       "name": "PolitiFact",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1286766140115517441/8rq6ZxZm_normal.jpg",
       "description": "Home of the Truth-O-Meter and independent fact-checking. Part of @Poynter. Sign up for our newsletter: https://t.co/9ygUqAw2P8",
-      "followersCount": 584959,
-      "friendsCount": 7183,
+      "followersCount": 584961,
+      "friendsCount": 7182,
       "location": "Washington, DC"
     },
     "images": [],
@@ -266,11 +362,26 @@
   },
   {
     "user": {
+      "screenName": "RobinRoberts",
+      "name": "Robin Roberts",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/1928115994653786112/lKrs82Io_normal.jpg",
+      "description": "Good Morning America Anchor",
+      "followersCount": 949018,
+      "friendsCount": 1676,
+      "location": "New York"
+    },
+    "images": [],
+    "videos": [],
+    "tweetUrl": "https://x.com/RobinRoberts/status/2016865914516541702",
+    "fullText": "The Hot Chocolate competition is heating up this morn! Next on @GMA it’s the finale of our “U.S. of Hot Chocolate” search…and the owners of the four shops are here LIVE in studio. So who will win the 10-thousand-dollar prize?🤔"
+  },
+  {
+    "user": {
       "screenName": "PaulPortesi",
       "name": "Paul Portesi",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1531335215896858624/42LKL7Dh_normal.jpg",
       "description": "Comments are from a nonsensical pontificator which are unscientific, unreasonable, illogical, unacademic nonevidentiary perspective https://t.co/wAsroKIpae",
-      "followersCount": 10687,
+      "followersCount": 10688,
       "friendsCount": 0,
       "location": ""
     },
@@ -278,6 +389,21 @@
     "videos": [],
     "tweetUrl": "https://x.com/PaulPortesi/status/2016864159271702904",
     "fullText": "You may teach it, but that doesn't mean they have to learn."
+  },
+  {
+    "user": {
+      "screenName": "RobinRoberts",
+      "name": "Robin Roberts",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/1928115994653786112/lKrs82Io_normal.jpg",
+      "description": "Good Morning America Anchor",
+      "followersCount": 949018,
+      "friendsCount": 1676,
+      "location": "New York"
+    },
+    "images": [],
+    "videos": [],
+    "tweetUrl": "https://x.com/RobinRoberts/status/2016860378186273197",
+    "fullText": "Looking forward to checking in with my \"Love and Basketball\" co-star @omarepps this morn on @GMA.😉 He’s here dishing on his role in the new film “Moses The Black”. And I can’t believe it’s been 25 more than years since “Love and Basketball”...we’ll check in with him about the"
   },
   {
     "user": {
@@ -300,11 +426,26 @@
   },
   {
     "user": {
+      "screenName": "RobinRoberts",
+      "name": "Robin Roberts",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/1928115994653786112/lKrs82Io_normal.jpg",
+      "description": "Good Morning America Anchor",
+      "followersCount": 949018,
+      "friendsCount": 1676,
+      "location": "New York"
+    },
+    "images": [],
+    "videos": [],
+    "tweetUrl": "https://x.com/RobinRoberts/status/2016857861410721862",
+    "fullText": "We have a very special #DealsandSteals with @toryjohnson this morn! Our crew is stepping into the spotlight this morn as they share their own favorite products…with savings up to 62% off!"
+  },
+  {
+    "user": {
       "screenName": "Porkchop_EXP",
       "name": "Porkchop Express",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1866153371679268866/E3yltNur_normal.jpg",
       "description": "Widely known in narrow circles Dostoevsky appreciatrix",
-      "followersCount": 15815,
+      "followersCount": 15816,
       "friendsCount": 174,
       "location": ""
     },
@@ -319,7 +460,7 @@
       "name": "CNN Breaking News",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/925092227667304448/fAY1HUu3_normal.jpg",
       "description": "Breaking news from CNN Digital. Check @cnn for all things CNN, breaking and more.",
-      "followersCount": 59261908,
+      "followersCount": 59262434,
       "friendsCount": 119,
       "location": "Everywhere"
     },
@@ -330,11 +471,56 @@
   },
   {
     "user": {
+      "screenName": "RobinRoberts",
+      "name": "Robin Roberts",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/1928115994653786112/lKrs82Io_normal.jpg",
+      "description": "Good Morning America Anchor",
+      "followersCount": 949018,
+      "friendsCount": 1676,
+      "location": "New York"
+    },
+    "images": [],
+    "videos": [],
+    "tweetUrl": "https://x.com/RobinRoberts/status/2016847040228004195",
+    "fullText": "Coming up next on @GMA @thepointsguy Brian Kelly is here LIVE with travel tips for handling the recent travel chaos. He’s breaking down the best strategies if your plans are impacted by weather and what to know about your traveler rights."
+  },
+  {
+    "user": {
+      "screenName": "RobinRoberts",
+      "name": "Robin Roberts",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/1928115994653786112/lKrs82Io_normal.jpg",
+      "description": "Good Morning America Anchor",
+      "followersCount": 949018,
+      "friendsCount": 1676,
+      "location": "New York"
+    },
+    "images": [],
+    "videos": [],
+    "tweetUrl": "https://x.com/RobinRoberts/status/2016845202980315426",
+    "fullText": "Next on @GMA @RhiannonAlly  is LIVE from a boat on the iced-over Hudson River tracking the deep freeze impacting millions across the country. And @Ginger_Zee is here following the latest on the Nor-easter threatening the East coast with even more snow."
+  },
+  {
+    "user": {
+      "screenName": "RobinRoberts",
+      "name": "Robin Roberts",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/1928115994653786112/lKrs82Io_normal.jpg",
+      "description": "Good Morning America Anchor",
+      "followersCount": 949018,
+      "friendsCount": 1676,
+      "location": "New York"
+    },
+    "images": [],
+    "videos": [],
+    "tweetUrl": "https://x.com/RobinRoberts/status/2016844712632578124",
+    "fullText": "We begin this busy Thursday morn on @GMA following the latest from Minneapolis. @MattRiversABC is LIVE on the scene with more on the investigation into the killing of Alex Pretti…with the administration now saying that the two agents who shot him were put on administrative"
+  },
+  {
+    "user": {
       "screenName": "MebFaber",
       "name": "Meb Faber",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1616559057984421888/JA46l4Zy_normal.jpg",
       "description": "Founder:@cambriafunds,@theideafarm \nPod: https://t.co/CvHIZ680Bm\nFree books: https://t.co/gm0ghO9Nji \nYoutube: https://t.co/linHiucSyE\n\nEmail: mf@cambriainvestments",
-      "followersCount": 137290,
+      "followersCount": 137289,
       "friendsCount": 2556,
       "location": "Manhattan Beach, CA"
     },
@@ -347,12 +533,29 @@
   },
   {
     "user": {
+      "screenName": "RobinRoberts",
+      "name": "Robin Roberts",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/1928115994653786112/lKrs82Io_normal.jpg",
+      "description": "Good Morning America Anchor",
+      "followersCount": 949018,
+      "friendsCount": 1676,
+      "location": "New York"
+    },
+    "images": [],
+    "videos": [
+      "https://video.twimg.com/amplify_video/2016841520343625730/vid/avc1/2160x3840/EQym4rUe_QKr7Qz6.mp4?tag=21"
+    ],
+    "tweetUrl": "https://x.com/RobinRoberts/status/2016842089003090170",
+    "fullText": "Good morning! Joining Glam Fam looking forward to you sharing what you’re most grateful for on this #thankfulthursday🙏🏾 \n#happyfridayeve 💃🏾\n#cmon 😘 https://t.co/GoxraSLjwZ"
+  },
+  {
+    "user": {
       "screenName": "ektrit",
       "name": "WAR ECONOMY by KRIS 📿",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1231545092671987712/tRXcJ07B_normal.jpg",
       "description": "WAR ECONOMY BY KRIS on SUBSTACK.\n\nSupply chains.\nStaunchly pro-USA.\nTheology. History. Finance. Money. Wars. Rûm Orthodox. Stochasticity. Krisonomics.",
       "followersCount": 12338,
-      "friendsCount": 1430,
+      "friendsCount": 1429,
       "location": ""
     },
     "images": [
@@ -396,6 +599,23 @@
   },
   {
     "user": {
+      "screenName": "NobelPrize",
+      "name": "The Nobel Prize",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/1029729528548139009/fVPd0EwX_normal.jpg",
+      "description": "The official feed of the Nobel Prize @NobelPrize #NobelPrize",
+      "followersCount": 1309783,
+      "friendsCount": 496,
+      "location": "Stockholm, Sweden"
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G_02iMKXgAAMCLk.jpg"
+    ],
+    "videos": [],
+    "tweetUrl": "https://x.com/NobelPrize/status/2016828189889249328",
+    "fullText": "\"Now I think the freedom I had as a child was a great gift that made me into someone who’s curious about everything, constantly in search of something.\"\n\nLearn more about literature laureate Olga Tokarczuk in her biography: https://t.co/fLziFvLZeq https://t.co/6hH6sFXngD"
+  },
+  {
+    "user": {
       "screenName": "mikeharrisNY",
       "name": "Michael Harris ∀p(p→◊Kp)",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1995765072648400896/27p5uLCt_normal.jpg",
@@ -418,7 +638,7 @@
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1231545092671987712/tRXcJ07B_normal.jpg",
       "description": "WAR ECONOMY BY KRIS on SUBSTACK.\n\nSupply chains.\nStaunchly pro-USA.\nTheology. History. Finance. Money. Wars. Rûm Orthodox. Stochasticity. Krisonomics.",
       "followersCount": 12338,
-      "friendsCount": 1430,
+      "friendsCount": 1429,
       "location": ""
     },
     "images": [
@@ -434,7 +654,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020781,
+      "followersCount": 1020812,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -450,7 +670,7 @@
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1231545092671987712/tRXcJ07B_normal.jpg",
       "description": "WAR ECONOMY BY KRIS on SUBSTACK.\n\nSupply chains.\nStaunchly pro-USA.\nTheology. History. Finance. Money. Wars. Rûm Orthodox. Stochasticity. Krisonomics.",
       "followersCount": 12338,
-      "friendsCount": 1430,
+      "friendsCount": 1429,
       "location": ""
     },
     "images": [],
@@ -464,7 +684,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020781,
+      "followersCount": 1020812,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -496,7 +716,7 @@
       "name": "Mohamed A. El-Erian",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1016847534080155648/NGnyajkE_normal.jpg",
       "description": "Rene M Kern Prof of Prac at Wharton. Allianz Advisor. Gramercy Chair. Chair of UnderArmour Board. Former Pimco CEO/co-CIO and President of Queens' Col Cambridge",
-      "followersCount": 803590,
+      "followersCount": 803616,
       "friendsCount": 1133,
       "location": "USA"
     },
@@ -514,7 +734,7 @@
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1231545092671987712/tRXcJ07B_normal.jpg",
       "description": "WAR ECONOMY BY KRIS on SUBSTACK.\n\nSupply chains.\nStaunchly pro-USA.\nTheology. History. Finance. Money. Wars. Rûm Orthodox. Stochasticity. Krisonomics.",
       "followersCount": 12338,
-      "friendsCount": 1430,
+      "friendsCount": 1429,
       "location": ""
     },
     "images": [
@@ -530,7 +750,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020781,
+      "followersCount": 1020812,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -546,7 +766,7 @@
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1231545092671987712/tRXcJ07B_normal.jpg",
       "description": "WAR ECONOMY BY KRIS on SUBSTACK.\n\nSupply chains.\nStaunchly pro-USA.\nTheology. History. Finance. Money. Wars. Rûm Orthodox. Stochasticity. Krisonomics.",
       "followersCount": 12338,
-      "friendsCount": 1430,
+      "friendsCount": 1429,
       "location": ""
     },
     "images": [
@@ -562,7 +782,7 @@
       "name": "Mohamed A. El-Erian",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1016847534080155648/NGnyajkE_normal.jpg",
       "description": "Rene M Kern Prof of Prac at Wharton. Allianz Advisor. Gramercy Chair. Chair of UnderArmour Board. Former Pimco CEO/co-CIO and President of Queens' Col Cambridge",
-      "followersCount": 803590,
+      "followersCount": 803616,
       "friendsCount": 1133,
       "location": "USA"
     },
@@ -579,7 +799,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020781,
+      "followersCount": 1020812,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -594,7 +814,7 @@
       "name": "Mohamed A. El-Erian",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1016847534080155648/NGnyajkE_normal.jpg",
       "description": "Rene M Kern Prof of Prac at Wharton. Allianz Advisor. Gramercy Chair. Chair of UnderArmour Board. Former Pimco CEO/co-CIO and President of Queens' Col Cambridge",
-      "followersCount": 803590,
+      "followersCount": 803616,
       "friendsCount": 1133,
       "location": "USA"
     },
