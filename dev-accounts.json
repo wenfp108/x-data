@@ -2,29 +2,16 @@
   {
     "username": "nntaleb",
     "twitter_url": "https://x.com/nntaleb",
-    "tags": [
-      "Finance",
-      "Science",
-      "Geopolitics"
-    ]
+    "tags": ["Finance","Science","Geopolitics"]
   },
   {
     "username": "PeterSchiff",
     "twitter_url": "https://x.com/PeterSchiff",
-    "tags": [
-      "Economy",
-      "Finance",
-      "Crypto",
-      "Politics"
-    ]
+    "tags": ["Economy","Finance","Crypto","Politics"]
   },
   {
     "username": "NickTimiraos",
     "twitter_url": "https://x.com/NickTimiraos",
-    "tags": [
-      "Economy",
-      "Finance",
-      "Politics"
-    ]
+    "tags": ["Economy","Finance","Politics"]
   }
 ]
