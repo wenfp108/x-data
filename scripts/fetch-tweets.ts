@@ -36,15 +36,16 @@ originalTweets.forEach((tweet) => {
     tweet,
     "raw.result.legacy.idStr"
   )}`;
-  // 提取用户信息
+  
+  // 🔥【优化】只保留核心身份数据，去除污染
   const user = {
     screenName: get(tweet, "user.legacy.screenName"),
     name: get(tweet, "user.legacy.name"),
-    profileImageUrl: get(tweet, "user.legacy.profileImageUrlHttps"),
-    description: get(tweet, "user.legacy.description"),
-    followersCount: get(tweet, "user.legacy.followersCount"),
-    friendsCount: get(tweet, "user.legacy.friendsCount"),
-    location: get(tweet, "user.legacy.location"),
+    // profileImageUrl: ... // 🗑️ 已移除：冗余
+    // description: ... // 🗑️ 已移除：冗余
+    followersCount: get(tweet, "user.legacy.followersCount"), // ✅ 保留：用于计算权重
+    // friendsCount: ... // 🗑️ 已移除：噪音
+    // location: ... // 🗑️ 已移除：噪音
   };
 
   // 提取图片
@@ -67,6 +68,12 @@ originalTweets.forEach((tweet) => {
     })
     .filter(Boolean);
 
+  // 提取互动数据
+  const favoriteCount = get(tweet, "raw.result.legacy.favorite_count", 0);
+  const retweetCount = get(tweet, "raw.result.legacy.retweet_count", 0);
+  const replyCount = get(tweet, "raw.result.legacy.reply_count", 0);
+  const viewCount = get(tweet, "raw.result.views.count", "0");
+
   rows.push({
     // @ts-ignore
     user,
@@ -74,6 +81,13 @@ originalTweets.forEach((tweet) => {
     videos,
     tweetUrl,
     fullText,
+    createdAt,
+    metrics: {
+      likes: favoriteCount,
+      retweets: retweetCount,
+      replies: replyCount,
+      views: viewCount
+    }
   });
 });
 
@@ -99,7 +113,7 @@ const sortedRows = uniqueRows.sort((a, b) => {
   const urlB = new URL(b.tweetUrl);
   const idA = urlA.pathname.split('/').pop() || '';
   const idB = urlB.pathname.split('/').pop() || '';
-  return idB.localeCompare(idA); // Twitter ID 本身就包含时间信息，可以直接比较
+  return idB.localeCompare(idA);
 });
 
 fs.writeFileSync(
