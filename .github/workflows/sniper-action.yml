@@ -2,7 +2,7 @@ name: Sniper Elite (Fetch Target Tweets)
 
 on:
   schedule:
-    - cron: '*/30 * * * *'  # 每30分钟狙击一次
+    - cron: '0 */4 * * *'   # ✅ 修改：每4小时运行一次 (配合慢速轮询策略，避免任务重叠)
   workflow_dispatch:      # 允许手动触发
 
 jobs:
@@ -45,4 +45,10 @@ jobs:
         run: |
           git add .
           git commit -m "🎯 Sniper hit: updated tweets [skip ci]" || exit 0
-          git push
+          
+          # 🔥 核心修复：先拉取远程最新代码 (rebase模式)，解决冲突
+          # 这步能防止因 sync-to-bank 或其他脚本产生的提交导致的 push 失败
+          git pull --rebase origin main
+          
+          # 推送到远程
+          git push origin main
