@@ -1,0 +1,128 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "2"
+  },
+  "id": "VXNlcjo1NjU2MjgwMw==",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Tue Jul 14 01:28:42 +0000 2009",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "Chief Economist & Global Strategist https://t.co/X35usGhhgW, Chairman https://t.co/ulhU3vptUb, Founder https://t.co/zB1vZlRBGh, Host https://t.co/XazFnrIREg, Best-selling Author",
+    "entities": {
+      "description": {
+        "urls": [
+          {
+            "display_url": "Europac.com",
+            "expanded_url": "http://www.Europac.com",
+            "url": "https://t.co/X35usGhhgW",
+            "indices": [
+              36,
+              59
+            ]
+          },
+          {
+            "display_url": "SchiffGold.com",
+            "expanded_url": "http://www.SchiffGold.com",
+            "url": "https://t.co/ulhU3vptUb",
+            "indices": [
+              70,
+              93
+            ]
+          },
+          {
+            "display_url": "SchiffSovereign.com",
+            "expanded_url": "http://www.SchiffSovereign.com",
+            "url": "https://t.co/zB1vZlRBGh",
+            "indices": [
+              103,
+              126
+            ]
+          },
+          {
+            "display_url": "SchiffRadio.com",
+            "expanded_url": "http://www.SchiffRadio.com",
+            "url": "https://t.co/XazFnrIREg",
+            "indices": [
+              133,
+              156
+            ]
+          }
+        ]
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "amzn.to/1nDylDr",
+            "expanded_url": "http://amzn.to/1nDylDr",
+            "url": "https://t.co/ufTcx7dpVJ",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 861,
+    "followersCount": 1312880,
+    "following": false,
+    "friendsCount": 302,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 10181,
+    "location": "",
+    "mediaCount": 1843,
+    "name": "Peter Schiff",
+    "normalFollowersCount": 1312880,
+    "pinnedTweetIdsStr": [
+      "1280257955787661315"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/56562803/1600369965",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1679540487743496205/LcNCN4tX_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "PeterSchiff",
+    "statusesCount": 39021,
+    "translatorType": "none",
+    "url": "https://t.co/ufTcx7dpVJ",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "profileImageShape": "Circle",
+  "restId": "56562803",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1624026190711"
+    }
+  }
+}
