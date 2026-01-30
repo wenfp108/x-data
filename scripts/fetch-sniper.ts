@@ -8,31 +8,19 @@ import path from "path";
 // 🧠 策略配置中心 (Strategy Hub)
 // ==========================================
 
-// 定义不同板块的“保留条数” (Limit)
-// 逻辑：数字越小，代表该板块“噪音”越大，或者需要更严格的精选
 const TAG_STRATEGIES: Record<string, number> = {
-  // --- 🔴 高噪区 (严格限制 Top 3) ---
-  "Politics": 3,    // 🏛️ 政治：口水战多，只看前 3 条核心
-  "Economy": 3,     // 📉 经济：数据发布时太密集，只看前 3 条核心数据
-  "Crypto": 3,      // ₿ 虚拟币：噪音之王，严格限制 Top 3 (防表情包刷屏)
-  
-  // --- 🟡 中信噪比 (保留 Top 5) ---
-  "Geopolitics": 5, // 🌍 地缘：突发性强，一旦打仗需要多看几条
-  "Finance": 5,     // 💰 金融：图表和分析较多，值得多留几条
-  "Tech": 5,        // 🚀 科技：干货多，发布会/论文需要覆盖
-
-  // --- 🟢 净土区 (全量/高保留) ---
-  "Science": 8,     // 🔬 科学：极低频，全是干货。设为 8 约等于全量保留。
-
-  // --- 🛡️ 特殊策略 ---
-  "Meme": 2,        // 🤡 搞笑/梗图：只留 2 条看个乐
-  "Noise": 1,       // 🔇 纯噪点：只留 1 条
-  "General": 4      // 👤 默认：留 4 条
+  "Noise": 1,
+  "Meme": 2,
+  "Crypto": 3,
+  "Politics": 3,
+  "Economy": 3,
+  "General": 4,
+  "Geopolitics": 5,
+  "Finance": 5,
+  "Tech": 5,
+  "Science": 8
 };
 
-// 核心算法：根据用户的 tags 计算 limit
-// 规则：取所有 tag 中【限制最严】(数值最小) 的那个
-// 举例：如果一个人既是 "Tech"(5) 又是 "Crypto"(3)，最终取 3。因为币圈属性会带来高噪音。
 const getLimitByTags = (tags: string[] = []): number => {
   if (!tags || tags.length === 0) return TAG_STRATEGIES["General"];
   
@@ -40,7 +28,6 @@ const getLimitByTags = (tags: string[] = []): number => {
   let hasMatch = false;
 
   tags.forEach(tag => {
-    // 模糊匹配 (例如 tags 写 "US_Politics" 也能命中 "Politics")
     const key = Object.keys(TAG_STRATEGIES).find(k => tag.includes(k));
     if (key) {
       const limit = TAG_STRATEGIES[key];
@@ -69,7 +56,6 @@ const findRestId = (obj: any): string | undefined => {
   return undefined;
 };
 
-// 读取目标 (支持 tags)
 const loadTargets = () => {
   const accountPath = path.join(process.cwd(), "dev-accounts.json");
   if (!fs.existsSync(accountPath)) return [];
@@ -88,7 +74,7 @@ const loadTargets = () => {
         targets.push({ 
             screenName, 
             restId,
-            tags: acc.tags || [] // 读取 tags
+            tags: acc.tags || []
         });
       }
     }
@@ -108,9 +94,11 @@ if (targets.length === 0) {
 
 const todayPath = `./tweets/${dayjs().format("YYYY-MM-DD")}.json`;
 const yesterdayPath = `./tweets/${dayjs().subtract(1, 'day').format("YYYY-MM-DD")}.json`;
-const currentTimeStr = dayjs().format("HH:mm");
 
-// 加载历史数据作为基准
+// 🔥 修改点：将时间格式改为 年-月-日 时:分
+const currentTimeStr = dayjs().format("YYYY-MM-DD HH:mm");
+
+// 加载历史数据
 let historyMap = new Map();
 const loadIntoMap = (filePath: string) => {
   if (fs.existsSync(filePath)) {
@@ -127,13 +115,11 @@ console.log(`🎯 狙击目标: ${targets.length} 人 (板块策略引擎启动)
 
 const client = await XAuthClient();
 const newRows: any[] = [];
-// 随机打乱，模拟真人操作
 const shuffledTargets = targets.sort(() => 0.5 - Math.random());
 console.log(`🕒 预计耗时: ~${(shuffledTargets.length * 30 / 60).toFixed(1)} 分钟`);
 
 for (const [index, target] of shuffledTargets.entries()) {
   const currentNum = index + 1;
-  // 🔥 计算当前用户的动态限制
   const limit = getLimitByTags(target.tags);
   
   console.log(`\n[${currentNum}/${shuffledTargets.length}] 📡 Fetching @${target.screenName} [Tags: ${target.tags.join(',') || 'General'} -> Limit: ${limit}]...`);
@@ -141,7 +127,7 @@ for (const [index, target] of shuffledTargets.entries()) {
   try {
     const resp = await client.getTweetApi().getUserTweets({
       userId: target.restId,
-      count: 40, // 抓取基数保持 40，确保不漏
+      count: 40, 
       includePromotedContent: false 
     });
 
@@ -159,7 +145,7 @@ for (const [index, target] of shuffledTargets.entries()) {
        return { legacy, userResult };
     }).filter(Boolean);
 
-    // 2. 过滤时间窗口 (48h)
+    // 2. 过滤时间窗口
     userTweets = userTweets.filter((t: any) => {
       const createdAt = t.legacy.created_at || t.legacy.createdAt;
       const tweetDate = dayjs(createdAt);
@@ -167,7 +153,7 @@ for (const [index, target] of shuffledTargets.entries()) {
       return tweetDate.isSame(today, 'day') || tweetDate.isSame(today.subtract(1, 'day'), 'day');
     });
 
-    // 3. 排序 (按热度: Views > Likes)
+    // 3. 排序
     userTweets.sort((a: any, b: any) => {
       const viewA = parseInt(a.legacy.views?.count || "0") || 0;
       const viewB = parseInt(b.legacy.views?.count || "0") || 0;
@@ -177,7 +163,7 @@ for (const [index, target] of shuffledTargets.entries()) {
       return likeB - likeA;
     });
 
-    // 4. 🔥 动态截取 (应用策略)
+    // 4. 动态截取
     const finalPicks = userTweets.slice(0, limit);
     console.log(`   ✅ Kept Top ${finalPicks.length} tweets.`);
 
@@ -217,7 +203,7 @@ for (const [index, target] of shuffledTargets.entries()) {
       }
 
       newRows.push({
-        tags: target.tags, // ✅ 写入标签，前端可用于分类
+        tags: target.tags, 
         user: {
             screenName: userResult.screenName || userResult.screen_name,
             name: userResult.name,
@@ -237,7 +223,7 @@ for (const [index, target] of shuffledTargets.entries()) {
     console.error(`   ❌ Failed @${target.screenName}:`, e);
   }
 
-  // Checkpoint Save & Sleep
+  // Checkpoint Save
   if (currentNum % 5 === 0 || currentNum === shuffledTargets.length) {
     try {
         const tempSortedRows = [...newRows].sort((a: any, b: any) => {
@@ -250,6 +236,7 @@ for (const [index, target] of shuffledTargets.entries()) {
     } catch (err) {}
   }
 
+  // Sleep
   if (currentNum < shuffledTargets.length) {
     const delay = Math.floor(Math.random() * (40000 - 20000 + 1)) + 20000;
     console.log(`   ☕ Resting ${Math.round(delay / 1000)}s...`);
