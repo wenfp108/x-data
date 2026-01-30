@@ -36,7 +36,7 @@ originalTweets.forEach((tweet) => {
 
   const fullText = get(tweet, "raw.result.legacy.fullText");
 
-  // ✅ 提取被引用的推文内容 (大佬在评论什么？)
+  // 提取被引用的推文内容
   let quoted = null;
   const isQuoteStatus = get(tweet, "raw.result.legacy.isQuoteStatus");
   if (isQuoteStatus) {
@@ -65,8 +65,7 @@ originalTweets.forEach((tweet) => {
     })
     .filter(Boolean);
 
-  // 🔥【核心修复】更强壮的数据提取逻辑
-  // 即使 legacy 为空，也能保证 metrics 结构完整，不会报错
+  // 健壮的数据提取逻辑
   const legacy = get(tweet, "raw.result.legacy") || {};
   
   const currentMetrics = {
@@ -75,7 +74,6 @@ originalTweets.forEach((tweet) => {
     replies: legacy.reply_count || 0,
     quotes: legacy.quote_count || 0,
     bookmarks: legacy.bookmark_count || 0,
-    // views 比较特殊，通常在 views.count 且是字符串
     views: parseInt(get(tweet, "raw.result.views.count", "0")) || 0
   };
 
@@ -86,10 +84,9 @@ originalTweets.forEach((tweet) => {
     videos,
     tweetUrl,
     fullText,
-    quoted,   // 引用内容
+    quoted,
     createdAt,
     metrics: currentMetrics,
-    // growth 和 peakGrowth 稍后在合并时计算
   });
 });
 
@@ -107,7 +104,7 @@ if (fs.existsSync(outputPath)) {
 }
 
 // 3. 智能合并 logic
-const currentTimeStr = dayjs().format("YYYY-MM-DD HH:mm"); // ✅ 绝对时间戳
+const currentTimeStr = dayjs().format("YYYY-MM-DD HH:mm");
 
 newRows.forEach(newTweet => {
   const oldTweet = existingMap.get(newTweet.tweetUrl);
@@ -146,7 +143,6 @@ newRows.forEach(newTweet => {
     }
   }
 
-  // 写入新对象
   newTweet.growth = growth;
   newTweet.peakGrowth = peakGrowth;
   
@@ -161,16 +157,3 @@ const sortedRows = Array.from(existingMap.values()).sort((a: any, b: any) => {
 });
 
 fs.writeFileSync(outputPath, JSON.stringify(sortedRows, null, 2));
-
-// ==========================================
-// 🔥 极简版：监控摘要 (无污染)
-// ==========================================
-console.log("\n📊 [Monitor Summary]");
-const oneHourAgo = dayjs().subtract(1, 'hour');
-const recentTweets = sortedRows.filter((row: any) => dayjs(row.createdAt).isAfter(oneHourAgo));
-const trendIcon = recentTweets.length > 20 ? "🔥 HIGH" : "hmC NORMAL";
-
-console.log(`  ➤ Processed:        ${newRows.length} tweets from timeline`);
-console.log(`  ➤ Total Saved:      ${sortedRows.length} unique tweets (24h window)`);
-console.log(`  ➤ Recent Activity:  ${recentTweets.length} new tweets in last hour ${trendIcon}`);
-console.log("==========================================\n");
