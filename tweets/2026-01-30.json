@@ -1,11 +1,93 @@
 [
   {
     "user": {
+      "screenName": "stlouisfed",
+      "name": "St. Louis Fed",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/1908236155046236160/OGv6cHg0_normal.png",
+      "description": "Official Federal Reserve Bank of St. Louis account. We share economic data and insights. Home to FRED®, @FedFRASER & @FedHistory",
+      "followersCount": 244046,
+      "friendsCount": 37,
+      "location": "St. Louis, MO"
+    },
+    "images": [],
+    "videos": [
+      "https://video.twimg.com/ext_tw_video/2017094927147057152/pu/vid/avc1/480x270/PgdX7G5Sf56bp2li.mp4?tag=12"
+    ],
+    "tweetUrl": "https://x.com/stlouisfed/status/2017094969299747235",
+    "fullText": "The St. Louis Fed is part of the Federal Reserve System and serves the Eighth Federal Reserve District. Our District helps define us: https://t.co/RuQBFfk0yT https:// https://t.co/vQ46rkNtKe"
+  },
+  {
+    "user": {
+      "screenName": "elerianm",
+      "name": "Mohamed A. El-Erian",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/1016847534080155648/NGnyajkE_normal.jpg",
+      "description": "Rene M Kern Prof of Prac at Wharton. Allianz Advisor. Gramercy Chair. Chair of UnderArmour Board. Former Pimco CEO/co-CIO and President of Queens' Col Cambridge",
+      "followersCount": 803816,
+      "friendsCount": 1133,
+      "location": "USA"
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G_4eUbpW8AAhxXf.png",
+      "https://pbs.twimg.com/media/G_4eXO7WQAAbxUF.jpg"
+    ],
+    "videos": [],
+    "tweetUrl": "https://x.com/elerianm/status/2017083282760818975",
+    "fullText": "With President Trump set to announce his pick for Fed Chair in just a few hours, the odds in the \"prediction markets\" -- as shown below by Polymarket -- have shifted firmly in favor of Kevin Warsh.\n#economy #markets #federalreserve #FedChair https://t.co/YC4PwpQIy2"
+  },
+  {
+    "user": {
+      "screenName": "WSJmarkets",
+      "name": "WSJ Markets",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
+      "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
+      "followersCount": 1021038,
+      "friendsCount": 520,
+      "location": "New York, NY"
+    },
+    "images": [],
+    "videos": [],
+    "tweetUrl": "https://x.com/WSJmarkets/status/2017078469813788843",
+    "fullText": "London Metal Exchange Resumes Trade After Technical Glitch https://t.co/dGYQf0jpMM"
+  },
+  {
+    "user": {
+      "screenName": "stlouisfed",
+      "name": "St. Louis Fed",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/1908236155046236160/OGv6cHg0_normal.png",
+      "description": "Official Federal Reserve Bank of St. Louis account. We share economic data and insights. Home to FRED®, @FedFRASER & @FedHistory",
+      "followersCount": 244046,
+      "friendsCount": 37,
+      "location": "St. Louis, MO"
+    },
+    "images": [
+      "https://pbs.twimg.com/media/G_4V7DDWUAA7tK4.jpg"
+    ],
+    "videos": [],
+    "tweetUrl": "https://x.com/stlouisfed/status/2017073808046264683",
+    "fullText": ".@uscensusbureau estimates the number of people living in poverty in the U.S. In 2023, that number was 40,763,043 people. Visit the FRED Blog to learn more about the math and the methods https://t.co/L4pnUvqeHD https://t.co/RnzL8XLgBK"
+  },
+  {
+    "user": {
+      "screenName": "WSJmarkets",
+      "name": "WSJ Markets",
+      "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
+      "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
+      "followersCount": 1021038,
+      "friendsCount": 520,
+      "location": "New York, NY"
+    },
+    "images": [],
+    "videos": [],
+    "tweetUrl": "https://x.com/WSJmarkets/status/2017070905243869505",
+    "fullText": "Prices for gold, silver and platinum have surged to record levels, and individual investors are celebrating. The pros? Not so much. https://t.co/BfciMgP71b"
+  },
+  {
+    "user": {
       "screenName": "NickTimiraos",
       "name": "Nick Timiraos",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1819946702050115584/5Gvbvs3u_normal.jpg",
       "description": "Chief economics correspondent, The Wall Street Journal • Author, \"Trillion Dollar Triage”",
-      "followersCount": 458526,
+      "followersCount": 458557,
       "friendsCount": 118,
       "location": ""
     },
@@ -20,7 +102,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020995,
+      "followersCount": 1021038,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -35,7 +117,7 @@
       "name": "St. Louis Fed",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1908236155046236160/OGv6cHg0_normal.png",
       "description": "Official Federal Reserve Bank of St. Louis account. We share economic data and insights. Home to FRED®, @FedFRASER & @FedHistory",
-      "followersCount": 244024,
+      "followersCount": 244046,
       "friendsCount": 37,
       "location": "St. Louis, MO"
     },
@@ -52,7 +134,7 @@
       "name": "St. Louis Fed",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1908236155046236160/OGv6cHg0_normal.png",
       "description": "Official Federal Reserve Bank of St. Louis account. We share economic data and insights. Home to FRED®, @FedFRASER & @FedHistory",
-      "followersCount": 244024,
+      "followersCount": 244046,
       "friendsCount": 37,
       "location": "St. Louis, MO"
     },
@@ -69,7 +151,7 @@
       "name": "CNN Breaking News",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/925092227667304448/fAY1HUu3_normal.jpg",
       "description": "Breaking news from CNN Digital. Check @cnn for all things CNN, breaking and more.",
-      "followersCount": 59264835,
+      "followersCount": 59265110,
       "friendsCount": 119,
       "location": "Everywhere"
     },
@@ -84,7 +166,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020995,
+      "followersCount": 1021038,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -114,7 +196,7 @@
       "name": "Paul Portesi",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1531335215896858624/42LKL7Dh_normal.jpg",
       "description": "Comments are from a nonsensical pontificator which are unscientific, unreasonable, illogical, unacademic nonevidentiary perspective https://t.co/wAsroKIpae",
-      "followersCount": 10685,
+      "followersCount": 10684,
       "friendsCount": 0,
       "location": ""
     },
@@ -129,7 +211,7 @@
       "name": "St. Louis Fed",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1908236155046236160/OGv6cHg0_normal.png",
       "description": "Official Federal Reserve Bank of St. Louis account. We share economic data and insights. Home to FRED®, @FedFRASER & @FedHistory",
-      "followersCount": 244024,
+      "followersCount": 244046,
       "friendsCount": 37,
       "location": "St. Louis, MO"
     },
@@ -146,7 +228,7 @@
       "name": "Nick Timiraos",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1819946702050115584/5Gvbvs3u_normal.jpg",
       "description": "Chief economics correspondent, The Wall Street Journal • Author, \"Trillion Dollar Triage”",
-      "followersCount": 458526,
+      "followersCount": 458557,
       "friendsCount": 118,
       "location": ""
     },
@@ -161,7 +243,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020995,
+      "followersCount": 1021038,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -176,7 +258,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020995,
+      "followersCount": 1021038,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -191,7 +273,7 @@
       "name": "Michael Harris ∀p(p→◊Kp)",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1995765072648400896/27p5uLCt_normal.jpg",
       "description": "Tech | Markets | Philosophy |\nNovel: Albedo zero. \nNo advice.",
-      "followersCount": 32777,
+      "followersCount": 32775,
       "friendsCount": 1186,
       "location": "USA"
     },
@@ -206,7 +288,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020995,
+      "followersCount": 1021038,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -221,7 +303,7 @@
       "name": "Michael Harris ∀p(p→◊Kp)",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1995765072648400896/27p5uLCt_normal.jpg",
       "description": "Tech | Markets | Philosophy |\nNovel: Albedo zero. \nNo advice.",
-      "followersCount": 32777,
+      "followersCount": 32775,
       "friendsCount": 1186,
       "location": "USA"
     },
@@ -236,7 +318,7 @@
       "name": "St. Louis Fed",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1908236155046236160/OGv6cHg0_normal.png",
       "description": "Official Federal Reserve Bank of St. Louis account. We share economic data and insights. Home to FRED®, @FedFRASER & @FedHistory",
-      "followersCount": 244024,
+      "followersCount": 244046,
       "friendsCount": 37,
       "location": "St. Louis, MO"
     },
@@ -253,7 +335,7 @@
       "name": "CNN Breaking News",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/925092227667304448/fAY1HUu3_normal.jpg",
       "description": "Breaking news from CNN Digital. Check @cnn for all things CNN, breaking and more.",
-      "followersCount": 59264835,
+      "followersCount": 59265110,
       "friendsCount": 119,
       "location": "Everywhere"
     },
@@ -270,7 +352,7 @@
       "name": "PolitiFact",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1286766140115517441/8rq6ZxZm_normal.jpg",
       "description": "Home of the Truth-O-Meter and independent fact-checking. Part of @Poynter. Sign up for our newsletter: https://t.co/9ygUqAw2P8",
-      "followersCount": 584951,
+      "followersCount": 584953,
       "friendsCount": 7182,
       "location": "Washington, DC"
     },
@@ -285,7 +367,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020995,
+      "followersCount": 1021038,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -300,7 +382,7 @@
       "name": "Porkchop Express",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1866153371679268866/E3yltNur_normal.jpg",
       "description": "Widely known in narrow circles Dostoevsky appreciatrix",
-      "followersCount": 15816,
+      "followersCount": 15815,
       "friendsCount": 174,
       "location": ""
     },
@@ -315,7 +397,7 @@
       "name": "Michael Harris ∀p(p→◊Kp)",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1995765072648400896/27p5uLCt_normal.jpg",
       "description": "Tech | Markets | Philosophy |\nNovel: Albedo zero. \nNo advice.",
-      "followersCount": 32777,
+      "followersCount": 32775,
       "friendsCount": 1186,
       "location": "USA"
     },
@@ -330,7 +412,7 @@
       "name": "lavitalenta",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1922851315157262336/pNCDdT9w_normal.jpg",
       "description": "Investigating Leisure, what it is, how we can achieve it, and what gets in our way",
-      "followersCount": 46139,
+      "followersCount": 46138,
       "friendsCount": 380,
       "location": ""
     },
@@ -347,7 +429,7 @@
       "name": "CNN Breaking News",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/925092227667304448/fAY1HUu3_normal.jpg",
       "description": "Breaking news from CNN Digital. Check @cnn for all things CNN, breaking and more.",
-      "followersCount": 59264835,
+      "followersCount": 59265110,
       "friendsCount": 119,
       "location": "Everywhere"
     },
@@ -362,7 +444,7 @@
       "name": "Meb Faber",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1616559057984421888/JA46l4Zy_normal.jpg",
       "description": "Founder:@cambriafunds,@theideafarm \nPod: https://t.co/CvHIZ680Bm\nFree books: https://t.co/gm0ghO9Nji \nYoutube: https://t.co/linHiucSyE\n\nEmail: mf@cambriainvestments",
-      "followersCount": 137305,
+      "followersCount": 137307,
       "friendsCount": 2556,
       "location": "Manhattan Beach, CA"
     },
@@ -396,8 +478,8 @@
       "name": "Nassim Nicholas Taleb",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1835982938879508480/q4-Esddn_normal.jpg",
       "description": "Flaneur: probability (philosophy), probability (mathematics), probability (real life),Phoenician wine, deadlifts & dead languages. Greco-Levantine.Canaan. #RWRI",
-      "followersCount": 1123091,
-      "friendsCount": 1642,
+      "followersCount": 1123081,
+      "friendsCount": 1641,
       "location": ""
     },
     "images": [
@@ -413,7 +495,7 @@
       "name": "PolitiFact",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1286766140115517441/8rq6ZxZm_normal.jpg",
       "description": "Home of the Truth-O-Meter and independent fact-checking. Part of @Poynter. Sign up for our newsletter: https://t.co/9ygUqAw2P8",
-      "followersCount": 584951,
+      "followersCount": 584953,
       "friendsCount": 7182,
       "location": "Washington, DC"
     },
@@ -428,7 +510,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020995,
+      "followersCount": 1021038,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -443,7 +525,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020995,
+      "followersCount": 1021038,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -458,7 +540,7 @@
       "name": "CNN Breaking News",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/925092227667304448/fAY1HUu3_normal.jpg",
       "description": "Breaking news from CNN Digital. Check @cnn for all things CNN, breaking and more.",
-      "followersCount": 59264835,
+      "followersCount": 59265110,
       "friendsCount": 119,
       "location": "Everywhere"
     },
@@ -475,7 +557,7 @@
       "name": "CNN Breaking News",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/925092227667304448/fAY1HUu3_normal.jpg",
       "description": "Breaking news from CNN Digital. Check @cnn for all things CNN, breaking and more.",
-      "followersCount": 59264835,
+      "followersCount": 59265110,
       "friendsCount": 119,
       "location": "Everywhere"
     },
@@ -492,8 +574,8 @@
       "name": "Nassim Nicholas Taleb",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1835982938879508480/q4-Esddn_normal.jpg",
       "description": "Flaneur: probability (philosophy), probability (mathematics), probability (real life),Phoenician wine, deadlifts & dead languages. Greco-Levantine.Canaan. #RWRI",
-      "followersCount": 1123091,
-      "friendsCount": 1642,
+      "followersCount": 1123081,
+      "friendsCount": 1641,
       "location": ""
     },
     "images": [],
@@ -507,7 +589,7 @@
       "name": "Michael Harris ∀p(p→◊Kp)",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1995765072648400896/27p5uLCt_normal.jpg",
       "description": "Tech | Markets | Philosophy |\nNovel: Albedo zero. \nNo advice.",
-      "followersCount": 32777,
+      "followersCount": 32775,
       "friendsCount": 1186,
       "location": "USA"
     },
@@ -522,7 +604,7 @@
       "name": "Michael Harris ∀p(p→◊Kp)",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1995765072648400896/27p5uLCt_normal.jpg",
       "description": "Tech | Markets | Philosophy |\nNovel: Albedo zero. \nNo advice.",
-      "followersCount": 32777,
+      "followersCount": 32775,
       "friendsCount": 1186,
       "location": "USA"
     },
@@ -537,8 +619,8 @@
       "name": "Nassim Nicholas Taleb",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1835982938879508480/q4-Esddn_normal.jpg",
       "description": "Flaneur: probability (philosophy), probability (mathematics), probability (real life),Phoenician wine, deadlifts & dead languages. Greco-Levantine.Canaan. #RWRI",
-      "followersCount": 1123091,
-      "friendsCount": 1642,
+      "followersCount": 1123081,
+      "friendsCount": 1641,
       "location": ""
     },
     "images": [],
@@ -552,7 +634,7 @@
       "name": "PolitiFact",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1286766140115517441/8rq6ZxZm_normal.jpg",
       "description": "Home of the Truth-O-Meter and independent fact-checking. Part of @Poynter. Sign up for our newsletter: https://t.co/9ygUqAw2P8",
-      "followersCount": 584951,
+      "followersCount": 584953,
       "friendsCount": 7182,
       "location": "Washington, DC"
     },
@@ -567,7 +649,7 @@
       "name": "Michael Harris ∀p(p→◊Kp)",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1995765072648400896/27p5uLCt_normal.jpg",
       "description": "Tech | Markets | Philosophy |\nNovel: Albedo zero. \nNo advice.",
-      "followersCount": 32777,
+      "followersCount": 32775,
       "friendsCount": 1186,
       "location": "USA"
     },
@@ -582,7 +664,7 @@
       "name": "Mohamed A. El-Erian",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1016847534080155648/NGnyajkE_normal.jpg",
       "description": "Rene M Kern Prof of Prac at Wharton. Allianz Advisor. Gramercy Chair. Chair of UnderArmour Board. Former Pimco CEO/co-CIO and President of Queens' Col Cambridge",
-      "followersCount": 803784,
+      "followersCount": 803816,
       "friendsCount": 1133,
       "location": "USA"
     },
@@ -614,7 +696,7 @@
       "name": "Michael Harris ∀p(p→◊Kp)",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1995765072648400896/27p5uLCt_normal.jpg",
       "description": "Tech | Markets | Philosophy |\nNovel: Albedo zero. \nNo advice.",
-      "followersCount": 32777,
+      "followersCount": 32775,
       "friendsCount": 1186,
       "location": "USA"
     },
@@ -629,7 +711,7 @@
       "name": "Michael Harris ∀p(p→◊Kp)",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1995765072648400896/27p5uLCt_normal.jpg",
       "description": "Tech | Markets | Philosophy |\nNovel: Albedo zero. \nNo advice.",
-      "followersCount": 32777,
+      "followersCount": 32775,
       "friendsCount": 1186,
       "location": "USA"
     },
@@ -644,7 +726,7 @@
       "name": "PolitiFact",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1286766140115517441/8rq6ZxZm_normal.jpg",
       "description": "Home of the Truth-O-Meter and independent fact-checking. Part of @Poynter. Sign up for our newsletter: https://t.co/9ygUqAw2P8",
-      "followersCount": 584951,
+      "followersCount": 584953,
       "friendsCount": 7182,
       "location": "Washington, DC"
     },
@@ -659,7 +741,7 @@
       "name": "CNN Breaking News",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/925092227667304448/fAY1HUu3_normal.jpg",
       "description": "Breaking news from CNN Digital. Check @cnn for all things CNN, breaking and more.",
-      "followersCount": 59264835,
+      "followersCount": 59265110,
       "friendsCount": 119,
       "location": "Everywhere"
     },
@@ -676,7 +758,7 @@
       "name": "WSJ Markets",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/954404826212904960/TnG97-_8_normal.jpg",
       "description": "Breaking news, smart analysis and in-depth features on global markets and finance from The Wall Street Journal.",
-      "followersCount": 1020995,
+      "followersCount": 1021038,
       "friendsCount": 520,
       "location": "New York, NY"
     },
@@ -691,7 +773,7 @@
       "name": "Treasury Secretary Scott Bessent",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1889401757060444160/MDUd0e0g_normal.jpg",
       "description": "79th United States Secretary of the Treasury",
-      "followersCount": 805911,
+      "followersCount": 805969,
       "friendsCount": 25,
       "location": ""
     },
@@ -708,7 +790,7 @@
       "name": "The Nobel Prize",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1029729528548139009/fVPd0EwX_normal.jpg",
       "description": "The official feed of the Nobel Prize @NobelPrize #NobelPrize",
-      "followersCount": 1309859,
+      "followersCount": 1309861,
       "friendsCount": 496,
       "location": "Stockholm, Sweden"
     },
@@ -725,7 +807,7 @@
       "name": "Nassim Nicholas Taleb's Wisdom",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1111476570986893313/6r7zCbGa_normal.png",
       "description": "Sharing Nassim Nicholas Taleb's Wisdom from his books, interviews, and tweets. \n\n👇 GET YOUR FREE COPY of all awesome things about Nassim Nicholas Taleb",
-      "followersCount": 136965,
+      "followersCount": 136962,
       "friendsCount": 6,
       "location": ""
     },
@@ -742,7 +824,7 @@
       "name": "PolitiFact",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1286766140115517441/8rq6ZxZm_normal.jpg",
       "description": "Home of the Truth-O-Meter and independent fact-checking. Part of @Poynter. Sign up for our newsletter: https://t.co/9ygUqAw2P8",
-      "followersCount": 584951,
+      "followersCount": 584953,
       "friendsCount": 7182,
       "location": "Washington, DC"
     },
@@ -757,7 +839,7 @@
       "name": "Robin Roberts",
       "profileImageUrl": "https://pbs.twimg.com/profile_images/1928115994653786112/lKrs82Io_normal.jpg",
       "description": "Good Morning America Anchor",
-      "followersCount": 949019,
+      "followersCount": 949018,
       "friendsCount": 1676,
       "location": "New York"
     },
