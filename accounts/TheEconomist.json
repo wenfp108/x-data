@@ -1,0 +1,115 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {
+    "affiliates_count": 5
+  },
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "119"
+  },
+  "id": "VXNlcjo1OTg4MDYy",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": true,
+    "canMediaTag": true,
+    "createdAt": "Sat May 12 13:04:50 +0000 2007",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "News and analysis with a global perspective, since 1843. We’re here to help you understand the world around you. Subscribe here: https://t.co/RpUQAAnhog",
+    "entities": {
+      "description": {
+        "urls": [
+          {
+            "display_url": "econ.st/3Z79ixo",
+            "expanded_url": "http://econ.st/3Z79ixo",
+            "url": "https://t.co/RpUQAAnhog",
+            "indices": [
+              129,
+              152
+            ]
+          }
+        ]
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "economist.com",
+            "expanded_url": "http://www.economist.com",
+            "url": "https://t.co/8uFmIvXSDG",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 150,
+    "followersCount": 25808654,
+    "following": false,
+    "friendsCount": 150,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 118559,
+    "location": "London",
+    "mediaCount": 88283,
+    "name": "The Economist",
+    "normalFollowersCount": 25808654,
+    "pinnedTweetIdsStr": [
+      "2016852124005433349"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/5988062/1728502097",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1847280770743750656/0DkLNOPG_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "TheEconomist",
+    "statusesCount": 443570,
+    "translatorType": "none",
+    "url": "https://t.co/8uFmIvXSDG",
+    "verified": false,
+    "verifiedType": "Business",
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "professional": {
+    "category": [
+      {
+        "iconName": "IconBriefcaseStroke",
+        "id": 580,
+        "name": "Media & News Company"
+      }
+    ],
+    "professionalType": "Business",
+    "restId": "1610632785680646145"
+  },
+  "profileImageShape": "Square",
+  "restId": "5988062",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 69,
+            "ref": {
+              "url": "https://help.twitter.com/en/rules-and-policies/profile-labels",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 79
+          }
+        ],
+        "text": "This account is verified because it's an official organization on X. Learn more"
+      },
+      "verifiedSinceMsec": "1351240803305"
+    }
+  }
+}

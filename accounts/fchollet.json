@@ -1,0 +1,103 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "5"
+  },
+  "id": "VXNlcjo2ODc0NjcyMQ==",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": false,
+    "canMediaTag": false,
+    "createdAt": "Tue Aug 25 17:09:25 +0000 2009",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "Co-founder @ndea. Co-founder @arcprize. Creator of Keras and ARC-AGI. Author of 'Deep Learning with Python'.",
+    "entities": {
+      "description": {
+        "urls": []
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "fchollet.com",
+            "expanded_url": "https://fchollet.com/",
+            "url": "https://t.co/6miFIZS7Li",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 10449,
+    "followersCount": 600361,
+    "following": false,
+    "friendsCount": 823,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 8722,
+    "location": "United States",
+    "mediaCount": 1460,
+    "name": "François Chollet",
+    "normalFollowersCount": 600361,
+    "pinnedTweetIdsStr": [
+      "1968676861430706451"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/68746721/1463719109",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/2006806326140350470/Kd5oZv-f_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "fchollet",
+    "statusesCount": 24890,
+    "translatorType": "none",
+    "url": "https://t.co/6miFIZS7Li",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "professional": {
+    "category": [
+      {
+        "iconName": "IconBriefcaseStroke",
+        "id": 713,
+        "name": "Science & Technology"
+      }
+    ],
+    "professionalType": "Creator",
+    "restId": "1681109041228185602"
+  },
+  "profileImageShape": "Circle",
+  "restId": "68746721",
+  "superFollowEligible": true,
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1479035574552"
+    }
+  }
+}

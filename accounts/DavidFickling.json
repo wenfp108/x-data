@@ -1,0 +1,75 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": false,
+    "highlightedTweets": "0"
+  },
+  "id": "VXNlcjoyMzM5MTMzNDI=",
+  "isBlueVerified": false,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Tue Jan 04 12:10:02 +0000 2011",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "Climate & energy columnist at @opinion. Migrant. These are my views. If you don't like them, well, I have others.",
+    "entities": {
+      "description": {
+        "urls": []
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "bloomberg.com/authors/AQrSL0…",
+            "expanded_url": "https://www.bloomberg.com/authors/AQrSL0m_2u4/david-fickling",
+            "url": "https://t.co/cFXhC1N39F",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 21420,
+    "followersCount": 20743,
+    "following": false,
+    "friendsCount": 6902,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 489,
+    "location": "Sydney, New South Wales",
+    "mediaCount": 4381,
+    "name": "David Fickling",
+    "normalFollowersCount": 20743,
+    "pinnedTweetIdsStr": [
+      "1898537920828711268"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/233913342/1579473863",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/787774230003789824/NyQINP0Z_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "davidfickling",
+    "statusesCount": 40441,
+    "translatorType": "none",
+    "url": "https://t.co/cFXhC1N39F",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": true,
+  "profileImageShape": "Circle",
+  "restId": "233913342",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false
+  }
+}

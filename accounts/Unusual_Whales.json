@@ -1,0 +1,135 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "61"
+  },
+  "id": "VXNlcjoxMjAwNjE2Nzk2Mjk1ODQ3OTM2",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Sat Nov 30 03:25:32 +0000 2019",
+    "defaultProfile": true,
+    "defaultProfileImage": false,
+    "description": "Stocks/Options/Crypto/Market News/Tools. Not advice\n\n@Polymarket partner\n\nOpen a tastytrade account: https://t.co/wGf2ZdlXpw\nDiscord: https://t.co/0xJ9e0ZYYG\nMore: https://t.co/nsxZlPV0pC",
+    "entities": {
+      "description": {
+        "urls": [
+          {
+            "display_url": "bit.ly/4ayctTD",
+            "expanded_url": "http://bit.ly/4ayctTD",
+            "url": "https://t.co/wGf2ZdlXpw",
+            "indices": [
+              101,
+              124
+            ]
+          },
+          {
+            "display_url": "bit.ly/3Bf2pNJ",
+            "expanded_url": "http://bit.ly/3Bf2pNJ",
+            "url": "https://t.co/0xJ9e0ZYYG",
+            "indices": [
+              134,
+              157
+            ]
+          },
+          {
+            "display_url": "bit.ly/3V8D6Gb",
+            "expanded_url": "http://bit.ly/3V8D6Gb",
+            "url": "https://t.co/nsxZlPV0pC",
+            "indices": [
+              164,
+              187
+            ]
+          }
+        ]
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "unusualwhales.com",
+            "expanded_url": "https://unusualwhales.com",
+            "url": "https://t.co/Fmux22k4t1",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 67183,
+    "followersCount": 3124831,
+    "following": false,
+    "friendsCount": 2377,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 21324,
+    "location": "United States",
+    "mediaCount": 29647,
+    "name": "unusual_whales",
+    "normalFollowersCount": 3124831,
+    "pinnedTweetIdsStr": [
+      "2008944502300659838"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/1200616796295847936/1768937872",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1714107328134516736/dLZGJPm7_normal.png",
+    "profileInterstitialType": "",
+    "screenName": "unusual_whales",
+    "statusesCount": 152349,
+    "translatorType": "none",
+    "url": "https://t.co/Fmux22k4t1",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "professional": {
+    "category": [
+      {
+        "iconName": "IconBriefcaseStroke",
+        "id": 192,
+        "name": "Financial Services"
+      }
+    ],
+    "professionalType": "Business",
+    "restId": "1605781269488734208"
+  },
+  "profileImageShape": "Circle",
+  "restId": "1200616796295847936",
+  "superFollowEligible": true,
+  "tipjarSettings": {
+    "bitcoinHandle": "37FXRUxGya32Gg8AfAm1SxTpsRBeyjm8yV",
+    "ethereumHandle": "0x5f0Cad798d65fc166ED227Bd899b317E71151333",
+    "isEnabled": false
+  },
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1649297305977"
+    }
+  }
+}

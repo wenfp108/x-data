@@ -1,0 +1,91 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "10"
+  },
+  "id": "VXNlcjo4MjM3NjYwNTg5MDk3NjE1MzY=",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Tue Jan 24 05:35:08 +0000 2017",
+    "defaultProfile": true,
+    "defaultProfileImage": false,
+    "description": "Founder of Lyn Alden Investment Strategy. Blended finance and engineering background. Author of Broken Money. GP @egodeathcapital. BoD at Bakkt and @Swan.",
+    "entities": {
+      "description": {
+        "urls": []
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "lynalden.com",
+            "expanded_url": "https://www.lynalden.com/",
+            "url": "https://t.co/mwYcT35P5m",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 45178,
+    "followersCount": 828740,
+    "following": false,
+    "friendsCount": 945,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 15515,
+    "location": "",
+    "mediaCount": 6040,
+    "name": "Lyn Alden",
+    "normalFollowersCount": 828740,
+    "pinnedTweetIdsStr": [
+      "1996340036682609047"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/823766058909761536/1665866064",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1521181379677073414/bm4LcJTr_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "LynAldenContact",
+    "statusesCount": 32111,
+    "translatorType": "none",
+    "url": "https://t.co/mwYcT35P5m",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "profileImageShape": "Circle",
+  "restId": "823766058909761536",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1625704739594"
+    }
+  }
+}

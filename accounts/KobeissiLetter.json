@@ -1,0 +1,100 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {
+    "affiliates_count": 2
+  },
+  "creatorSubscriptionsCount": 1,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "4"
+  },
+  "id": "VXNlcjozMzE2Mzc2MDM4",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": true,
+    "canMediaTag": true,
+    "createdAt": "Wed Jun 10 00:34:15 +0000 2015",
+    "defaultProfile": true,
+    "defaultProfileImage": false,
+    "description": "Official X account for The Kobeissi Letter, an industry leading commentary on the global capital markets. Email us: support@thekobeissiletter.com",
+    "entities": {
+      "description": {
+        "urls": []
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "thekobeissiletter.com/subscribe",
+            "expanded_url": "http://thekobeissiletter.com/subscribe",
+            "url": "https://t.co/iG9KyPL13u",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 21547,
+    "followersCount": 1318213,
+    "following": false,
+    "friendsCount": 607,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 14920,
+    "location": "United States",
+    "mediaCount": 12152,
+    "name": "The Kobeissi Letter",
+    "normalFollowersCount": 1318213,
+    "pinnedTweetIdsStr": [
+      "2010041448486580639"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/3316376038/1547088797",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1975243710846640128/fwYCe67Y_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "KobeissiLetter",
+    "statusesCount": 29039,
+    "translatorType": "none",
+    "url": "https://t.co/iG9KyPL13u",
+    "verified": false,
+    "verifiedType": "Business",
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "professional": {
+    "category": [],
+    "professionalType": "Business",
+    "restId": "1462105627032014852"
+  },
+  "profileImageShape": "Square",
+  "restId": "3316376038",
+  "superFollowEligible": true,
+  "tipjarSettings": {},
+  "userSeedTweetCount": 2,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 69,
+            "ref": {
+              "url": "https://help.twitter.com/en/rules-and-policies/profile-labels",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 79
+          }
+        ],
+        "text": "This account is verified because it's an official organization on X. Learn more"
+      },
+      "verifiedSinceMsec": "1668016422212"
+    }
+  }
+}

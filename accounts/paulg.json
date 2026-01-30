@@ -1,0 +1,89 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "0"
+  },
+  "id": "VXNlcjoxODM3NDk1MTk=",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Fri Aug 27 20:13:59 +0000 2010",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "",
+    "entities": {
+      "description": {
+        "urls": []
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "paulgraham.com",
+            "expanded_url": "http://paulgraham.com",
+            "url": "https://t.co/99lamCujcc",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 149454,
+    "followersCount": 2133302,
+    "following": false,
+    "friendsCount": 781,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 19660,
+    "location": "",
+    "mediaCount": 1787,
+    "name": "Paul Graham",
+    "normalFollowersCount": 2133302,
+    "pinnedTweetIdsStr": [],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/183749519/1401332683",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1824002576/pg-railsconf_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "paulg",
+    "statusesCount": 51474,
+    "translatorType": "none",
+    "url": "https://t.co/99lamCujcc",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "profileImageShape": "Circle",
+  "restId": "183749519",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1282951815791"
+    }
+  }
+}

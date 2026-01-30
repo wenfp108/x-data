@@ -1,0 +1,101 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "0"
+  },
+  "id": "VXNlcjoxMzg0NTc5MzUzMjE3MDE5OTA2",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Tue Apr 20 18:47:05 +0000 2021",
+    "defaultProfile": true,
+    "defaultProfileImage": false,
+    "description": "Account no longer active, as explained here:\nhttps://t.co/eS3eVGe4jE\nAll other green chickens are impostors. \nDMs checked infrequently.",
+    "entities": {
+      "description": {
+        "urls": [
+          {
+            "display_url": "doomberg.substack.com/p/notes-on-x",
+            "expanded_url": "https://doomberg.substack.com/p/notes-on-x",
+            "url": "https://t.co/eS3eVGe4jE",
+            "indices": [
+              45,
+              68
+            ]
+          }
+        ]
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "doomberg.substack.com/about",
+            "expanded_url": "http://doomberg.substack.com/about",
+            "url": "https://t.co/LEL4JE6vXl",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 20252,
+    "followersCount": 243797,
+    "following": false,
+    "friendsCount": 1427,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 4085,
+    "location": "",
+    "mediaCount": 1091,
+    "name": "Doomberg",
+    "normalFollowersCount": 243797,
+    "pinnedTweetIdsStr": [
+      "1686663141847883777"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/1384579353217019906/1648510667",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1384943270212640770/JaU8KGRj_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "DoombergT",
+    "statusesCount": 18546,
+    "translatorType": "none",
+    "url": "https://t.co/LEL4JE6vXl",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "profileImageShape": "Circle",
+  "restId": "1384579353217019906",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1711580963797"
+    }
+  }
+}

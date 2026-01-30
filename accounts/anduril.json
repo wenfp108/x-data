@@ -1,0 +1,58 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": false,
+    "highlightedTweets": "0"
+  },
+  "id": "VXNlcjo2NzUzNjM=",
+  "isBlueVerified": false,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": false,
+    "canMediaTag": false,
+    "createdAt": "Sun Jan 21 14:42:27 +0000 2007",
+    "defaultProfile": true,
+    "defaultProfileImage": false,
+    "description": "Does it really matter? | Take defense payments in bitcoin",
+    "entities": {
+      "description": {
+        "urls": []
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 133,
+    "followersCount": 247,
+    "following": false,
+    "friendsCount": 314,
+    "hasCustomTimelines": false,
+    "isTranslator": false,
+    "listedCount": 8,
+    "location": "Harrisburg, PA, USA",
+    "mediaCount": 35,
+    "name": "Chris",
+    "normalFollowersCount": 247,
+    "pinnedTweetIdsStr": [],
+    "possiblySensitive": false,
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/689155617387360256/mVuUwgm__normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "anduril",
+    "statusesCount": 2956,
+    "translatorType": "none",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": true,
+  "profileImageShape": "Circle",
+  "restId": "675363",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false
+  }
+}

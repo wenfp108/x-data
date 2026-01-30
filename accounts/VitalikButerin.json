@@ -1,0 +1,96 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "0"
+  },
+  "id": "VXNlcjoyOTUyMTg5MDE=",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Sun May 08 16:03:03 +0000 2011",
+    "defaultProfile": true,
+    "defaultProfileImage": false,
+    "description": "I choose balance. First-level balance.\n\nmi pinxe lo crino tcati\n\nhttps://t.co/gCQrmCb0ih",
+    "entities": {
+      "description": {
+        "urls": [
+          {
+            "display_url": "slatestarcodex.com/2018/09/12/in-…",
+            "expanded_url": "https://slatestarcodex.com/2018/09/12/in-the-balance/",
+            "url": "https://t.co/gCQrmCb0ih",
+            "indices": [
+              65,
+              88
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 11180,
+    "followersCount": 5885488,
+    "following": false,
+    "friendsCount": 540,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 39579,
+    "location": "Earth",
+    "mediaCount": 955,
+    "name": "vitalik.eth",
+    "normalFollowersCount": 5885488,
+    "pinnedTweetIdsStr": [],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/295218901/1740846090",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/2006515705223516160/wGIa8vCp_normal.png",
+    "profileInterstitialType": "",
+    "screenName": "VitalikButerin",
+    "statusesCount": 21543,
+    "translatorType": "none",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "professional": {
+    "category": [
+      {
+        "iconName": "IconBriefcaseStroke",
+        "id": 958,
+        "name": "Entrepreneur"
+      }
+    ],
+    "professionalType": "Business",
+    "restId": "1814799464940642445"
+  },
+  "profileImageShape": "Circle",
+  "restId": "295218901",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1472142756256"
+    }
+  }
+}

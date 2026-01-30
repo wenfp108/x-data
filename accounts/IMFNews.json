@@ -1,0 +1,97 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "14"
+  },
+  "id": "VXNlcjoyNTA5ODQ4Mg==",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Wed Mar 18 16:13:51 +0000 2009",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "Bringing together 191 member countries to improve lives through global growth and economic stability. \nAlso: @FMIactualities @FMInoticias @IMFAfrica @IMFinMENA",
+    "entities": {
+      "description": {
+        "urls": []
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "imf.org",
+            "expanded_url": "https://www.imf.org",
+            "url": "https://t.co/Gv7XnVxWDz",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 896,
+    "followersCount": 2355299,
+    "following": false,
+    "friendsCount": 356,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 13209,
+    "location": "Washington, DC",
+    "mediaCount": 15074,
+    "name": "IMF",
+    "normalFollowersCount": 2355299,
+    "pinnedTweetIdsStr": [
+      "2013627950600724776"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/25098482/1761050926",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1365422981103689728/Un-ESw2K_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "IMFNews",
+    "statusesCount": 31079,
+    "translatorType": "none",
+    "url": "https://t.co/Gv7XnVxWDz",
+    "verified": false,
+    "verifiedType": "Government",
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "professional": {
+    "category": [],
+    "professionalType": "Business",
+    "restId": "1486690392154202116"
+  },
+  "profileImageShape": "Square",
+  "restId": "25098482",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 91,
+            "ref": {
+              "url": "https://help.twitter.com/en/rules-and-policies/profile-labels",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 101
+          }
+        ],
+        "text": "This account is verified because it is a government or multilateral organization account.  Learn more"
+      },
+      "verifiedSinceMsec": "1349450632542"
+    }
+  }
+}

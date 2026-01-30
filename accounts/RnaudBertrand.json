@@ -1,0 +1,102 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "68"
+  },
+  "id": "VXNlcjo0MzA2MTczOQ==",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": false,
+    "canMediaTag": false,
+    "createdAt": "Thu May 28 06:31:26 +0000 2009",
+    "defaultProfile": true,
+    "defaultProfileImage": false,
+    "description": "Entrepreneur. Previously HouseTrip (sold to TripAdvisor), now https://t.co/C4SmZQ8bl6\n\nSubscribe if you like what I write",
+    "entities": {
+      "description": {
+        "urls": [
+          {
+            "display_url": "MeAndQi.com",
+            "expanded_url": "https://www.MeAndQi.com",
+            "url": "https://t.co/C4SmZQ8bl6",
+            "indices": [
+              62,
+              85
+            ]
+          }
+        ]
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "substack.com/@arnaudbertrand",
+            "expanded_url": "https://substack.com/@arnaudbertrand",
+            "url": "https://t.co/rGjbBOqEYG",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 148060,
+    "followersCount": 379389,
+    "following": false,
+    "friendsCount": 1240,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 2897,
+    "location": "",
+    "mediaCount": 3629,
+    "name": "Arnaud Bertrand",
+    "normalFollowersCount": 379389,
+    "pinnedTweetIdsStr": [
+      "2016830757352968398"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/43061739/1768523389",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1387256201293959168/3h5yYupT_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "RnaudBertrand",
+    "statusesCount": 43482,
+    "translatorType": "regular",
+    "url": "https://t.co/rGjbBOqEYG",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "profileImageShape": "Circle",
+  "restId": "43061739",
+  "superFollowEligible": true,
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": true,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1681352136900"
+    }
+  }
+}

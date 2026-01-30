@@ -1,0 +1,123 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "71"
+  },
+  "id": "VXNlcjoxNDU3ODY3MDQ3MzM0MDMxMzYw",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Tue Nov 09 00:26:24 +0000 2021",
+    "defaultProfile": true,
+    "defaultProfileImage": false,
+    "description": "Open Source Intelligence Monitor focused on Europe and Conflicts across the World. RT ≠ Endorsement. Want to Support my Work? https://t.co/PcUbewvWPr",
+    "entities": {
+      "description": {
+        "urls": [
+          {
+            "display_url": "ko-fi.com/osintdefender",
+            "expanded_url": "https://ko-fi.com/osintdefender",
+            "url": "https://t.co/PcUbewvWPr",
+            "indices": [
+              126,
+              149
+            ]
+          }
+        ]
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "discord.gg/gMyeW4jK5W",
+            "expanded_url": "https://discord.gg/gMyeW4jK5W",
+            "url": "https://t.co/sISAkTi8i7",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 61859,
+    "followersCount": 1818005,
+    "following": false,
+    "friendsCount": 1483,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 16392,
+    "location": "Georgia, USA",
+    "mediaCount": 20659,
+    "name": "OSINTdefender",
+    "normalFollowersCount": 1818005,
+    "pinnedTweetIdsStr": [
+      "1933353154625626203"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/1457867047334031360/1638905263",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1505052393750384642/XNFUztL2_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "sentdefender",
+    "statusesCount": 56824,
+    "translatorType": "none",
+    "url": "https://t.co/sISAkTi8i7",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {
+    "birthdate": {
+      "day": 19,
+      "month": 11,
+      "visibility": "Public",
+      "yearVisibility": "Self"
+    }
+  },
+  "premiumGiftingEligible": false,
+  "professional": {
+    "category": [
+      {
+        "iconName": "IconBriefcaseStroke",
+        "id": 580,
+        "name": "Media & News Company"
+      }
+    ],
+    "professionalType": "Business",
+    "restId": "1630256710148317186"
+  },
+  "profileImageShape": "Circle",
+  "restId": "1457867047334031360",
+  "superFollowEligible": true,
+  "tipjarSettings": {
+    "cashAppHandle": "$OSINTdefender",
+    "isEnabled": true
+  },
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1744774504891"
+    }
+  }
+}

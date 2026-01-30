@@ -1,0 +1,112 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "1"
+  },
+  "id": "VXNlcjo0MDEyOTE3MQ==",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Fri May 15 00:26:19 +0000 2009",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "Holger Zschäpitz is market maniac @Welt and Author of 'Schulden ohne Sühne?' a book on states' addiction to debt. Pics: https://t.co/0T7FGGZvLQ",
+    "entities": {
+      "description": {
+        "urls": [
+          {
+            "display_url": "instagram.com/schuldensuehner",
+            "expanded_url": "http://instagram.com/schuldensuehner",
+            "url": "https://t.co/0T7FGGZvLQ",
+            "indices": [
+              120,
+              143
+            ]
+          }
+        ]
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "welt.de/autor/holger-z…",
+            "expanded_url": "http://www.welt.de/autor/holger-zschaepitz/",
+            "url": "https://t.co/vdqrzvEA52",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 7616,
+    "followersCount": 364062,
+    "following": false,
+    "friendsCount": 362,
+    "hasCustomTimelines": false,
+    "isTranslator": false,
+    "listedCount": 7837,
+    "location": "Berlin, Germany",
+    "mediaCount": 40133,
+    "name": "Holger Zschaepitz",
+    "normalFollowersCount": 364062,
+    "pinnedTweetIdsStr": [
+      "1689211813169078273"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/40129171/1365866294",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/799730879064993792/_ErzqsW2_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "Schuldensuehner",
+    "statusesCount": 84324,
+    "translatorType": "none",
+    "url": "https://t.co/vdqrzvEA52",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "professional": {
+    "category": [
+      {
+        "iconName": "IconBriefcaseStroke",
+        "id": 955,
+        "name": "Journalist"
+      }
+    ],
+    "professionalType": "Creator",
+    "restId": "1459308883961421826"
+  },
+  "profileImageShape": "Circle",
+  "restId": "40129171",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1628243590865"
+    }
+  }
+}

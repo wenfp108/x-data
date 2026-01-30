@@ -1,0 +1,109 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {
+    "label": {
+      "url": {
+        "url": "https://twitter.com/OpenAI",
+        "urlType": "DeepLink"
+      },
+      "badge": {
+        "url": "https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_bigger.jpg"
+      },
+      "description": "OpenAI",
+      "userLabelType": "BusinessLabel",
+      "userLabelDisplayType": "Badge"
+    }
+  },
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "0"
+  },
+  "id": "VXNlcjoxNjA1",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": false,
+    "canMediaTag": false,
+    "createdAt": "Sun Jul 16 22:01:55 +0000 2006",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "AI is cool i guess",
+    "entities": {
+      "description": {
+        "urls": []
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "blog.samaltman.com",
+            "expanded_url": "http://blog.samaltman.com",
+            "url": "https://t.co/teHmy8EFSH",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 1019,
+    "followersCount": 4256697,
+    "following": false,
+    "friendsCount": 977,
+    "hasCustomTimelines": false,
+    "isTranslator": false,
+    "listedCount": 26307,
+    "location": "SF",
+    "mediaCount": 380,
+    "name": "Sam Altman",
+    "normalFollowersCount": 4256697,
+    "pinnedTweetIdsStr": [],
+    "possiblySensitive": false,
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1904933748015255552/k43GMz63_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "sama",
+    "statusesCount": 7343,
+    "translatorType": "none",
+    "url": "https://t.co/teHmy8EFSH",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "profileImageShape": "Circle",
+  "restId": "1605",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 54,
+            "ref": {
+              "url": "https://twitter.com/OpenAI",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 61
+          },
+          {
+            "fromIndex": 68,
+            "ref": {
+              "url": "https://help.twitter.com/en/rules-and-policies/profile-labels",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 78
+          }
+        ],
+        "text": "This account is verified because it's an affiliate of @OpenAI on X. Learn more"
+      },
+      "verifiedSinceMsec": "1426282195584"
+    }
+  }
+}

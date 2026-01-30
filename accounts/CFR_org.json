@@ -1,0 +1,112 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "20"
+  },
+  "id": "VXNlcjoxNzQ2OTQ5Mg==",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": true,
+    "canMediaTag": true,
+    "createdAt": "Tue Nov 18 19:55:35 +0000 2008",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "Foreign policy news and analysis. CFR takes no institutional positions on policy. Follows, RT ≠ endorsements.\n\n✉️ Subscribe for more: https://t.co/ehd5lKYrLs",
+    "entities": {
+      "description": {
+        "urls": [
+          {
+            "display_url": "cfr.org/newsletters",
+            "expanded_url": "http://cfr.org/newsletters",
+            "url": "https://t.co/ehd5lKYrLs",
+            "indices": [
+              134,
+              157
+            ]
+          }
+        ]
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "cfr.org",
+            "expanded_url": "http://www.cfr.org",
+            "url": "https://t.co/8YT4IqhoeW",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 2020,
+    "followersCount": 560622,
+    "following": false,
+    "friendsCount": 142,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 8812,
+    "location": "New York, NY",
+    "mediaCount": 12374,
+    "name": "Council on Foreign Relations",
+    "normalFollowersCount": 560622,
+    "pinnedTweetIdsStr": [
+      "2001657965258903678"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/17469492/1666120503",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1917636418483970048/lP_tJa1O_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "CFR_org",
+    "statusesCount": 85025,
+    "translatorType": "none",
+    "url": "https://t.co/8YT4IqhoeW",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "professional": {
+    "category": [
+      {
+        "iconName": "IconBriefcaseStroke",
+        "id": 688,
+        "name": "Non-Governmental & Nonprofit Organization "
+      }
+    ],
+    "professionalType": "Business",
+    "restId": "1648314951432282112"
+  },
+  "profileImageShape": "Circle",
+  "restId": "17469492",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1313517719905"
+    }
+  }
+}

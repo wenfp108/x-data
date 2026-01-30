@@ -1,0 +1,110 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "3"
+  },
+  "id": "VXNlcjo4NjYyNjg0NQ==",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Sun Nov 01 00:02:55 +0000 2009",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "physician-scientist, author of SUPER AGERS https://t.co/ZEdooyyJpP\nand Ground Truths: https://t.co/YhatcBT0hA",
+    "entities": {
+      "description": {
+        "urls": [
+          {
+            "display_url": "tinyurl.com/3w76us9a",
+            "expanded_url": "https://tinyurl.com/3w76us9a",
+            "url": "https://t.co/ZEdooyyJpP",
+            "indices": [
+              43,
+              66
+            ]
+          },
+          {
+            "display_url": "erictopol.substack.com",
+            "expanded_url": "http://erictopol.substack.com",
+            "url": "https://t.co/YhatcBT0hA",
+            "indices": [
+              86,
+              109
+            ]
+          }
+        ]
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "scripps.edu/translational",
+            "expanded_url": "http://www.scripps.edu/translational",
+            "url": "https://t.co/Z53npaOqS2",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 44044,
+    "followersCount": 703428,
+    "following": false,
+    "friendsCount": 642,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 11859,
+    "location": "La Jolla, CA",
+    "mediaCount": 32166,
+    "name": "Eric Topol",
+    "normalFollowersCount": 703428,
+    "pinnedTweetIdsStr": [
+      "1927470895343296519"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/86626845/1738777055",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1589325138960318464/2OwvQAWC_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "EricTopol",
+    "statusesCount": 52215,
+    "translatorType": "none",
+    "url": "https://t.co/Z53npaOqS2",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "profileImageShape": "Circle",
+  "restId": "86626845",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1438968960115"
+    }
+  }
+}

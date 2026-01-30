@@ -1,0 +1,73 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": false,
+    "highlightedTweets": "0"
+  },
+  "id": "VXNlcjoxOTgxMjg4Ng==",
+  "isBlueVerified": false,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Sat Jan 31 11:57:21 +0000 2009",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "",
+    "entities": {
+      "description": {
+        "urls": []
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "hd-art.co.uk",
+            "expanded_url": "http://hd-art.co.uk",
+            "url": "http://t.co/ql8kbSbAtE",
+            "indices": [
+              0,
+              22
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 223,
+    "followersCount": 170,
+    "following": false,
+    "friendsCount": 357,
+    "hasCustomTimelines": false,
+    "isTranslator": false,
+    "listedCount": 26,
+    "location": "53.16637,-0.735058",
+    "mediaCount": 66,
+    "name": "Alasdair MacLeod",
+    "normalFollowersCount": 170,
+    "pinnedTweetIdsStr": [],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/19812886/1469016053",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1094869758/28589_10150227219615553_590195552_12996526_7414545_n_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "alasdairmacleod",
+    "statusesCount": 744,
+    "translatorType": "none",
+    "url": "http://t.co/ql8kbSbAtE",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "profileImageShape": "Circle",
+  "restId": "19812886",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false
+  }
+}

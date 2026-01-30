@@ -1,0 +1,90 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": false,
+    "highlightedTweets": "0"
+  },
+  "id": "VXNlcjozMjc0ODQ4MDM=",
+  "isBlueVerified": false,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": false,
+    "canMediaTag": false,
+    "createdAt": "Fri Jul 01 17:00:13 +0000 2011",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "Coverage of the Federal Reserve and other central banks by @WSJ reporters around the world, from WSJ Pro Central Banking, a premium service",
+    "entities": {
+      "description": {
+        "urls": []
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "on.wsj.com/ProCentralBanks",
+            "expanded_url": "http://on.wsj.com/ProCentralBanks",
+            "url": "http://t.co/RgjQ5iHRK1",
+            "indices": [
+              0,
+              22
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 122,
+    "followersCount": 127197,
+    "following": false,
+    "friendsCount": 9802,
+    "hasCustomTimelines": false,
+    "isTranslator": false,
+    "listedCount": 3742,
+    "location": "",
+    "mediaCount": 1511,
+    "name": "WSJ Central Banks",
+    "normalFollowersCount": 127197,
+    "pinnedTweetIdsStr": [],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/327484803/1543497607",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1068131941382275073/HQ4iPtt__normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "WSJCentralBanks",
+    "statusesCount": 80018,
+    "translatorType": "none",
+    "url": "http://t.co/RgjQ5iHRK1",
+    "verified": false,
+    "verifiedType": "Business",
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "profileImageShape": "Square",
+  "restId": "327484803",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 69,
+            "ref": {
+              "url": "https://help.twitter.com/en/rules-and-policies/profile-labels",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 79
+          }
+        ],
+        "text": "This account is verified because it's an official organization on X. Learn more"
+      },
+      "verifiedSinceMsec": "1432810404422"
+    }
+  }
+}

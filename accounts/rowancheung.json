@@ -1,0 +1,117 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {
+    "label": {
+      "url": {
+        "url": "https://twitter.com/TheRundownAI",
+        "urlType": "DeepLink"
+      },
+      "badge": {
+        "url": "https://pbs.twimg.com/profile_images/1672707817197965312/zsxkJv_T_bigger.jpg"
+      },
+      "description": "The Rundown AI",
+      "userLabelType": "BusinessLabel",
+      "userLabelDisplayType": "Badge"
+    }
+  },
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "419"
+  },
+  "id": "VXNlcjoxMzE0Njg2MDQy",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": true,
+    "canMediaTag": true,
+    "createdAt": "Fri Mar 29 18:03:03 +0000 2013",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "Founder of the world’s most read daily AI newsletter @therundownai. Sharing the latest developments in the world of artificial intelligence.",
+    "entities": {
+      "description": {
+        "urls": []
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "rundown.ai",
+            "expanded_url": "https://www.rundown.ai/",
+            "url": "https://t.co/61X8vgmOMn",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 22315,
+    "followersCount": 569200,
+    "following": false,
+    "friendsCount": 548,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 10930,
+    "location": "Join 2,000,000+ Readers →",
+    "mediaCount": 3949,
+    "name": "Rowan Cheung",
+    "normalFollowersCount": 569200,
+    "pinnedTweetIdsStr": [
+      "2001001969100657132"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/1314686042/1672275988",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1711152452735774720/Cotttl-n_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "rowancheung",
+    "statusesCount": 12100,
+    "translatorType": "none",
+    "url": "https://t.co/61X8vgmOMn",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "professional": {
+    "category": [],
+    "professionalType": "Creator",
+    "restId": "1609712179959459844"
+  },
+  "profileImageShape": "Circle",
+  "restId": "1314686042",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": true,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 54,
+            "ref": {
+              "url": "https://twitter.com/TheRundownAI",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 67
+          },
+          {
+            "fromIndex": 74,
+            "ref": {
+              "url": "https://help.twitter.com/en/rules-and-policies/profile-labels",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 84
+          }
+        ],
+        "text": "This account is verified because it's an affiliate of @TheRundownAI on X. Learn more"
+      },
+      "verifiedSinceMsec": "1671922621375"
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "473"
+  },
+  "id": "VXNlcjoxNTM5MjQ4Ng==",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": true,
+    "canMediaTag": true,
+    "createdAt": "Fri Jul 11 15:25:39 +0000 2008",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "Observing world events unfold in the grand theater of our time.",
+    "entities": {
+      "description": {
+        "urls": []
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "disclose.tv",
+            "expanded_url": "https://www.disclose.tv",
+            "url": "https://t.co/O31NBmUmyw",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 47101,
+    "followersCount": 1559438,
+    "following": false,
+    "friendsCount": 1262,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 8865,
+    "location": "🌍",
+    "mediaCount": 4538,
+    "name": "Disclose.tv",
+    "normalFollowersCount": 1559438,
+    "pinnedTweetIdsStr": [
+      "2017066594531266730"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/15392486/1639358972",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/898153945721339904/OFVCkPfR_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "disclosetv",
+    "statusesCount": 9906,
+    "translatorType": "none",
+    "url": "https://t.co/O31NBmUmyw",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "professional": {
+    "category": [],
+    "professionalType": "Creator",
+    "restId": "1444809508174368772"
+  },
+  "profileImageShape": "Circle",
+  "restId": "15392486",
+  "superFollowEligible": true,
+  "tipjarSettings": {
+    "bitcoinHandle": "",
+    "isEnabled": true,
+    "patreonHandle": "disclosetv"
+  },
+  "userSeedTweetCount": 2,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1682246464887"
+    }
+  }
+}

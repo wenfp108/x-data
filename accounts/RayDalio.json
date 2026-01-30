@@ -1,0 +1,91 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "15"
+  },
+  "id": "VXNlcjo2MjYwMzg5Mw==",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": false,
+    "canMediaTag": false,
+    "createdAt": "Mon Aug 03 19:47:29 +0000 2009",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "Official account of Ray Dalio, founder of Bridgewater Associates, author of #1 New York Times bestseller 'Principles,' professional mistake maker",
+    "entities": {
+      "description": {
+        "urls": []
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "wmi.edu.sg/dmp-online/?ut…",
+            "expanded_url": "https://wmi.edu.sg/dmp-online/?utm_source=raydalio_x&utm_medium=social_bio&utm_campaign=dmp_program_",
+            "url": "https://t.co/BFWBy4MZT4",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 217,
+    "followersCount": 1857070,
+    "following": false,
+    "friendsCount": 92,
+    "hasCustomTimelines": false,
+    "isTranslator": false,
+    "listedCount": 14515,
+    "location": "",
+    "mediaCount": 3233,
+    "name": "Ray Dalio",
+    "normalFollowersCount": 1857070,
+    "pinnedTweetIdsStr": [
+      "2015822544083759340"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/62603893/1764688978",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1465691046747283461/3ZtnoH5-_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "RayDalio",
+    "statusesCount": 7152,
+    "translatorType": "none",
+    "url": "https://t.co/BFWBy4MZT4",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "profileImageShape": "Circle",
+  "restId": "62603893",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 35,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1493222699785"
+    }
+  }
+}

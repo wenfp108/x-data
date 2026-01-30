@@ -1,0 +1,91 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "2"
+  },
+  "id": "VXNlcjo3NDUyNzM=",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": false,
+    "canMediaTag": false,
+    "createdAt": "Thu Feb 01 23:05:04 +0000 2007",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "Incompressible",
+    "entities": {
+      "description": {
+        "urls": []
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "nav.al",
+            "expanded_url": "https://nav.al",
+            "url": "https://t.co/diCVEyX9nB",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 283399,
+    "followersCount": 3003954,
+    "following": true,
+    "friendsCount": 0,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 28953,
+    "location": "",
+    "mediaCount": 317,
+    "name": "Naval",
+    "normalFollowersCount": 3003954,
+    "pinnedTweetIdsStr": [
+      "1002103360646823936"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/745273/1588490328",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1256841238298292232/ycqwaMI2_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "naval",
+    "statusesCount": 26941,
+    "translatorType": "none",
+    "url": "https://t.co/diCVEyX9nB",
+    "verified": false,
+    "wantRetweets": true,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "profileImageShape": "Circle",
+  "restId": "745273",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1548726814977"
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {
+    "affiliates_count": 38
+  },
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "83"
+  },
+  "id": "VXNlcjozNDcxMzM2Mg==",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Thu Apr 23 20:05:17 +0000 2009",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "The first word in business news. Singapore newsletter: https://t.co/RtyaUOdLdF Newsletters: https://t.co/nWaCxHSKuU Podcasts: https://t.co/096e9xMbPz",
+    "entities": {
+      "description": {
+        "urls": [
+          {
+            "display_url": "bloom.bg/singapore",
+            "expanded_url": "https://bloom.bg/singapore",
+            "url": "https://t.co/RtyaUOdLdF",
+            "indices": [
+              55,
+              78
+            ]
+          },
+          {
+            "display_url": "bloom.bg/newsletters",
+            "expanded_url": "http://bloom.bg/newsletters",
+            "url": "https://t.co/nWaCxHSKuU",
+            "indices": [
+              92,
+              115
+            ]
+          },
+          {
+            "display_url": "bloom.bg/podcasts",
+            "expanded_url": "http://bloom.bg/podcasts",
+            "url": "https://t.co/096e9xMbPz",
+            "indices": [
+              126,
+              149
+            ]
+          }
+        ]
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "bloom.bg/alphadots",
+            "expanded_url": "https://bloom.bg/alphadots",
+            "url": "https://t.co/1hjfo7A0Vx",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 5378,
+    "followersCount": 9742045,
+    "following": false,
+    "friendsCount": 104,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 72117,
+    "location": "New York and the World",
+    "mediaCount": 321755,
+    "name": "Bloomberg",
+    "normalFollowersCount": 9742045,
+    "pinnedTweetIdsStr": [
+      "2016535836519535026"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/34713362/1759167039",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1631723279676317709/-fjgaR2p_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "business",
+    "statusesCount": 1229751,
+    "translatorType": "none",
+    "url": "https://t.co/1hjfo7A0Vx",
+    "verified": false,
+    "verifiedType": "Business",
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "profileImageShape": "Square",
+  "restId": "34713362",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 69,
+            "ref": {
+              "url": "https://help.twitter.com/en/rules-and-policies/profile-labels",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 79
+          }
+        ],
+        "text": "This account is verified because it's an official organization on X. Learn more"
+      },
+      "verifiedSinceMsec": "1395425998170"
+    }
+  }
+}

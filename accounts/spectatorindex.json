@@ -1,0 +1,90 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "0"
+  },
+  "id": "VXNlcjoxNjI2Mjk0Mjc3",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": true,
+    "canMediaTag": true,
+    "createdAt": "Sat Jul 27 20:42:27 +0000 2013",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "News, media and data from around the globe. Covering politics, economics, science, tech and sport.",
+    "entities": {
+      "description": {
+        "urls": []
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 9,
+    "followersCount": 3112500,
+    "following": false,
+    "friendsCount": 0,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 18262,
+    "location": "Global",
+    "mediaCount": 2936,
+    "name": "The Spectator Index",
+    "normalFollowersCount": 3112500,
+    "pinnedTweetIdsStr": [],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/1626294277/1430626667",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1145865652533547008/XBahoZmX_normal.png",
+    "profileInterstitialType": "",
+    "screenName": "spectatorindex",
+    "statusesCount": 36408,
+    "translatorType": "none",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "professional": {
+    "category": [
+      {
+        "iconName": "IconBriefcaseStroke",
+        "id": 580,
+        "name": "Media & News Company"
+      }
+    ],
+    "professionalType": "Business",
+    "restId": "1467070654323126272"
+  },
+  "profileImageShape": "Circle",
+  "restId": "1626294277",
+  "superFollowEligible": true,
+  "tipjarSettings": {
+    "bitcoinHandle": "",
+    "isEnabled": true
+  },
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": true,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1682248054052"
+    }
+  }
+}

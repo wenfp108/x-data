@@ -1,0 +1,88 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "38"
+  },
+  "id": "VXNlcjoxODg1Njg2Nw==",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": false,
+    "canMediaTag": false,
+    "createdAt": "Sun Jan 11 04:08:58 +0000 2009",
+    "defaultProfile": true,
+    "defaultProfileImage": false,
+    "description": "",
+    "entities": {
+      "description": {
+        "urls": []
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "zerohedge.com",
+            "expanded_url": "https://zerohedge.com",
+            "url": "https://t.co/XKPaugBRRi",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 55,
+    "followersCount": 2448807,
+    "following": false,
+    "friendsCount": 935,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 35680,
+    "location": "",
+    "mediaCount": 26745,
+    "name": "zerohedge",
+    "normalFollowersCount": 2448807,
+    "pinnedTweetIdsStr": [],
+    "possiblySensitive": false,
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/72647502/tyler_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "zerohedge",
+    "statusesCount": 609647,
+    "translatorType": "regular",
+    "url": "https://t.co/XKPaugBRRi",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "profileImageShape": "Circle",
+  "restId": "18856867",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1682247127563"
+    }
+  }
+}

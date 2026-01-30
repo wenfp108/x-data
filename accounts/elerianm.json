@@ -1,0 +1,89 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "5"
+  },
+  "id": "VXNlcjozMzI2MTczNzM=",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": true,
+    "canMediaTag": false,
+    "createdAt": "Sun Jul 10 04:00:32 +0000 2011",
+    "defaultProfile": true,
+    "defaultProfileImage": false,
+    "description": "Rene M Kern Prof of Prac at Wharton. Allianz Advisor. Gramercy Chair. Chair of UnderArmour Board. Former Pimco CEO/co-CIO and President of Queens' Col Cambridge",
+    "entities": {
+      "description": {
+        "urls": []
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "mohamedel-erian.com",
+            "expanded_url": "http://mohamedel-erian.com",
+            "url": "https://t.co/8HgUgOpXHW",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 1913,
+    "followersCount": 803985,
+    "following": true,
+    "friendsCount": 1133,
+    "hasCustomTimelines": false,
+    "isTranslator": false,
+    "listedCount": 11157,
+    "location": "USA",
+    "mediaCount": 12399,
+    "name": "Mohamed A. El-Erian",
+    "normalFollowersCount": 803985,
+    "pinnedTweetIdsStr": [],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/332617373/1747786359",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1016847534080155648/NGnyajkE_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "elerianm",
+    "statusesCount": 27364,
+    "translatorType": "none",
+    "url": "https://t.co/8HgUgOpXHW",
+    "verified": false,
+    "wantRetweets": true,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "profileImageShape": "Circle",
+  "restId": "332617373",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1395426059156"
+    }
+  }
+}

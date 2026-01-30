@@ -1,0 +1,102 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {
+    "affiliates_count": 6
+  },
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "3"
+  },
+  "id": "VXNlcjoyNTMxNjcyMzk=",
+  "isBlueVerified": false,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": false,
+    "canMediaTag": false,
+    "createdAt": "Wed Feb 16 17:59:09 +0000 2011",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "Official account for Goldman Sachs. The latest insights, analysis, and news from across the firm. https://t.co/3FRVF3sdcC",
+    "entities": {
+      "description": {
+        "urls": [
+          {
+            "display_url": "goldmansachs.com",
+            "expanded_url": "http://goldmansachs.com",
+            "url": "https://t.co/3FRVF3sdcC",
+            "indices": [
+              98,
+              121
+            ]
+          }
+        ]
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "gs.com/social-media-d…",
+            "expanded_url": "http://gs.com/social-media-disclosures",
+            "url": "https://t.co/FOJ0GYHPEB",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 309,
+    "followersCount": 1113922,
+    "following": false,
+    "friendsCount": 11,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 8188,
+    "location": "",
+    "mediaCount": 8728,
+    "name": "Goldman Sachs",
+    "normalFollowersCount": 1113922,
+    "pinnedTweetIdsStr": [],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/253167239/1749239613",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1818953376744280064/cGpm19p7_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "GoldmanSachs",
+    "statusesCount": 16525,
+    "translatorType": "none",
+    "url": "https://t.co/FOJ0GYHPEB",
+    "verified": false,
+    "verifiedType": "Business",
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "profileImageShape": "Square",
+  "restId": "253167239",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 69,
+            "ref": {
+              "url": "https://help.twitter.com/en/rules-and-policies/profile-labels",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 79
+          }
+        ],
+        "text": "This account is verified because it's an official organization on X. Learn more"
+      },
+      "verifiedSinceMsec": "1337889503417"
+    }
+  }
+}

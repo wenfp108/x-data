@@ -1,0 +1,102 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "1"
+  },
+  "id": "VXNlcjo0ODAwODkzOA==",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Wed Jun 17 16:05:51 +0000 2009",
+    "defaultProfile": true,
+    "defaultProfileImage": false,
+    "description": "Professor at NYU & Executive Chairman at AMI Labs. \nEx-Chief AI Scientist at Meta.\nResearcher in AI, Machine Learning, Robotics, etc.\nACM Turing Award Laureate.",
+    "entities": {
+      "description": {
+        "urls": []
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "yann.lecun.com",
+            "expanded_url": "http://yann.lecun.com",
+            "url": "https://t.co/POp7IBHfXy",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 26370,
+    "followersCount": 1021955,
+    "following": false,
+    "friendsCount": 772,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 14137,
+    "location": "New York",
+    "mediaCount": 459,
+    "name": "Yann LeCun",
+    "normalFollowersCount": 1021955,
+    "pinnedTweetIdsStr": [
+      "1862598063275061484"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/48008938/1642547502",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1483577865056702469/rWA-3_T7_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "ylecun",
+    "statusesCount": 24788,
+    "translatorType": "none",
+    "url": "https://t.co/POp7IBHfXy",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "professional": {
+    "category": [
+      {
+        "iconName": "IconBriefcaseStroke",
+        "id": 713,
+        "name": "Science & Technology"
+      }
+    ],
+    "professionalType": "Creator",
+    "restId": "1474385647339245576"
+  },
+  "profileImageShape": "Circle",
+  "restId": "48008938",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1682276877821"
+    }
+  }
+}

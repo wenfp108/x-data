@@ -1,0 +1,112 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 3,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "3"
+  },
+  "id": "VXNlcjo1ODM1MTc2Mjk=",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": true,
+    "canMediaTag": true,
+    "createdAt": "Fri May 18 06:05:35 +0000 2012",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "If you can keep your head when all about you are losing theirs & blaming it on you…\nNOT TRADING ADVICE\nhttps://t.co/l29nWovEkm",
+    "entities": {
+      "description": {
+        "urls": [
+          {
+            "display_url": "youtube.com/@MilkshakesPod",
+            "expanded_url": "http://www.youtube.com/@MilkshakesPod",
+            "url": "https://t.co/l29nWovEkm",
+            "indices": [
+              103,
+              126
+            ]
+          }
+        ]
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "santiagocapital.com",
+            "expanded_url": "http://www.santiagocapital.com",
+            "url": "https://t.co/2G33ZtkNV7",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 171429,
+    "followersCount": 329128,
+    "following": false,
+    "friendsCount": 2243,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 4991,
+    "location": "San Juan, Puerto Rico",
+    "mediaCount": 11449,
+    "name": "Santiago Capital",
+    "normalFollowersCount": 329128,
+    "pinnedTweetIdsStr": [
+      "1910156128987529649"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/583517629/1660835682",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1151291047667834880/9H6hiZgu_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "SantiagoAuFund",
+    "statusesCount": 123674,
+    "translatorType": "none",
+    "url": "https://t.co/2G33ZtkNV7",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "professional": {
+    "category": [
+      {
+        "iconName": "IconBriefcaseStroke",
+        "id": 192,
+        "name": "Financial Services"
+      }
+    ],
+    "professionalType": "Business",
+    "restId": "1663305087131762688"
+  },
+  "profileImageShape": "Circle",
+  "restId": "583517629",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1668021945552"
+    }
+  }
+}

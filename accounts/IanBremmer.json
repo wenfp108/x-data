@@ -1,0 +1,91 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "2"
+  },
+  "id": "VXNlcjo2MDc4MzcyNA==",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Tue Jul 28 02:23:28 +0000 2009",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "@eurasiagroup & @gzeromedia. political scientist, author. if you lived here, you'd be home now.",
+    "entities": {
+      "description": {
+        "urls": []
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "bit.ly/commencementbr…",
+            "expanded_url": "http://bit.ly/commencementbremmer2025",
+            "url": "https://t.co/lsSDJGEAFw",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 18922,
+    "followersCount": 875112,
+    "following": false,
+    "friendsCount": 1807,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 11351,
+    "location": "",
+    "mediaCount": 29822,
+    "name": "ian bremmer",
+    "normalFollowersCount": 875112,
+    "pinnedTweetIdsStr": [
+      "801590659291480068"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/60783724/1685026176",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1669005424467628033/Unv6Q_Va_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "ianbremmer",
+    "statusesCount": 99763,
+    "translatorType": "none",
+    "url": "https://t.co/lsSDJGEAFw",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "profileImageShape": "Circle",
+  "restId": "60783724",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1419031653162"
+    }
+  }
+}
