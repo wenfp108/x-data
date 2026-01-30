@@ -1,82 +1,81 @@
-# x-kit
+# 🎯 X-Sniper Elite (推特精英情报狙击系统)
 
-一个用于抓取和分析 X (Twitter) 用户数据和推文的工具。
+> **特别鸣谢：[xiaoxiunique](https://github.com/xiaoxiunique) 对系统架构的启发。**
+> **"Ignore the noise, capture the signal."**
+> 一个基于大师思维模型、具备传播力加权引擎的 Twitter 宏观情报监测系统。**慢速潜行规避风控，加权评分过滤口水。**
 
-![x-kit](./images/action-stats.png)
-## 功能特点
+---
 
-- 自动抓取指定用户的基本信息和推文
-- 定时更新用户时间线数据
-- 支持数据本地化存储
-- GitHub Actions 自动化部署
+## 🚀 核心架构：信噪比增强引擎
 
-## 更新日志
+本系统并非全量采集，而是通过一套复杂的**“生杀预判算法”**，确保你的日报里只有 1% 的金子。
 
-- 2024-12-24 添加每日发布推文功能 `post-twitter-daily.yml` `post-tweet.ts`
-- 2025-01-02 添加获取用户推文功能 `fetch-user-tweets.ts`
+### 1. ⚖️ 传播力优先加权算法 (Score Engine)
 
-## 安装
+系统不再盲目看点赞，而是通过五维权重计算每一条推文的“战略分数”：
 
-```bash
-bun install
-```
+* **转发 (Retweets/Quotes) 为王**：给予 **100 倍**最高权重，第一时间捕捉全网裂变传播的突发大新闻。
+* **收藏 (Bookmarks) 为相**：给予 **50 倍**高权重，留住那些互动虽低但价值极高的深度干货。
 
-## 使用方法
+### 2. 🛡️ 七大板块动态限流 (Tag-Based Strategy)
 
-### 1. 配置环境变量
+系统根据账号所属板块的“平均噪音水平”，动态决定保留条数，强制压制话痨，保护清净：
 
-在项目根目录创建 `.env` 文件,添加以下配置:
+| 板块 (Category) | 策略预期 | 保留限制 | 监控核心 |
+| --- | --- | --- | --- |
+| **Science** | 🔬 极低频净土 | **Top 8 (近全量)** | 论文、技术突围、硬核实验 |
+| **Finance/Tech** | 💰/🚀 高价值干货 | **Top 5** | 研报、架构演进、市场分析 |
+| **Politics** | 🏛️ 高话痨区 | **Top 3 (严管)** | 官员变动、政策吹风 |
+| **Crypto** | ₿ 噪音之王 | **Top 3 (极限)** | 价格剧震、共识爆发、项目跑路 |
+| **Economy** | 📉 数据发布区 | **Top 3 (精选)** | CPI/非农数据、联储信号 |
 
-```bash
-AUTH_TOKEN=你的X认证Token
-GET_ID_X_TOKEN=用于获取用户ID的Token
-```
+---
 
-### 2. 添加需要追踪的用户
+## 🛡️ 核心黑科技：潜行与抗灾逻辑
 
-在 `dev-accounts.json` 中添加用户信息:
+针对推特严苛的风控环境与自动化提交冲突，系统实现了“特种兵”级的运行逻辑：
+
+* **☕ 慢速潜行 (Slow Polling)**：每两个账号抓取间随机休息 20-40 秒。在后台看来，这只是一个慢悠悠刷推的真人。
+* **💾 单行元数据 (Compact JSON)**：通过正则表达式，将 `tags`、`user` 和 `growth` 强制压缩为单行。JSON 文件体积缩减 60%，阅读效率提升 200%。
+* **破障推送 (Git -X theirs)**：内置版本冲突自愈逻辑。即便云端数据被其他脚本修改，系统也会在推送时执行 `theirs` 策略，强制以本地新抓取的情报覆盖旧档案。
+
+---
+
+## 🧠 大师思维模型打标 (Master Mindset)
+
+每一条入选的情报都会接受大师级的逻辑审计：
+
+* **塔勒布 (Taleb)**：捕捉 `Science` 里的极端孤例，发现**黑天鹅**。
+* **索罗斯 (Soros)**：通过 `Growth` 指标发现 **24h 转发剧增**，定位反身性趋势。
+* **纳瓦尔 (Naval)**：筛选 `Tech` 板块中收藏量极高的条目，寻找**高杠杆**技术点。
+* **芒格 (Munger)**：锁定 `Economy` 板块中多方确认的**确定性事实**。
+
+---
+
+## 🕹️ 情报输出示例 (Compact JSON)
+
+数据以极致脱水的结构存储，每一行都是精华：
 
 ```json
-{
-  "username": "用户名",
-  "twitter_url": "用户主页链接", 
-  "description": "用户描述",
-  "tags": ["标签1", "标签2"]
-}
+[
+  {
+    "tags": [ "Economy", "Finance", "Politics" ],
+    "user": { "screenName": "NickTimiraos", "name": "Nick Timiraos", "followersCount": 458660 },
+    "tweetUrl": "https://x.com/NickTimiraos/status/2017058872582676686",
+    "fullText": "Trump plans to unveil his Fed chair pick on Friday...",
+    "metrics": { "likes": 591, "retweets": 99, "replies": 41, "bookmarks": 75, "views": 0 },
+    "growth": { "views": 0, "likes": 591, "retweets": 99, "replies": 41 }
+  }
+]
+
 ```
 
-### 3. 运行脚本
+---
 
-```bash
-# 获取用户信息
-bun run scripts/index.ts
+## 📈 运行状态
 
-# 获取最新推文
-bun run scripts/fetch-tweets.ts
+* **调度频率**：每 4 小时全域狙击一次。
+* **数据存储**：按日期存储于 `/tweets/YYYY-MM-DD.json`。
+* **增量追踪**：`growth` 字段实时记录自上一轮扫描以来的数据波动。
 
-# 批量关注用户
-bun run scripts/batch-follow.ts
-```
-
-## 自动化部署
-
-项目使用 GitHub Actions 实现自动化:
-
-- `get-home-latest-timeline.yml`: 每30分钟获取一次最新推文
-- `daily-get-tweet-id.yml`: 每天获取一次用户信息
-
-## 数据存储
-
-- 用户信息保存在 `accounts/` 目录
-- 推文数据保存在 `tweets/` 目录,按日期命名
-
-## 技术栈
-
-- Bun
-- TypeScript 
-- Twitter API
-- GitHub Actions
-
-## License
-
-MIT
+---
