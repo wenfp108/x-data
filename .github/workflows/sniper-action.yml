@@ -2,14 +2,14 @@ name: Sniper Elite (Fetch Target Tweets)
 
 on:
   schedule:
-    - cron: '0 */4 * * *'   # ✅ 修改：每4小时运行一次 (配合慢速轮询策略，避免任务重叠)
+    - cron: '0 */4 * * *'   # 每4小时运行一次
   workflow_dispatch:      # 允许手动触发
 
 jobs:
   snipe:
     runs-on: ubuntu-latest
     permissions:
-      contents: write     # 必须有写入权限才能保存 JSON
+      contents: write
       
     steps:
       - uses: actions/checkout@v3
@@ -23,19 +23,15 @@ jobs:
           
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
-        with:
-          bun-version: latest
-          
+        
       - name: Install dependencies
         run: bun install
         
-      # 🔥 关键步骤 1：先更新 ID 缓存 (防止有新大佬加入名单)
       - name: Update Account IDs
         env:
           GET_ID_X_TOKEN: ${{ secrets.GET_ID_X_TOKEN }}
         run: bun run scripts/index.ts
 
-      # 🔥 关键步骤 2：执行狙击
       - name: Run Sniper
         env:
           AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
@@ -46,13 +42,13 @@ jobs:
           git config --local user.email "bot@sniper.alpha"
           git config --local user.name "Sniper Bot"
           
-          # 1. 先暂存本地修改
+          # 1. 暂存所有更改并提交（清空工作区）
           git add .
-          
-          # 2. 尝试拉取并重基
-          # 如果遇到冲突，强制以本地新抓取的数据为准
-          git pull --rebase origin main || (git checkout --ours . && git add . && git rebase --continue)
-          
-          # 3. 提交并推送
           git commit -m "🎯 Sniper hit: updated tweets [skip ci]" || exit 0
+          
+          # 2. 拉取远程更新并使用 -X theirs 策略自动解决冲突
+          # 
+          git pull --rebase -X theirs origin main
+          
+          # 3. 强制推送以确保云端数据最新
           git push origin main
