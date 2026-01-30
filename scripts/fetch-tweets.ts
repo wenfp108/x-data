@@ -13,10 +13,13 @@ const resp = await client.getTweetApi().getHomeLatestTimeline({
 const rawData = resp.data.data || [];
 console.log(`🔍 [Debug] API returned ${rawData.length} raw items.`);
 
-// 1. 过滤转推
+// 1. 强力过滤
 const originalTweets = rawData.filter((item: any) => {
+  // 兼容路径
   const legacy = get(item, "raw.result.legacy") || get(item, "tweet.legacy");
   if (!legacy) return false;
+  
+  // 注意：这里用 idStr (驼峰)
   const fullText = legacy.fullText || "";
   return !fullText.startsWith("RT @");
 });
@@ -24,91 +27,89 @@ const originalTweets = rawData.filter((item: any) => {
 console.log(`🔍 [Debug] After filtering RTs, remaining items: ${originalTweets.length}`);
 
 const newRows: any[] = [];
-// 统计被跳过的原因
-let skippedStats = { old: 0, noId: 0, ok: 0 };
+let skippedCount = 0;
 
 // 2. 处理数据
-originalTweets.forEach((item: any, index: number) => {
+originalTweets.forEach((item: any) => {
   const legacy = get(item, "raw.result.legacy") || get(item, "tweet.legacy");
   const rawResult = get(item, "raw.result") || {}; 
 
-  const createdAt = legacy.createdAt;
+  const createdAt = legacy.createdAt; // 驼峰
   
-  // 🔍 调试：打印前3条的日期，看看是不是真的过期了
-  if (index < 3) {
-    console.log(`   📝 [Sample ${index}] Date: ${createdAt} | Diff: ${dayjs().diff(dayjs(createdAt), "day")} days`);
-  }
-
-  // 🚨 【修改】把时间限制放宽到 7 天，先看看能不能抓到数据
+  // 宽松时间限制 (7天)，防止数据全被扔掉
   if (dayjs().diff(dayjs(createdAt), "day") > 7) {
-    skippedStats.old++;
+    skippedCount++;
     return;
   }
 
-  const screenName = get(item, "user.legacy.screenName") || 
-                     get(item, "raw.result.core.user_results.result.legacy.screenName") ||
-                     get(item, "tweet.core.user_results.result.legacy.screenName");
-                     
-  const idStr = legacy.id_str || rawResult.rest_id; 
+  // 🔥【关键修复】使用驼峰命名 idStr 和 restId
+  // 还要尝试 id (有些库直接叫 id)
+  const idStr = legacy.idStr || legacy.id || rawResult.restId || legacy.id_str;
 
-  if (!idStr) {
-    // 🔍 调试：如果没 ID，打印一下结构看为什么
-    if (skippedStats.noId === 0) console.log("   ⚠️ [Sample NoID] Item has no ID:", JSON.stringify(item).substring(0, 100) + "...");
-    skippedStats.noId++;
+  // 这里的 user 路径也需要注意驼峰
+  const userResult = get(item, "raw.result.core.user_results.result.legacy") || 
+                     get(item, "tweet.core.user_results.result.legacy") || 
+                     get(item, "user.legacy");
+
+  const screenName = userResult?.screenName || legacy.screenName;
+
+  if (!idStr || !screenName) {
+    if (skippedCount === 0) console.log("⚠️ [Debug] Item missing ID/ScreenName. Keys available:", Object.keys(legacy));
+    skippedCount++;
     return;
   }
 
   const tweetUrl = `https://x.com/${screenName}/status/${idStr}`;
 
-  // 尝试多种路径获取 User Info
   const user = {
     screenName: screenName,
-    name: get(item, "user.legacy.name") || 
-          get(item, "raw.result.core.user_results.result.legacy.name") ||
-          get(item, "tweet.core.user_results.result.legacy.name"),
-    followersCount: get(item, "user.legacy.followersCount") || 
-                    get(item, "raw.result.core.user_results.result.legacy.followersCount") ||
-                    get(item, "tweet.core.user_results.result.legacy.followersCount"),
+    name: userResult?.name,
+    followersCount: userResult?.followersCount,
   };
 
   const fullText = legacy.fullText;
 
-  // 提取引用
+  // 引用内容
   let quoted = null;
-  if (legacy.is_quote_status) { 
+  if (legacy.isQuoteStatus) { // 驼峰 isQuoteStatus
     const quotedResult = get(item, "raw.result.quoted_status_result") || get(item, "tweet.quoted_status_result");
     if (quotedResult) {
-      quoted = {
-        screenName: get(quotedResult, "result.core.user_results.result.legacy.screenName"),
-        fullText: get(quotedResult, "result.legacy.fullText"),
-      };
+      const qLegacy = get(quotedResult, "result.legacy");
+      const qUser = get(quotedResult, "result.core.user_results.result.legacy");
+      if (qLegacy && qUser) {
+        quoted = {
+          screenName: qUser.screenName,
+          fullText: qLegacy.fullText,
+        };
+      }
     }
   }
 
-  // 提取媒体
-  const mediaItems = get(legacy, "extended_entities.media", []) || get(legacy, "entities.media", []);
+  // 媒体
+  const mediaItems = get(legacy, "extendedEntities.media", []) || get(legacy, "entities.media", []);
   const images = mediaItems
     .filter((media: any) => media.type === "photo")
-    .map((media: any) => media.media_url_https);
+    .map((media: any) => media.mediaUrlHttps || media.media_url_https);
 
   const videos = mediaItems
     .filter((media: any) => media.type === "video" || media.type === "animated_gif")
     .map((media: any) => {
-      const variants = get(media, "video_info.variants", []);
+      const variants = get(media, "videoInfo.variants", []) || get(media, "video_info.variants", []);
       const bestQuality = variants
-        .filter((v: any) => v.content_type === "video/mp4")
+        .filter((v: any) => v.contentType === "video/mp4" || v.content_type === "video/mp4")
         .sort((a: any, b: any) => (b.bitrate || 0) - (a.bitrate || 0))[0];
       return bestQuality?.url;
     })
     .filter(Boolean);
 
-  // 提取指标
+  // 🔥【关键修复】指标也全部换成驼峰 (favoriteCount)
   const currentMetrics = {
-    likes: legacy.favorite_count || 0,
-    retweets: legacy.retweet_count || 0,
-    replies: legacy.reply_count || 0,
-    quotes: legacy.quote_count || 0,
-    bookmarks: legacy.bookmark_count || 0,
+    likes: legacy.favoriteCount || legacy.favorite_count || 0,
+    retweets: legacy.retweetCount || legacy.retweet_count || 0,
+    replies: legacy.replyCount || legacy.reply_count || 0,
+    quotes: legacy.quoteCount || legacy.quote_count || 0,
+    bookmarks: legacy.bookmarkCount || legacy.bookmark_count || 0,
+    // Views 比较顽固，可能在深层结构
     views: parseInt(get(rawResult, "views.count", "0")) || parseInt(get(item, "tweet.views.count", "0")) || 0
   };
 
@@ -123,10 +124,9 @@ originalTweets.forEach((item: any, index: number) => {
     createdAt,
     metrics: currentMetrics,
   });
-  skippedStats.ok++;
 });
 
-console.log(`📊 [Stats] Processed: ${skippedStats.ok} | Skipped (Old > 7d): ${skippedStats.old} | Skipped (No ID): ${skippedStats.noId}`);
+console.log(`✅ [Debug] Successfully processed ${newRows.length} tweets. (Skipped: ${skippedCount})`);
 
 const outputPath = `./tweets/${dayjs().format("YYYY-MM-DD")}.json`;
 let existingMap = new Map();
