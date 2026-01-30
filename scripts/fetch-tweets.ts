@@ -10,13 +10,23 @@ const resp = await client.getTweetApi().getHomeLatestTimeline({
   count: 100,
 });
 
+// 拿到原始数组
 const rawData = resp.data.data || [];
-console.log(`🔍 Debug: API returned ${rawData.length} raw items.`);
+console.log(`🔍 [Debug] API returned ${rawData.length} raw items.`);
+
+// 🚨【大招】如果拿到了数据但全是空的，打印第一条看看结构！
+if (rawData.length > 0) {
+  const firstItem = rawData[0];
+  const testLegacy = get(firstItem, "raw.result.legacy") || get(firstItem, "tweet.legacy");
+  if (!testLegacy) {
+    console.log("⚠️ [Warning] Cannot find legacy data! Dumping first item structure:");
+    console.log(JSON.stringify(firstItem, null, 2)); // 打印结构供分析
+  }
+}
 
 // 1. 强力过滤
 const originalTweets = rawData.filter((item: any) => {
-  // 🔥【关键修复】兼容两种数据结构
-  // 优先找 raw.result.legacy (Timeline常用)，其次找 tweet.legacy (某些User接口常用)
+  // 兼容两种常见结构
   const legacy = get(item, "raw.result.legacy") || get(item, "tweet.legacy");
   
   if (!legacy) return false;
@@ -25,22 +35,23 @@ const originalTweets = rawData.filter((item: any) => {
   return !fullText.startsWith("RT @");
 });
 
-console.log(`🔍 Debug: After filtering RTs, remaining items: ${originalTweets.length}`);
+console.log(`🔍 [Debug] After filtering RTs, remaining items: ${originalTweets.length}`);
 
 const newRows: any[] = [];
 
 // 2. 处理数据
 originalTweets.forEach((item: any) => {
-  // 🔥【关键修复】统一提取入口
   const legacy = get(item, "raw.result.legacy") || get(item, "tweet.legacy");
+  // 兜底的原始数据对象
   const rawResult = get(item, "raw.result") || {}; 
 
   const createdAt = legacy.createdAt;
-  // 只保留 24 小时内的推文
   if (dayjs().diff(dayjs(createdAt), "day") > 1) return;
 
+  // 尝试多种路径获取 screenName
   const screenName = get(item, "user.legacy.screenName") || 
-                     get(item, "raw.result.core.user_results.result.legacy.screenName");
+                     get(item, "raw.result.core.user_results.result.legacy.screenName") ||
+                     get(item, "tweet.core.user_results.result.legacy.screenName");
                      
   const idStr = legacy.id_str || rawResult.rest_id; 
 
@@ -48,18 +59,23 @@ originalTweets.forEach((item: any) => {
 
   const tweetUrl = `https://x.com/${screenName}/status/${idStr}`;
 
+  // 尝试多种路径获取 User Info
   const user = {
     screenName: screenName,
-    name: get(item, "user.legacy.name") || get(item, "raw.result.core.user_results.result.legacy.name"),
-    followersCount: get(item, "user.legacy.followersCount") || get(item, "raw.result.core.user_results.result.legacy.followersCount"),
+    name: get(item, "user.legacy.name") || 
+          get(item, "raw.result.core.user_results.result.legacy.name") ||
+          get(item, "tweet.core.user_results.result.legacy.name"),
+    followersCount: get(item, "user.legacy.followersCount") || 
+                    get(item, "raw.result.core.user_results.result.legacy.followersCount") ||
+                    get(item, "tweet.core.user_results.result.legacy.followersCount"),
   };
 
   const fullText = legacy.fullText;
 
-  // 提取被引用的推文内容
+  // 提取引用
   let quoted = null;
   if (legacy.is_quote_status) { 
-    const quotedResult = get(item, "raw.result.quoted_status_result");
+    const quotedResult = get(item, "raw.result.quoted_status_result") || get(item, "tweet.quoted_status_result");
     if (quotedResult) {
       quoted = {
         screenName: get(quotedResult, "result.core.user_results.result.legacy.screenName"),
@@ -85,15 +101,15 @@ originalTweets.forEach((item: any) => {
     })
     .filter(Boolean);
 
-  // 提取指标 (兼容 raw 和 legacy)
+  // 提取指标
   const currentMetrics = {
     likes: legacy.favorite_count || 0,
     retweets: legacy.retweet_count || 0,
     replies: legacy.reply_count || 0,
     quotes: legacy.quote_count || 0,
     bookmarks: legacy.bookmark_count || 0,
-    // Views 通常只藏在 raw.result.views.count 里
-    views: parseInt(get(rawResult, "views.count", "0")) || 0
+    // 浏览量通常在 views.count (raw) 或 legacy.views.count (tweet)
+    views: parseInt(get(rawResult, "views.count", "0")) || parseInt(get(item, "tweet.views.count", "0")) || 0
   };
 
   newRows.push({
@@ -109,7 +125,7 @@ originalTweets.forEach((item: any) => {
   });
 });
 
-console.log(`✅ Debug: Successfully processed ${newRows.length} tweets.`);
+console.log(`✅ [Debug] Successfully processed ${newRows.length} tweets.`);
 
 const outputPath = `./tweets/${dayjs().format("YYYY-MM-DD")}.json`;
 let existingMap = new Map();
@@ -124,7 +140,7 @@ if (fs.existsSync(outputPath)) {
   }
 }
 
-// 4. 智能合并 logic
+// 4. 智能合并
 const currentTimeStr = dayjs().format("YYYY-MM-DD HH:mm");
 
 newRows.forEach(newTweet => {
@@ -137,7 +153,6 @@ newRows.forEach(newTweet => {
     peakGrowth = oldTweet.peakGrowth;
   }
 
-  // 计算增量
   if (oldTweet && oldTweet.metrics) {
     growth = {
       likes: newTweet.metrics.likes - (oldTweet.metrics.likes || 0),
@@ -153,7 +168,6 @@ newRows.forEach(newTweet => {
       if (growth[k] < 0) growth[k] = 0;
     });
 
-    // 更新峰值
     if (growth.views > peakGrowth.views) {
       peakGrowth.views = growth.views;
       peakGrowth.likes = growth.likes;
