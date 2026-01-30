@@ -1,0 +1,120 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "0"
+  },
+  "id": "VXNlcjoyMTMxMjk2MQ==",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "blockedBy": false,
+    "blocking": false,
+    "canDm": false,
+    "canMediaTag": true,
+    "createdAt": "Thu Feb 19 16:26:34 +0000 2009",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "Defense News is the global defense community's leading source of news & analysis on programs, policy, business & tech. Subscribe: https://t.co/9yyVXPil0I",
+    "entities": {
+      "description": {
+        "urls": [
+          {
+            "display_url": "defensenews.com/newsletters",
+            "expanded_url": "http://defensenews.com/newsletters",
+            "indices": [
+              130,
+              153
+            ],
+            "url": "https://t.co/9yyVXPil0I"
+          }
+        ]
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "defensenews.com",
+            "expanded_url": "https://www.defensenews.com",
+            "indices": [
+              0,
+              23
+            ],
+            "url": "https://t.co/uFhw14VKvN"
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 442,
+    "followRequestSent": false,
+    "followedBy": false,
+    "followersCount": 267965,
+    "following": false,
+    "friendsCount": 363,
+    "hasCustomTimelines": false,
+    "isTranslator": false,
+    "listedCount": 4265,
+    "location": "Washington, DC",
+    "mediaCount": 19632,
+    "muting": false,
+    "name": "Defense News",
+    "normalFollowersCount": 267965,
+    "notifications": false,
+    "pinnedTweetIdsStr": [],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/21312961/1660080408",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/998671614655979520/MTlEyNtc_normal.jpg",
+    "profileInterstitialType": "",
+    "_protected": false,
+    "screenName": "defense_news",
+    "statusesCount": 50127,
+    "translatorType": "none",
+    "url": "https://t.co/uFhw14VKvN",
+    "verified": false,
+    "wantRetweets": false,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "professional": {
+    "category": [
+      {
+        "iconName": "IconBriefcaseStroke",
+        "id": 580,
+        "name": "Media & News Company"
+      }
+    ],
+    "professionalType": "Business",
+    "restId": "1504468012916686848"
+  },
+  "profileImageShape": "Circle",
+  "restId": "21312961",
+  "superFollowEligible": false,
+  "superFollowedBy": false,
+  "superFollowing": false,
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1367876438045"
+    }
+  }
+}
