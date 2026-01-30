@@ -11,9 +11,8 @@ const resp = await client.getTweetApi().getHomeLatestTimeline({
   count: 100,
 });
 
-// 过滤出原创推文 (注意：Twitter把"引用推文"也算作原创的一种，只要不是纯转推)
+// 过滤出原创推文 (保留 Original 和 Quote，排除纯 Retweet)
 const originalTweets = resp.data.data.filter((tweet) => {
-  // 排除纯转推 (Retweet)，保留原创 (Original) 和 引用 (Quote)
   const fullText = get(tweet, "raw.result.legacy.fullText", "");
   return !fullText.startsWith("RT @"); 
 });
@@ -37,7 +36,7 @@ originalTweets.forEach((tweet) => {
 
   const fullText = get(tweet, "raw.result.legacy.fullText");
 
-  // 🔥【新增】提取被引用的推文内容 (如果有)
+  // ✅ 提取被引用的推文内容 (大佬在评论什么？)
   let quoted = null;
   const isQuoteStatus = get(tweet, "raw.result.legacy.isQuoteStatus");
   if (isQuoteStatus) {
@@ -46,7 +45,6 @@ originalTweets.forEach((tweet) => {
       quoted = {
         screenName: get(quotedResult, "result.core.user_results.result.legacy.screenName"),
         fullText: get(quotedResult, "result.legacy.fullText"),
-        // 你甚至可以提取被引用推文的图片/视频，这里先只取文本
       };
     }
   }
@@ -67,13 +65,17 @@ originalTweets.forEach((tweet) => {
     })
     .filter(Boolean);
 
-  // 提取全维度互动指标
+  // 🔥【核心修复】更强壮的数据提取逻辑
+  // 即使 legacy 为空，也能保证 metrics 结构完整，不会报错
+  const legacy = get(tweet, "raw.result.legacy") || {};
+  
   const currentMetrics = {
-    likes: get(tweet, "raw.result.legacy.favorite_count", 0),
-    retweets: get(tweet, "raw.result.legacy.retweet_count", 0),
-    replies: get(tweet, "raw.result.legacy.reply_count", 0),
-    quotes: get(tweet, "raw.result.legacy.quote_count", 0),
-    bookmarks: get(tweet, "raw.result.legacy.bookmark_count", 0),
+    likes: legacy.favorite_count || 0,
+    retweets: legacy.retweet_count || 0,
+    replies: legacy.reply_count || 0,
+    quotes: legacy.quote_count || 0,
+    bookmarks: legacy.bookmark_count || 0,
+    // views 比较特殊，通常在 views.count 且是字符串
     views: parseInt(get(tweet, "raw.result.views.count", "0")) || 0
   };
 
@@ -83,8 +85,8 @@ originalTweets.forEach((tweet) => {
     images,
     videos,
     tweetUrl,
-    fullText, // 大佬的评论
-    quoted,   // 🔥 被引用的原文
+    fullText,
+    quoted,   // 引用内容
     createdAt,
     metrics: currentMetrics,
     // growth 和 peakGrowth 稍后在合并时计算
@@ -105,7 +107,7 @@ if (fs.existsSync(outputPath)) {
 }
 
 // 3. 智能合并 logic
-const currentTimeStr = dayjs().format("YYYY-MM-DD HH:mm");
+const currentTimeStr = dayjs().format("YYYY-MM-DD HH:mm"); // ✅ 绝对时间戳
 
 newRows.forEach(newTweet => {
   const oldTweet = existingMap.get(newTweet.tweetUrl);
