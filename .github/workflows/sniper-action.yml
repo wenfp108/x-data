@@ -2,7 +2,7 @@ name: Sniper Elite (Fetch Target Tweets)
 
 on:
   schedule:
-    - cron: '0 */4 * * *'   # 每4小时运行一次
+    - cron: '17 */4 * * *'   # 每4小时运行一次
   workflow_dispatch:      # 允许手动触发
 
 jobs:
