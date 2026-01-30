@@ -3,7 +3,7 @@
     "user": {
       "screenName": "NobelPrize",
       "name": "The Nobel Prize",
-      "followersCount": 1309969
+      "followersCount": 1309971
     },
     "images": [],
     "videos": [
@@ -14,27 +14,27 @@
     "quoted": null,
     "createdAt": "Fri Jan 30 08:49:36 +0000 2026",
     "metrics": {
-      "likes": 30,
+      "likes": 35,
       "retweets": 8,
-      "replies": 5,
+      "replies": 6,
       "quotes": 0,
       "bookmarks": 4,
-      "views": 2356
+      "views": 2898
     },
     "growth": {
-      "likes": 0,
-      "views": 0,
+      "likes": 5,
       "retweets": 0,
-      "replies": 0,
+      "replies": 1,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 542
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
-      "likes": 0,
+      "time": "2026-01-30 09:46",
+      "views": 542,
+      "likes": 5,
       "bookmarks": 0,
-      "replies": 0
+      "replies": 1
     }
   },
   {
@@ -57,19 +57,19 @@
       "replies": 0,
       "quotes": 0,
       "bookmarks": 0,
-      "views": 173
+      "views": 183
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 10
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 10,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -93,19 +93,19 @@
       "replies": 1,
       "quotes": 0,
       "bookmarks": 2,
-      "views": 470
+      "views": 480
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 10
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 10,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -115,7 +115,7 @@
     "user": {
       "screenName": "naval",
       "name": "Naval",
-      "followersCount": 3003863
+      "followersCount": 3003871
     },
     "images": [],
     "videos": [],
@@ -124,34 +124,34 @@
     "quoted": null,
     "createdAt": "Fri Jan 30 05:56:27 +0000 2026",
     "metrics": {
-      "likes": 1738,
-      "retweets": 150,
-      "replies": 148,
+      "likes": 1794,
+      "retweets": 153,
+      "replies": 152,
       "quotes": 9,
       "bookmarks": 132,
-      "views": 94342
+      "views": 96315
     },
     "growth": {
-      "likes": 0,
-      "views": 0,
-      "retweets": 0,
-      "replies": 0,
+      "likes": 56,
+      "retweets": 3,
+      "replies": 4,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 1973
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
-      "likes": 0,
+      "time": "2026-01-30 09:46",
+      "views": 1973,
+      "likes": 56,
       "bookmarks": 0,
-      "replies": 0
+      "replies": 4
     }
   },
   {
     "user": {
       "screenName": "NobelPrize",
       "name": "The Nobel Prize",
-      "followersCount": 1309969
+      "followersCount": 1309971
     },
     "images": [
       "https://pbs.twimg.com/media/G_41ghHWAAEEYyl.jpg",
@@ -163,25 +163,25 @@
     "quoted": null,
     "createdAt": "Fri Jan 30 05:32:10 +0000 2026",
     "metrics": {
-      "likes": 116,
-      "retweets": 21,
+      "likes": 121,
+      "retweets": 22,
       "replies": 7,
       "quotes": 2,
       "bookmarks": 5,
-      "views": 5114
+      "views": 5327
     },
     "growth": {
-      "likes": 0,
-      "views": 0,
-      "retweets": 0,
+      "likes": 5,
+      "retweets": 1,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 213
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
-      "likes": 0,
+      "time": "2026-01-30 09:46",
+      "views": 213,
+      "likes": 5,
       "bookmarks": 0,
       "replies": 0
     }
@@ -201,25 +201,25 @@
     "quoted": null,
     "createdAt": "Fri Jan 30 04:38:11 +0000 2026",
     "metrics": {
-      "likes": 5,
+      "likes": 6,
       "retweets": 1,
       "replies": 1,
       "quotes": 0,
       "bookmarks": 0,
-      "views": 1495
+      "views": 1512
     },
     "growth": {
-      "likes": 0,
-      "views": 0,
+      "likes": 1,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 17
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
-      "likes": 0,
+      "time": "2026-01-30 09:46",
+      "views": 17,
+      "likes": 1,
       "bookmarks": 0,
       "replies": 0
     }
@@ -228,7 +228,7 @@
     "user": {
       "screenName": "elerianm",
       "name": "Mohamed A. El-Erian",
-      "followersCount": 803887
+      "followersCount": 803891
     },
     "images": [
       "https://pbs.twimg.com/media/G_4eUbpW8AAhxXf.png",
@@ -240,26 +240,26 @@
     "quoted": null,
     "createdAt": "Fri Jan 30 03:51:44 +0000 2026",
     "metrics": {
-      "likes": 132,
-      "retweets": 23,
+      "likes": 136,
+      "retweets": 24,
       "replies": 28,
       "quotes": 3,
-      "bookmarks": 13,
-      "views": 26892
+      "bookmarks": 14,
+      "views": 27155
     },
     "growth": {
-      "likes": 0,
-      "views": 0,
-      "retweets": 0,
+      "likes": 4,
+      "retweets": 1,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 1,
+      "views": 263
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
-      "likes": 0,
-      "bookmarks": 0,
+      "time": "2026-01-30 09:46",
+      "views": 263,
+      "likes": 4,
+      "bookmarks": 1,
       "replies": 0
     }
   },
@@ -267,7 +267,7 @@
     "user": {
       "screenName": "WSJmarkets",
       "name": "WSJ Markets",
-      "followersCount": 1021099
+      "followersCount": 1021104
     },
     "images": [],
     "videos": [],
@@ -281,19 +281,19 @@
       "replies": 2,
       "quotes": 0,
       "bookmarks": 0,
-      "views": 3652
+      "views": 3679
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 27
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 27,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -319,19 +319,19 @@
       "replies": 1,
       "quotes": 0,
       "bookmarks": 0,
-      "views": 1765
+      "views": 1776
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 11
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 11,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -341,7 +341,7 @@
     "user": {
       "screenName": "WSJmarkets",
       "name": "WSJ Markets",
-      "followersCount": 1021099
+      "followersCount": 1021104
     },
     "images": [],
     "videos": [],
@@ -355,19 +355,19 @@
       "replies": 0,
       "quotes": 1,
       "bookmarks": 2,
-      "views": 3639
+      "views": 3664
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 25
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 25,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -377,7 +377,7 @@
     "user": {
       "screenName": "NickTimiraos",
       "name": "Nick Timiraos",
-      "followersCount": 458626
+      "followersCount": 458632
     },
     "images": [],
     "videos": [],
@@ -386,26 +386,26 @@
     "quoted": null,
     "createdAt": "Fri Jan 30 02:14:45 +0000 2026",
     "metrics": {
-      "likes": 553,
-      "retweets": 95,
+      "likes": 558,
+      "retweets": 96,
       "replies": 39,
       "quotes": 31,
-      "bookmarks": 61,
-      "views": 201502
+      "bookmarks": 63,
+      "views": 203429
     },
     "growth": {
-      "likes": 0,
-      "views": 0,
-      "retweets": 0,
+      "likes": 5,
+      "retweets": 1,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 2,
+      "views": 1927
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
-      "likes": 0,
-      "bookmarks": 0,
+      "time": "2026-01-30 09:46",
+      "views": 1927,
+      "likes": 5,
+      "bookmarks": 2,
       "replies": 0
     }
   },
@@ -413,7 +413,7 @@
     "user": {
       "screenName": "WSJmarkets",
       "name": "WSJ Markets",
-      "followersCount": 1021099
+      "followersCount": 1021104
     },
     "images": [],
     "videos": [],
@@ -427,19 +427,19 @@
       "replies": 0,
       "quotes": 0,
       "bookmarks": 2,
-      "views": 3369
+      "views": 3385
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 16
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 16,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -465,19 +465,19 @@
       "replies": 0,
       "quotes": 0,
       "bookmarks": 1,
-      "views": 1667
+      "views": 1681
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 14
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 14,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -503,19 +503,19 @@
       "replies": 0,
       "quotes": 1,
       "bookmarks": 1,
-      "views": 3285
+      "views": 3315
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 30
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 30,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -525,7 +525,7 @@
     "user": {
       "screenName": "cnnbrk",
       "name": "CNN Breaking News",
-      "followersCount": 59265989
+      "followersCount": 59266047
     },
     "images": [],
     "videos": [],
@@ -534,34 +534,34 @@
     "quoted": null,
     "createdAt": "Fri Jan 30 01:36:34 +0000 2026",
     "metrics": {
-      "likes": 311,
-      "retweets": 103,
-      "replies": 246,
+      "likes": 314,
+      "retweets": 104,
+      "replies": 247,
       "quotes": 65,
       "bookmarks": 40,
-      "views": 149602
+      "views": 150268
     },
     "growth": {
-      "likes": 0,
-      "views": 0,
-      "retweets": 0,
-      "replies": 0,
+      "likes": 3,
+      "retweets": 1,
+      "replies": 1,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 666
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
-      "likes": 0,
+      "time": "2026-01-30 09:46",
+      "views": 666,
+      "likes": 3,
       "bookmarks": 0,
-      "replies": 0
+      "replies": 1
     }
   },
   {
     "user": {
       "screenName": "WSJmarkets",
       "name": "WSJ Markets",
-      "followersCount": 1021099
+      "followersCount": 1021104
     },
     "images": [],
     "videos": [],
@@ -575,19 +575,19 @@
       "replies": 0,
       "quotes": 0,
       "bookmarks": 0,
-      "views": 3366
+      "views": 3379
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 13
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 13,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -611,19 +611,19 @@
       "replies": 1,
       "quotes": 0,
       "bookmarks": 0,
-      "views": 4501
+      "views": 4509
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 8
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 8,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -645,21 +645,21 @@
       "likes": 65,
       "retweets": 8,
       "replies": 0,
-      "quotes": 0,
+      "quotes": 1,
       "bookmarks": 13,
-      "views": 1245
+      "views": 1253
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
-      "quotes": 0,
-      "bookmarks": 0
+      "quotes": 1,
+      "bookmarks": 0,
+      "views": 8
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 8,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -685,19 +685,19 @@
       "replies": 0,
       "quotes": 0,
       "bookmarks": 1,
-      "views": 1657
+      "views": 1659
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 2
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 2,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -707,7 +707,7 @@
     "user": {
       "screenName": "NickTimiraos",
       "name": "Nick Timiraos",
-      "followersCount": 458626
+      "followersCount": 458632
     },
     "images": [],
     "videos": [],
@@ -716,25 +716,25 @@
     "quoted": null,
     "createdAt": "Fri Jan 30 00:35:01 +0000 2026",
     "metrics": {
-      "likes": 192,
+      "likes": 193,
       "retweets": 27,
       "replies": 23,
       "quotes": 9,
       "bookmarks": 8,
-      "views": 39119
+      "views": 39317
     },
     "growth": {
-      "likes": 0,
-      "views": 0,
+      "likes": 1,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 198
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
-      "likes": 0,
+      "time": "2026-01-30 09:46",
+      "views": 198,
+      "likes": 1,
       "bookmarks": 0,
       "replies": 0
     }
@@ -743,7 +743,7 @@
     "user": {
       "screenName": "WSJmarkets",
       "name": "WSJ Markets",
-      "followersCount": 1021099
+      "followersCount": 1021104
     },
     "images": [],
     "videos": [],
@@ -757,19 +757,19 @@
       "replies": 0,
       "quotes": 0,
       "bookmarks": 1,
-      "views": 7430
+      "views": 7447
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 17
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 17,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -779,7 +779,7 @@
     "user": {
       "screenName": "WSJmarkets",
       "name": "WSJ Markets",
-      "followersCount": 1021099
+      "followersCount": 1021104
     },
     "images": [],
     "videos": [],
@@ -793,19 +793,19 @@
       "replies": 0,
       "quotes": 0,
       "bookmarks": 1,
-      "views": 2857
+      "views": 2864
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 7
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 7,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -829,19 +829,19 @@
       "replies": 1,
       "quotes": 0,
       "bookmarks": 0,
-      "views": 796
+      "views": 801
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 5
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 5,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -851,7 +851,7 @@
     "user": {
       "screenName": "WSJmarkets",
       "name": "WSJ Markets",
-      "followersCount": 1021099
+      "followersCount": 1021104
     },
     "images": [],
     "videos": [],
@@ -865,19 +865,19 @@
       "replies": 0,
       "quotes": 0,
       "bookmarks": 0,
-      "views": 2950
+      "views": 2955
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 5
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 5,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -901,19 +901,19 @@
       "replies": 2,
       "quotes": 0,
       "bookmarks": 0,
-      "views": 1445
+      "views": 1458
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 13
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 13,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -937,19 +937,19 @@
       "replies": 0,
       "quotes": 0,
       "bookmarks": 0,
-      "views": 435
+      "views": 440
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 5
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 5,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -975,19 +975,19 @@
       "replies": 1,
       "quotes": 0,
       "bookmarks": 0,
-      "views": 1702
+      "views": 1706
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 4
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 4,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -997,7 +997,7 @@
     "user": {
       "screenName": "cnnbrk",
       "name": "CNN Breaking News",
-      "followersCount": 59265989
+      "followersCount": 59266047
     },
     "images": [
       "https://pbs.twimg.com/media/G_3ht0NXIAAEEGI.jpg"
@@ -1008,25 +1008,25 @@
     "quoted": null,
     "createdAt": "Thu Jan 29 23:26:00 +0000 2026",
     "metrics": {
-      "likes": 297,
+      "likes": 298,
       "retweets": 92,
       "replies": 135,
       "quotes": 42,
       "bookmarks": 26,
-      "views": 149995
+      "views": 150300
     },
     "growth": {
-      "likes": 0,
-      "views": 0,
+      "likes": 1,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 305
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
-      "likes": 0,
+      "time": "2026-01-30 09:46",
+      "views": 305,
+      "likes": 1,
       "bookmarks": 0,
       "replies": 0
     }
@@ -1049,19 +1049,19 @@
       "replies": 2,
       "quotes": 0,
       "bookmarks": 0,
-      "views": 4478
+      "views": 4479
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 1
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 1,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -1071,7 +1071,7 @@
     "user": {
       "screenName": "WSJmarkets",
       "name": "WSJ Markets",
-      "followersCount": 1021099
+      "followersCount": 1021104
     },
     "images": [],
     "videos": [],
@@ -1085,19 +1085,19 @@
       "replies": 0,
       "quotes": 0,
       "bookmarks": 0,
-      "views": 3490
+      "views": 3499
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 9
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 9,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -1121,19 +1121,19 @@
       "replies": 6,
       "quotes": 1,
       "bookmarks": 2,
-      "views": 1674
+      "views": 1689
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 15
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 15,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -1157,19 +1157,19 @@
       "replies": 0,
       "quotes": 0,
       "bookmarks": 2,
-      "views": 1409
+      "views": 1411
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 2
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 2,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -1197,11 +1197,11 @@
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 0
     },
     "peakGrowth": {
       "time": "2026-01-30 09:33",
@@ -1231,19 +1231,19 @@
       "replies": 0,
       "quotes": 0,
       "bookmarks": 1,
-      "views": 1116
+      "views": 1128
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 12
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 12,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -1271,11 +1271,11 @@
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 0
     },
     "peakGrowth": {
       "time": "2026-01-30 09:33",
@@ -1307,11 +1307,11 @@
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 0
     },
     "peakGrowth": {
       "time": "2026-01-30 09:33",
@@ -1325,7 +1325,7 @@
     "user": {
       "screenName": "cnnbrk",
       "name": "CNN Breaking News",
-      "followersCount": 59265989
+      "followersCount": 59266047
     },
     "images": [],
     "videos": [],
@@ -1335,23 +1335,23 @@
     "createdAt": "Thu Jan 29 20:54:22 +0000 2026",
     "metrics": {
       "likes": 423,
-      "retweets": 78,
+      "retweets": 79,
       "replies": 96,
       "quotes": 32,
       "bookmarks": 29,
-      "views": 137894
+      "views": 138169
     },
     "growth": {
       "likes": 0,
-      "views": 0,
-      "retweets": 0,
+      "retweets": 1,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 275
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 275,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -1361,7 +1361,7 @@
     "user": {
       "screenName": "MebFaber",
       "name": "Meb Faber",
-      "followersCount": 137308
+      "followersCount": 137309
     },
     "images": [
       "https://pbs.twimg.com/media/G_27i7CbUAE-aDE.png"
@@ -1372,25 +1372,25 @@
     "quoted": null,
     "createdAt": "Thu Jan 29 20:39:12 +0000 2026",
     "metrics": {
-      "likes": 385,
+      "likes": 386,
       "retweets": 51,
       "replies": 14,
       "quotes": 10,
       "bookmarks": 109,
-      "views": 31947
+      "views": 32039
     },
     "growth": {
-      "likes": 0,
-      "views": 0,
+      "likes": 1,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 92
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
-      "likes": 0,
+      "time": "2026-01-30 09:46",
+      "views": 92,
+      "likes": 1,
       "bookmarks": 0,
       "replies": 0
     }
@@ -1415,19 +1415,19 @@
       "replies": 9,
       "quotes": 1,
       "bookmarks": 1,
-      "views": 3435
+      "views": 3594
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 159
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 159,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -1457,11 +1457,11 @@
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 0
     },
     "peakGrowth": {
       "time": "2026-01-30 09:33",
@@ -1475,7 +1475,7 @@
     "user": {
       "screenName": "nntaleb",
       "name": "Nassim Nicholas Taleb",
-      "followersCount": 1123099
+      "followersCount": 1123100
     },
     "images": [],
     "videos": [],
@@ -1484,25 +1484,25 @@
     "quoted": null,
     "createdAt": "Thu Jan 29 19:02:57 +0000 2026",
     "metrics": {
-      "likes": 155,
+      "likes": 156,
       "retweets": 6,
       "replies": 4,
       "quotes": 0,
       "bookmarks": 16,
-      "views": 44942
+      "views": 45328
     },
     "growth": {
-      "likes": 0,
-      "views": 0,
+      "likes": 1,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 386
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
-      "likes": 0,
+      "time": "2026-01-30 09:46",
+      "views": 386,
+      "likes": 1,
       "bookmarks": 0,
       "replies": 0
     }
@@ -1511,7 +1511,7 @@
     "user": {
       "screenName": "MebFaber",
       "name": "Meb Faber",
-      "followersCount": 137308
+      "followersCount": 137309
     },
     "images": [],
     "videos": [],
@@ -1525,19 +1525,19 @@
       "replies": 1,
       "quotes": 0,
       "bookmarks": 1,
-      "views": 5456
+      "views": 5464
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 8
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 8,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -1547,7 +1547,7 @@
     "user": {
       "screenName": "nntaleb",
       "name": "Nassim Nicholas Taleb",
-      "followersCount": 1123099
+      "followersCount": 1123100
     },
     "images": [
       "https://pbs.twimg.com/media/G_2jJrrXkAEhyZg.jpg"
@@ -1558,25 +1558,25 @@
     "quoted": null,
     "createdAt": "Thu Jan 29 18:52:38 +0000 2026",
     "metrics": {
-      "likes": 347,
+      "likes": 354,
       "retweets": 16,
       "replies": 17,
       "quotes": 6,
       "bookmarks": 74,
-      "views": 41472
+      "views": 42082
     },
     "growth": {
-      "likes": 0,
-      "views": 0,
+      "likes": 7,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 610
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
-      "likes": 0,
+      "time": "2026-01-30 09:46",
+      "views": 610,
+      "likes": 7,
       "bookmarks": 0,
       "replies": 0
     }
@@ -1603,11 +1603,11 @@
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 0
     },
     "peakGrowth": {
       "time": "2026-01-30 09:33",
@@ -1621,7 +1621,7 @@
     "user": {
       "screenName": "WSJmarkets",
       "name": "WSJ Markets",
-      "followersCount": 1021099
+      "followersCount": 1021104
     },
     "images": [],
     "videos": [],
@@ -1635,19 +1635,19 @@
       "replies": 1,
       "quotes": 2,
       "bookmarks": 1,
-      "views": 5951
+      "views": 5971
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 20
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 20,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -1657,7 +1657,7 @@
     "user": {
       "screenName": "WSJmarkets",
       "name": "WSJ Markets",
-      "followersCount": 1021099
+      "followersCount": 1021104
     },
     "images": [],
     "videos": [],
@@ -1671,19 +1671,19 @@
       "replies": 0,
       "quotes": 0,
       "bookmarks": 0,
-      "views": 3188
+      "views": 3190
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 2
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 2,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -1693,7 +1693,7 @@
     "user": {
       "screenName": "cnnbrk",
       "name": "CNN Breaking News",
-      "followersCount": 59265989
+      "followersCount": 59266047
     },
     "images": [
       "https://pbs.twimg.com/media/G_2SleUWwAIvMIC.jpg"
@@ -1704,27 +1704,27 @@
     "quoted": null,
     "createdAt": "Thu Jan 29 17:40:16 +0000 2026",
     "metrics": {
-      "likes": 695,
-      "retweets": 184,
-      "replies": 115,
+      "likes": 696,
+      "retweets": 185,
+      "replies": 116,
       "quotes": 19,
       "bookmarks": 14,
-      "views": 122874
+      "views": 122989
     },
     "growth": {
-      "likes": 0,
-      "views": 0,
-      "retweets": 0,
-      "replies": 0,
+      "likes": 1,
+      "retweets": 1,
+      "replies": 1,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 115
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
-      "likes": 0,
+      "time": "2026-01-30 09:46",
+      "views": 115,
+      "likes": 1,
       "bookmarks": 0,
-      "replies": 0
+      "replies": 1
     }
   },
   {
@@ -1745,19 +1745,19 @@
       "replies": 1,
       "quotes": 0,
       "bookmarks": 1,
-      "views": 1592
+      "views": 1668
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 76
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 76,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -1767,7 +1767,7 @@
     "user": {
       "screenName": "cnnbrk",
       "name": "CNN Breaking News",
-      "followersCount": 59265989
+      "followersCount": 59266047
     },
     "images": [
       "https://pbs.twimg.com/media/G_2I0tNWUAAX6HT.jpg"
@@ -1779,23 +1779,23 @@
     "createdAt": "Thu Jan 29 16:57:37 +0000 2026",
     "metrics": {
       "likes": 931,
-      "retweets": 165,
+      "retweets": 166,
       "replies": 49,
       "quotes": 13,
       "bookmarks": 10,
-      "views": 97397
+      "views": 97505
     },
     "growth": {
       "likes": 0,
-      "views": 0,
-      "retweets": 0,
+      "retweets": 1,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 108
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 108,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -1805,7 +1805,7 @@
     "user": {
       "screenName": "nntaleb",
       "name": "Nassim Nicholas Taleb",
-      "followersCount": 1123099
+      "followersCount": 1123100
     },
     "images": [],
     "videos": [],
@@ -1814,25 +1814,25 @@
     "quoted": null,
     "createdAt": "Thu Jan 29 16:32:33 +0000 2026",
     "metrics": {
-      "likes": 1381,
+      "likes": 1384,
       "retweets": 80,
       "replies": 52,
       "quotes": 11,
       "bookmarks": 650,
-      "views": 202439
+      "views": 203322
     },
     "growth": {
-      "likes": 0,
-      "views": 0,
+      "likes": 3,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 883
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
-      "likes": 0,
+      "time": "2026-01-30 09:46",
+      "views": 883,
+      "likes": 3,
       "bookmarks": 0,
       "replies": 0
     }
@@ -1859,11 +1859,11 @@
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 0
     },
     "peakGrowth": {
       "time": "2026-01-30 09:33",
@@ -1895,11 +1895,11 @@
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 0
     },
     "peakGrowth": {
       "time": "2026-01-30 09:33",
@@ -1913,7 +1913,7 @@
     "user": {
       "screenName": "nntaleb",
       "name": "Nassim Nicholas Taleb",
-      "followersCount": 1123099
+      "followersCount": 1123100
     },
     "images": [],
     "videos": [],
@@ -1922,25 +1922,25 @@
     "quoted": null,
     "createdAt": "Thu Jan 29 15:45:09 +0000 2026",
     "metrics": {
-      "likes": 709,
+      "likes": 710,
       "retweets": 40,
       "replies": 46,
       "quotes": 7,
       "bookmarks": 135,
-      "views": 46248
+      "views": 46364
     },
     "growth": {
-      "likes": 0,
-      "views": 0,
+      "likes": 1,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 116
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
-      "likes": 0,
+      "time": "2026-01-30 09:46",
+      "views": 116,
+      "likes": 1,
       "bookmarks": 0,
       "replies": 0
     }
@@ -1967,11 +1967,11 @@
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 0
     },
     "peakGrowth": {
       "time": "2026-01-30 09:33",
@@ -2004,19 +2004,19 @@
       "replies": 0,
       "quotes": 0,
       "bookmarks": 13,
-      "views": 1129
+      "views": 1132
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 3
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 3,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -2040,19 +2040,19 @@
       "replies": 1,
       "quotes": 0,
       "bookmarks": 3,
-      "views": 1113
+      "views": 1114
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 1
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 1,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -2080,11 +2080,11 @@
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 0
     },
     "peakGrowth": {
       "time": "2026-01-30 09:33",
@@ -2098,7 +2098,7 @@
     "user": {
       "screenName": "elerianm",
       "name": "Mohamed A. El-Erian",
-      "followersCount": 803887
+      "followersCount": 803891
     },
     "images": [
       "https://pbs.twimg.com/media/G_1yHv5WMAAyaJj.jpg"
@@ -2109,25 +2109,25 @@
     "quoted": null,
     "createdAt": "Thu Jan 29 15:18:30 +0000 2026",
     "metrics": {
-      "likes": 100,
+      "likes": 101,
       "retweets": 11,
       "replies": 18,
       "quotes": 2,
       "bookmarks": 13,
-      "views": 18963
+      "views": 18984
     },
     "growth": {
-      "likes": 0,
-      "views": 0,
+      "likes": 1,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 21
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
-      "likes": 0,
+      "time": "2026-01-30 09:46",
+      "views": 21,
+      "likes": 1,
       "bookmarks": 0,
       "replies": 0
     }
@@ -2150,19 +2150,19 @@
       "replies": 0,
       "quotes": 0,
       "bookmarks": 1,
-      "views": 396
+      "views": 397
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 1
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 1,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -2190,11 +2190,11 @@
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 0
     },
     "peakGrowth": {
       "time": "2026-01-30 09:33",
@@ -2226,11 +2226,11 @@
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 0
     },
     "peakGrowth": {
       "time": "2026-01-30 09:33",
@@ -2258,19 +2258,19 @@
       "replies": 0,
       "quotes": 0,
       "bookmarks": 1,
-      "views": 846
+      "views": 849
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 3
     },
     "peakGrowth": {
-      "time": "2026-01-30 09:33",
-      "views": 0,
+      "time": "2026-01-30 09:46",
+      "views": 3,
       "likes": 0,
       "bookmarks": 0,
       "replies": 0
@@ -2298,11 +2298,11 @@
     },
     "growth": {
       "likes": 0,
-      "views": 0,
       "retweets": 0,
       "replies": 0,
       "quotes": 0,
-      "bookmarks": 0
+      "bookmarks": 0,
+      "views": 0
     },
     "peakGrowth": {
       "time": "2026-01-30 09:33",
