@@ -10,27 +10,13 @@ const resp = await client.getTweetApi().getHomeLatestTimeline({
   count: 100,
 });
 
-// 拿到原始数组
 const rawData = resp.data.data || [];
 console.log(`🔍 [Debug] API returned ${rawData.length} raw items.`);
 
-// 🚨【大招】如果拿到了数据但全是空的，打印第一条看看结构！
-if (rawData.length > 0) {
-  const firstItem = rawData[0];
-  const testLegacy = get(firstItem, "raw.result.legacy") || get(firstItem, "tweet.legacy");
-  if (!testLegacy) {
-    console.log("⚠️ [Warning] Cannot find legacy data! Dumping first item structure:");
-    console.log(JSON.stringify(firstItem, null, 2)); // 打印结构供分析
-  }
-}
-
-// 1. 强力过滤
+// 1. 过滤转推
 const originalTweets = rawData.filter((item: any) => {
-  // 兼容两种常见结构
   const legacy = get(item, "raw.result.legacy") || get(item, "tweet.legacy");
-  
   if (!legacy) return false;
-  
   const fullText = legacy.fullText || "";
   return !fullText.startsWith("RT @");
 });
@@ -38,24 +24,39 @@ const originalTweets = rawData.filter((item: any) => {
 console.log(`🔍 [Debug] After filtering RTs, remaining items: ${originalTweets.length}`);
 
 const newRows: any[] = [];
+// 统计被跳过的原因
+let skippedStats = { old: 0, noId: 0, ok: 0 };
 
 // 2. 处理数据
-originalTweets.forEach((item: any) => {
+originalTweets.forEach((item: any, index: number) => {
   const legacy = get(item, "raw.result.legacy") || get(item, "tweet.legacy");
-  // 兜底的原始数据对象
   const rawResult = get(item, "raw.result") || {}; 
 
   const createdAt = legacy.createdAt;
-  if (dayjs().diff(dayjs(createdAt), "day") > 1) return;
+  
+  // 🔍 调试：打印前3条的日期，看看是不是真的过期了
+  if (index < 3) {
+    console.log(`   📝 [Sample ${index}] Date: ${createdAt} | Diff: ${dayjs().diff(dayjs(createdAt), "day")} days`);
+  }
 
-  // 尝试多种路径获取 screenName
+  // 🚨 【修改】把时间限制放宽到 7 天，先看看能不能抓到数据
+  if (dayjs().diff(dayjs(createdAt), "day") > 7) {
+    skippedStats.old++;
+    return;
+  }
+
   const screenName = get(item, "user.legacy.screenName") || 
                      get(item, "raw.result.core.user_results.result.legacy.screenName") ||
                      get(item, "tweet.core.user_results.result.legacy.screenName");
                      
   const idStr = legacy.id_str || rawResult.rest_id; 
 
-  if (!idStr) return;
+  if (!idStr) {
+    // 🔍 调试：如果没 ID，打印一下结构看为什么
+    if (skippedStats.noId === 0) console.log("   ⚠️ [Sample NoID] Item has no ID:", JSON.stringify(item).substring(0, 100) + "...");
+    skippedStats.noId++;
+    return;
+  }
 
   const tweetUrl = `https://x.com/${screenName}/status/${idStr}`;
 
@@ -108,7 +109,6 @@ originalTweets.forEach((item: any) => {
     replies: legacy.reply_count || 0,
     quotes: legacy.quote_count || 0,
     bookmarks: legacy.bookmark_count || 0,
-    // 浏览量通常在 views.count (raw) 或 legacy.views.count (tweet)
     views: parseInt(get(rawResult, "views.count", "0")) || parseInt(get(item, "tweet.views.count", "0")) || 0
   };
 
@@ -123,14 +123,14 @@ originalTweets.forEach((item: any) => {
     createdAt,
     metrics: currentMetrics,
   });
+  skippedStats.ok++;
 });
 
-console.log(`✅ [Debug] Successfully processed ${newRows.length} tweets.`);
+console.log(`📊 [Stats] Processed: ${skippedStats.ok} | Skipped (Old > 7d): ${skippedStats.old} | Skipped (No ID): ${skippedStats.noId}`);
 
 const outputPath = `./tweets/${dayjs().format("YYYY-MM-DD")}.json`;
 let existingMap = new Map();
 
-// 3. 读取旧数据
 if (fs.existsSync(outputPath)) {
   try {
     const existingRows = JSON.parse(fs.readFileSync(outputPath, 'utf-8'));
@@ -140,7 +140,6 @@ if (fs.existsSync(outputPath)) {
   }
 }
 
-// 4. 智能合并
 const currentTimeStr = dayjs().format("YYYY-MM-DD HH:mm");
 
 newRows.forEach(newTweet => {
@@ -183,7 +182,6 @@ newRows.forEach(newTweet => {
   existingMap.set(newTweet.tweetUrl, newTweet);
 });
 
-// 5. 排序并保存
 const sortedRows = Array.from(existingMap.values()).sort((a: any, b: any) => {
   const idA = a.tweetUrl.split('/').pop() || '';
   const idB = b.tweetUrl.split('/').pop() || '';
