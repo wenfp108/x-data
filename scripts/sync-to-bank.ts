@@ -7,8 +7,10 @@ const BANK_ROOT = path.resolve(ROOT, '../central_bank');
 const BANK_TWEETS_PATH = path.join(BANK_ROOT, 'twitter');
 
 async function syncLogic() {
-  // 获取服务器当前日期 (UTC时间)
   const today = new Date().toISOString().split('T')[0];
+  // 计算昨天日期的字符串 (简单处理)
+  const yesterday = new Date(Date.now() - 86400000).toISOString().split('T')[0];
+  
   console.log(`📅 Sync Date: ${today}`);
 
   if (!fs.existsSync(BANK_TWEETS_PATH)) {
@@ -19,37 +21,29 @@ async function syncLogic() {
     const files = fs.readdirSync(TWEETS_DIR);
     
     files.forEach(file => {
-      // 过滤非 JSON 文件和 .gitkeep
       if (!file.endsWith('.json')) return;
 
       const src = path.join(TWEETS_DIR, file);
       const dest = path.join(BANK_TWEETS_PATH, file);
       
       try {
-        if (file.includes(today)) {
-          // ==============================
-          // 🔥 策略 A: 今天的文件 -> 实时同步 (Copy)
-          // ==============================
-          // 我们只复制过去，不删除本地文件。
-          // 这样 fetch-sniper 下次运行时，还能读取本地文件来计算 Growth。
-          fs.copyFileSync(src, dest);
-          console.log(`🔄 [Sync] Updated today's snapshot: ${file}`);
+        // 1. 无论什么文件，先同步到 Bank (覆盖旧的以防万一)
+        fs.copyFileSync(src, dest);
+        
+        // 2. 清理逻辑：只删除“非今天”且“非昨天”的文件
+        // 这样可以保留昨天的数据用于计算 Growth
+        if (file.includes(today) || file.includes(yesterday)) {
+           console.log(`🔄 [Sync Only] Kept active file: ${file}`);
         } else {
-          // ==============================
-          // 📦 策略 B: 历史文件 -> 归档收割 (Move)
-          // ==============================
-          // 昨天的文件已经定型了，直接剪切带走，清理本地空间。
-          // 如果目标已存在（比如昨天同步过），直接覆盖
-          fs.copyFileSync(src, dest); 
-          fs.unlinkSync(src); // 删除源文件
-          console.log(`🚚 [Archive] Moved old file: ${file}`);
+           fs.unlinkSync(src); // 删除更早的文件
+           console.log(`🚚 [Archive] Moved & Deleted old file: ${file}`);
         }
       } catch (e) {
         console.error(`❌ Error syncing ${file}:`, e);
       }
     });
   } else {
-    console.log("📭 Local tweets directory is empty, nothing to harvest.");
+    console.log("📭 Local tweets directory is empty.");
   }
 }
 
