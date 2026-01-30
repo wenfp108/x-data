@@ -1,0 +1,102 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 3,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "6"
+  },
+  "id": "VXNlcjozODEyODk3MTk=",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": false,
+    "canMediaTag": false,
+    "createdAt": "Wed Sep 28 02:19:07 +0000 2011",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "Flaneur: probability (philosophy), probability (mathematics), probability (real life),Phoenician wine, deadlifts & dead languages. Greco-Levantine.Canaan. #RWRI",
+    "entities": {
+      "description": {
+        "urls": []
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "amazon.com/Statistical-Co…",
+            "expanded_url": "https://www.amazon.com/Statistical-Consequences-Fat-Tails-Preasymptotics/dp/B0CD8X5YC5/ref=sr_1_1?ke",
+            "url": "https://t.co/Y4YQnWaqyR",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 97026,
+    "followersCount": 1123095,
+    "following": true,
+    "friendsCount": 1641,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 13334,
+    "location": "",
+    "mediaCount": 6445,
+    "name": "Nassim Nicholas Taleb",
+    "normalFollowersCount": 1123095,
+    "pinnedTweetIdsStr": [
+      "1930316510636966327"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/381289719/1402489958",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1835982938879508480/q4-Esddn_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "nntaleb",
+    "statusesCount": 51430,
+    "translatorType": "none",
+    "url": "https://t.co/Y4YQnWaqyR",
+    "verified": false,
+    "wantRetweets": true,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "professional": {
+    "category": [
+      {
+        "iconName": "IconBriefcaseStroke",
+        "id": 144,
+        "name": "Education"
+      }
+    ],
+    "professionalType": "Business",
+    "restId": "1627720221615063077"
+  },
+  "profileImageShape": "Circle",
+  "restId": "381289719",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1407939500239"
+    }
+  }
+}

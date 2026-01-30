@@ -1,0 +1,91 @@
+{
+  "typename": "User",
+  "affiliatesHighlightedLabel": {},
+  "businessAccount": {},
+  "creatorSubscriptionsCount": 0,
+  "hasGraduatedAccess": true,
+  "highlightsInfo": {
+    "canHighlightTweets": true,
+    "highlightedTweets": "0"
+  },
+  "id": "VXNlcjo1OTYwMzQwNg==",
+  "isBlueVerified": true,
+  "isProfileTranslatable": false,
+  "legacy": {
+    "canDm": true,
+    "canMediaTag": true,
+    "createdAt": "Thu Jul 23 22:06:04 +0000 2009",
+    "defaultProfile": false,
+    "defaultProfileImage": false,
+    "description": "Chief economics correspondent, The Wall Street Journal • Author, \"Trillion Dollar Triage”",
+    "entities": {
+      "description": {
+        "urls": []
+      },
+      "url": {
+        "urls": [
+          {
+            "display_url": "nicktimiraos.com",
+            "expanded_url": "http://www.nicktimiraos.com",
+            "url": "https://t.co/s2vY9QEuYM",
+            "indices": [
+              0,
+              23
+            ]
+          }
+        ]
+      }
+    },
+    "fastFollowersCount": 0,
+    "favouritesCount": 32627,
+    "followersCount": 458638,
+    "following": true,
+    "friendsCount": 118,
+    "hasCustomTimelines": true,
+    "isTranslator": false,
+    "listedCount": 9490,
+    "location": "",
+    "mediaCount": 9715,
+    "name": "Nick Timiraos",
+    "normalFollowersCount": 458638,
+    "pinnedTweetIdsStr": [
+      "1521290542662959105"
+    ],
+    "possiblySensitive": false,
+    "profileBannerUrl": "https://pbs.twimg.com/profile_banners/59603406/1655833416",
+    "profileImageUrlHttps": "https://pbs.twimg.com/profile_images/1819946702050115584/5Gvbvs3u_normal.jpg",
+    "profileInterstitialType": "",
+    "screenName": "NickTimiraos",
+    "statusesCount": 48095,
+    "translatorType": "none",
+    "url": "https://t.co/s2vY9QEuYM",
+    "verified": false,
+    "wantRetweets": true,
+    "withheldInCountries": []
+  },
+  "legacyExtendedProfile": {},
+  "premiumGiftingEligible": false,
+  "profileImageShape": "Circle",
+  "restId": "59603406",
+  "tipjarSettings": {},
+  "userSeedTweetCount": 0,
+  "verificationInfo": {
+    "isIdentityVerified": false,
+    "reason": {
+      "description": {
+        "entities": [
+          {
+            "fromIndex": 26,
+            "ref": {
+              "url": "https://help.twitter.com/managing-your-account/about-twitter-verified-accounts",
+              "urlType": "ExternalUrl"
+            },
+            "toIndex": 36
+          }
+        ],
+        "text": "This account is verified. Learn more"
+      },
+      "verifiedSinceMsec": "1395426378911"
+    }
+  }
+}
