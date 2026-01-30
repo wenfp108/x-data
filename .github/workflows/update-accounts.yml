@@ -1,0 +1,38 @@
+name: 🆔 Manual Update Account IDs
+
+on:
+  workflow_dispatch:      # 🔥 关键：这就允许你在网页上点击按钮触发
+
+jobs:
+  update-ids:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write     # 允许提交代码
+      
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+          
+      - name: Install dependencies
+        run: bun install
+        
+      # 运行你的 index.ts 脚本
+      - name: Update Account IDs
+        env:
+          GET_ID_X_TOKEN: ${{ secrets.GET_ID_X_TOKEN }} # 确保你在 Secrets 里配了这个
+        run: bun run scripts/index.ts
+        
+      - name: Commit changes
+        run: |
+          git config --global user.name 'ID Updater Bot'
+          git config --global user.email 'bot@updater.alpha'
+          # 如果有变动才提交
+          git add accounts/
+          git commit -m "chore: manual update account ids [skip ci]" || echo "No changes to commit"
+          git push
