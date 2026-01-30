@@ -1,0 +1,48 @@
+name: Sniper Elite (Fetch Target Tweets)
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'  # 每30分钟狙击一次
+  workflow_dispatch:      # 允许手动触发
+
+jobs:
+  snipe:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write     # 必须有写入权限才能保存 JSON
+      
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+          
+      - name: Setup Git
+        run: |
+          git config --global user.name 'Sniper Bot'
+          git config --global user.email 'bot@sniper.alpha'
+          
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+          
+      - name: Install dependencies
+        run: bun install
+        
+      # 🔥 关键步骤 1：先更新 ID 缓存 (防止有新大佬加入名单)
+      - name: Update Account IDs
+        env:
+          GET_ID_X_TOKEN: ${{ secrets.GET_ID_X_TOKEN }}
+        run: bun run scripts/index.ts
+
+      # 🔥 关键步骤 2：执行狙击
+      - name: Run Sniper
+        env:
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+        run: bun run scripts/fetch-sniper.ts
+        
+      - name: Commit and push changes
+        run: |
+          git add .
+          git commit -m "🎯 Sniper hit: updated tweets [skip ci]" || exit 0
+          git push
