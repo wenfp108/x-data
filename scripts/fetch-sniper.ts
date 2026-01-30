@@ -5,17 +5,11 @@ import fs from "fs-extra";
 import path from "path";
 
 // 🛠️ 工具函数：递归查找 JSON 中的 rest_id 或 restId
-// 不管它藏在第几层，也不管是驼峰还是下划线，只要有就能找到
 const findRestId = (obj: any): string | undefined => {
   if (!obj || typeof obj !== 'object') return undefined;
-  
-  // 1. 优先检查当前层级
   if (obj.restId) return obj.restId;
   if (obj.rest_id) return obj.rest_id;
-  
-  // 2. 递归查找子属性
   for (const k of Object.keys(obj)) {
-    // 避免死循环，只处理对象
     if (typeof obj[k] === 'object') {
       const found = findRestId(obj[k]);
       if (found) return found;
@@ -37,20 +31,15 @@ const loadTargets = () => {
     const urlParts = acc.twitter_url.split('/');
     const screenName = urlParts[urlParts.length - 1].trim();
     
-    // 读取缓存文件
     const cachePath = path.join(process.cwd(), "accounts", `${screenName}.json`);
     if (fs.existsSync(cachePath)) {
       const cache = fs.readJSONSync(cachePath);
-      
-      // 🔥 核心修复：使用智能查找函数
       const restId = findRestId(cache);
 
       if (restId) {
         targets.push({ screenName, restId });
       } else {
         console.error(`❌ [Error] File 'accounts/${screenName}.json' exists but no ID found.`);
-        // 调试用：如果找不到，打印文件内容前100个字符
-        console.log("👇 File preview:", JSON.stringify(cache).substring(0, 100));
       }
     } else {
       console.warn(`⚠️ [Warning] Cache missing for ${screenName}. Run 'bun run scripts/index.ts' first.`);
@@ -86,26 +75,39 @@ for (const target of targets) {
     
     // 过滤 + 提取
     const userTweets = timeline.filter((item: any) => {
+      // 兼容两种结构
       const legacy = get(item, "content.itemContent.tweet_results.result.legacy") || 
                      get(item, "tweet.legacy"); 
       
       if (!legacy && item.content) return false; 
       
-      // 兼容直接返回 tweet 对象的情况
       const finalLegacy = legacy || item; 
+      // 只要有一个日期字段存在即可
       if (!finalLegacy.created_at && !finalLegacy.createdAt) return false;
 
       const fullText = finalLegacy.fullText || finalLegacy.full_text || "";
       return !fullText.startsWith("RT @");
     }).map((item: any) => {
+       // 尝试获取推文主体数据
        let tweetData = get(item, "content.itemContent.tweet_results.result") || item;
        
-       if (!tweetData.legacy && item.tweet) tweetData = item.tweet;
+       // 🔥 关键兼容：如果 item.tweet 存在，说明是简化结构
+       if (!tweetData.legacy && item.tweet) {
+         tweetData = item.tweet;
+       }
 
        const legacy = tweetData.legacy;
        if (!legacy) return null;
 
-       const userResult = get(tweetData, "core.user_results.result.legacy");
+       // 🔥🔥 核心修复：用户信息的双重查找策略 🔥🔥
+       // 策略 A: 尝试在推文深层结构找 (Raw GraphQL)
+       let userResult = get(tweetData, "core.user_results.result.legacy");
+       
+       // 策略 B: 如果没找到，且 item 本身有 user 字段 (Library Simplified)
+       if (!userResult && item.user && item.user.legacy) {
+         userResult = item.user.legacy;
+       }
+
        if (!userResult) return null;
 
        return { legacy, userResult };
@@ -116,30 +118,31 @@ for (const target of targets) {
     // 处理每一条推文
     userTweets.forEach((data: any) => {
       const { legacy, userResult } = data;
-      const createdAt = legacy.created_at; 
+      const createdAt = legacy.created_at || legacy.createdAt; 
       
       // 7天限制
       if (dayjs().diff(dayjs(createdAt), "day") > 7) return;
 
-      const idStr = legacy.id_str;
-      const tweetUrl = `https://x.com/${userResult.screen_name}/status/${idStr}`;
+      const idStr = legacy.id_str || legacy.idStr;
+      const tweetUrl = `https://x.com/${userResult.screenName || userResult.screen_name}/status/${idStr}`;
 
       const user = {
-        screenName: userResult.screen_name,
+        screenName: userResult.screenName || userResult.screen_name,
         name: userResult.name,
-        followersCount: userResult.followers_count,
+        followersCount: userResult.followersCount || userResult.followers_count,
       };
 
       // 媒体
-      const mediaArr = legacy.extended_entities?.media || legacy.entities?.media || [];
-      const images = mediaArr.filter((m:any) => m.type === 'photo').map((m:any) => m.media_url_https);
+      const mediaArr = legacy.extended_entities?.media || legacy.entities?.media || legacy.extendedEntities?.media || [];
+      const images = mediaArr.filter((m:any) => m.type === 'photo').map((m:any) => m.media_url_https || m.mediaUrlHttps);
       
+      // 指标兼容
       const metrics = {
-        likes: legacy.favorite_count || 0,
-        retweets: legacy.retweet_count || 0,
-        replies: legacy.reply_count || 0,
-        quotes: legacy.quote_count || 0,
-        bookmarks: legacy.bookmark_count || 0,
+        likes: legacy.favorite_count || legacy.favoriteCount || 0,
+        retweets: legacy.retweet_count || legacy.retweetCount || 0,
+        replies: legacy.reply_count || legacy.replyCount || 0,
+        quotes: legacy.quote_count || legacy.quoteCount || 0,
+        bookmarks: legacy.bookmark_count || legacy.bookmarkCount || 0,
         views: parseInt(get(data, "views.count", "0")) || 0 
       };
 
@@ -149,7 +152,7 @@ for (const target of targets) {
         images,
         videos: [],
         tweetUrl,
-        fullText: legacy.full_text,
+        fullText: legacy.full_text || legacy.fullText,
         createdAt,
         metrics
       });
@@ -205,7 +208,6 @@ newRows.forEach(newTweet => {
 });
 
 const sortedRows = Array.from(existingMap.values()).sort((a: any, b: any) => {
-    // 兼容可能的时间格式差异
     const timeA = a.createdAt || a.created_at;
     const timeB = b.createdAt || b.created_at;
     return dayjs(timeB).diff(dayjs(timeA));
