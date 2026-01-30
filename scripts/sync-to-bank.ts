@@ -7,10 +7,10 @@ const BANK_ROOT = path.resolve(ROOT, '../central_bank');
 const BANK_TWEETS_PATH = path.join(BANK_ROOT, 'twitter');
 
 async function syncLogic() {
+  // 获取服务器当前日期 (UTC时间)
   const today = new Date().toISOString().split('T')[0];
-  console.log(`📅 服务器日期: ${today}`);
+  console.log(`📅 Sync Date: ${today}`);
 
-  // 1. 确保目标银行目录存在
   if (!fs.existsSync(BANK_TWEETS_PATH)) {
     fs.mkdirSync(BANK_TWEETS_PATH, { recursive: true });
   }
@@ -19,23 +19,37 @@ async function syncLogic() {
     const files = fs.readdirSync(TWEETS_DIR);
     
     files.forEach(file => {
-      // ⭐ 核心修改：只提取 .json 文件，且排除当天的活跃文件
-      if (file.endsWith('.json') && !file.includes(today)) {
-        const src = path.join(TWEETS_DIR, file);
-        const dest = path.join(BANK_TWEETS_PATH, file);
-        
-        console.log(`🚚 归档 JSON: ${file}`);
-        fs.copyFileSync(src, dest);
-        
-        if (fs.existsSync(dest)) {
-          fs.unlinkSync(src);
-          console.log(`✅ 已搬运并清理: ${file}`);
+      // 过滤非 JSON 文件和 .gitkeep
+      if (!file.endsWith('.json')) return;
+
+      const src = path.join(TWEETS_DIR, file);
+      const dest = path.join(BANK_TWEETS_PATH, file);
+      
+      try {
+        if (file.includes(today)) {
+          // ==============================
+          // 🔥 策略 A: 今天的文件 -> 实时同步 (Copy)
+          // ==============================
+          // 我们只复制过去，不删除本地文件。
+          // 这样 fetch-sniper 下次运行时，还能读取本地文件来计算 Growth。
+          fs.copyFileSync(src, dest);
+          console.log(`🔄 [Sync] Updated today's snapshot: ${file}`);
+        } else {
+          // ==============================
+          // 📦 策略 B: 历史文件 -> 归档收割 (Move)
+          // ==============================
+          // 昨天的文件已经定型了，直接剪切带走，清理本地空间。
+          // 如果目标已存在（比如昨天同步过），直接覆盖
+          fs.copyFileSync(src, dest); 
+          fs.unlinkSync(src); // 删除源文件
+          console.log(`🚚 [Archive] Moved old file: ${file}`);
         }
-      } else {
-        // 如果是 .gitkeep 或当天文件，脚本会跳过，保持文件夹存在
-        console.log(`🛡️ 保持原地: ${file}`);
+      } catch (e) {
+        console.error(`❌ Error syncing ${file}:`, e);
       }
     });
+  } else {
+    console.log("📭 Local tweets directory is empty, nothing to harvest.");
   }
 }
 
