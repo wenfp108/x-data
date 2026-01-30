@@ -1,14 +1,17 @@
 [
   {
-    "username": "nntaleb",
-    "twitter_url": "https://x.com/nntaleb"
-  },
-  {
     "username": "PeterSchiff",
-    "twitter_url": "https://x.com/PeterSchiff"
+    "twitter_url": "...",
+    "tags": ["Economy", "Gold"] 
   },
   {
     "username": "NickTimiraos",
-    "twitter_url": "https://x.com/NickTimiraos"
+    "twitter_url": "...",
+    "tags": ["Finance", "Politics"] 
+  },
+  {
+    "username": "SpaceX",
+    "twitter_url": "...",
+    "tags": ["Tech", "Science"]
   }
 ]
