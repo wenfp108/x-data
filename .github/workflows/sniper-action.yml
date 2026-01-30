@@ -43,12 +43,16 @@ jobs:
         
       - name: Commit and push changes
         run: |
+          git config --local user.email "bot@sniper.alpha"
+          git config --local user.name "Sniper Bot"
+          
+          # 1. 先暂存本地修改
           git add .
+          
+          # 2. 尝试拉取并重基
+          # 如果遇到冲突，强制以本地新抓取的数据为准
+          git pull --rebase origin main || (git checkout --ours . && git add . && git rebase --continue)
+          
+          # 3. 提交并推送
           git commit -m "🎯 Sniper hit: updated tweets [skip ci]" || exit 0
-          
-          # 🔥 核心修复：先拉取远程最新代码 (rebase模式)，解决冲突
-          # 这步能防止因 sync-to-bank 或其他脚本产生的提交导致的 push 失败
-          git pull --rebase origin main
-          
-          # 推送到远程
           git push origin main
