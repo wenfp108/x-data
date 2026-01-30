@@ -1,17 +1,30 @@
 [
   {
+    "username": "nntaleb",
+    "twitter_url": "https://x.com/nntaleb",
+    "tags": [
+      "Finance",
+      "Science",
+      "Geopolitics"
+    ]
+  },
+  {
     "username": "PeterSchiff",
-    "twitter_url": "...",
-    "tags": ["Economy", "Gold"] 
+    "twitter_url": "https://x.com/PeterSchiff",
+    "tags": [
+      "Economy",
+      "Finance",
+      "Crypto",
+      "Politics"
+    ]
   },
   {
     "username": "NickTimiraos",
-    "twitter_url": "...",
-    "tags": ["Finance", "Politics"] 
-  },
-  {
-    "username": "SpaceX",
-    "twitter_url": "...",
-    "tags": ["Tech", "Science"]
+    "twitter_url": "https://x.com/NickTimiraos",
+    "tags": [
+      "Economy",
+      "Finance",
+      "Politics"
+    ]
   }
 ]
