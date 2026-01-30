@@ -2,8 +2,6 @@ import { XAuthClient } from "./utils";
 import { get } from "lodash";
 import dayjs from "dayjs";
 import fs from "fs-extra";
-// 引入类型定义，确保智能提示正确
-import type { TweetApiUtilsData } from "twitter-openapi-typescript";
 
 const client = await XAuthClient();
 
@@ -12,47 +10,55 @@ const resp = await client.getTweetApi().getHomeLatestTimeline({
   count: 100,
 });
 
-// 1. 强力过滤：不仅要过滤转推，还要过滤掉无效数据(没有legacy信息的)
-const originalTweets = resp.data.data.filter((item: any) => {
-  // 确保基本结构存在
-  if (!item.tweet || !item.tweet.legacy) return false;
+const rawData = resp.data.data || [];
+console.log(`🔍 Debug: API returned ${rawData.length} raw items.`);
+
+// 1. 强力过滤
+const originalTweets = rawData.filter((item: any) => {
+  // 🔥【关键修复】兼容两种数据结构
+  // 优先找 raw.result.legacy (Timeline常用)，其次找 tweet.legacy (某些User接口常用)
+  const legacy = get(item, "raw.result.legacy") || get(item, "tweet.legacy");
   
-  const fullText = item.tweet.legacy.fullText || "";
-  // 排除纯转推 (RT @...)
+  if (!legacy) return false;
+  
+  const fullText = legacy.fullText || "";
   return !fullText.startsWith("RT @");
 });
+
+console.log(`🔍 Debug: After filtering RTs, remaining items: ${originalTweets.length}`);
 
 const newRows: any[] = [];
 
 // 2. 处理数据
 originalTweets.forEach((item: any) => {
-  // 优先使用库整理好的 legacy 对象 (这是修复 0 数据的关键!)
-  const legacy = item.tweet.legacy;
-  const rawResult = get(item, "raw.result") || {}; // 备用原始数据
+  // 🔥【关键修复】统一提取入口
+  const legacy = get(item, "raw.result.legacy") || get(item, "tweet.legacy");
+  const rawResult = get(item, "raw.result") || {}; 
 
   const createdAt = legacy.createdAt;
   // 只保留 24 小时内的推文
   if (dayjs().diff(dayjs(createdAt), "day") > 1) return;
 
-  const screenName = get(item, "user.legacy.screenName");
-  const idStr = legacy.id_str || rawResult.rest_id; // 双重保险获取 ID
+  const screenName = get(item, "user.legacy.screenName") || 
+                     get(item, "raw.result.core.user_results.result.legacy.screenName");
+                     
+  const idStr = legacy.id_str || rawResult.rest_id; 
 
-  // 如果连 ID 都拿不到，直接跳过，防止出现 status/undefined
   if (!idStr) return;
 
   const tweetUrl = `https://x.com/${screenName}/status/${idStr}`;
 
   const user = {
-    screenName: get(item, "user.legacy.screenName"),
-    name: get(item, "user.legacy.name"),
-    followersCount: get(item, "user.legacy.followersCount"),
+    screenName: screenName,
+    name: get(item, "user.legacy.name") || get(item, "raw.result.core.user_results.result.legacy.name"),
+    followersCount: get(item, "user.legacy.followersCount") || get(item, "raw.result.core.user_results.result.legacy.followersCount"),
   };
 
   const fullText = legacy.fullText;
 
   // 提取被引用的推文内容
   let quoted = null;
-  if (legacy.is_quote_status) { // 注意：库里的字段通常是下划线风格
+  if (legacy.is_quote_status) { 
     const quotedResult = get(item, "raw.result.quoted_status_result");
     if (quotedResult) {
       quoted = {
@@ -79,15 +85,14 @@ originalTweets.forEach((item: any) => {
     })
     .filter(Boolean);
 
-  // 🔥【核心修复】数据源切换
-  // 左边：从标准库取 (解决 0 赞问题) | 右边：从 raw 取 (作为兜底)
+  // 提取指标 (兼容 raw 和 legacy)
   const currentMetrics = {
     likes: legacy.favorite_count || 0,
     retweets: legacy.retweet_count || 0,
     replies: legacy.reply_count || 0,
     quotes: legacy.quote_count || 0,
     bookmarks: legacy.bookmark_count || 0,
-    // 浏览量 (Views) 比较特殊，通常只在 raw 里有
+    // Views 通常只藏在 raw.result.views.count 里
     views: parseInt(get(rawResult, "views.count", "0")) || 0
   };
 
@@ -103,6 +108,8 @@ originalTweets.forEach((item: any) => {
     metrics: currentMetrics,
   });
 });
+
+console.log(`✅ Debug: Successfully processed ${newRows.length} tweets.`);
 
 const outputPath = `./tweets/${dayjs().format("YYYY-MM-DD")}.json`;
 let existingMap = new Map();
@@ -170,3 +177,5 @@ const sortedRows = Array.from(existingMap.values()).sort((a: any, b: any) => {
 });
 
 fs.writeFileSync(outputPath, JSON.stringify(sortedRows, null, 2));
+
+console.log(`💾 Saved ${sortedRows.length} tweets to ${outputPath}`);
