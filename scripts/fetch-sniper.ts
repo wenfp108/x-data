@@ -15,19 +15,24 @@ const loadTargets = () => {
   accounts.forEach((acc: any) => {
     if (!acc.twitter_url) return;
     const urlParts = acc.twitter_url.split('/');
-    const screenName = urlParts[urlParts.length - 1];
+    const screenName = urlParts[urlParts.length - 1].trim(); // Trim 一下防止空格
     
-    // 尝试从缓存文件读取 rest_id (userId)
-    // 必须先运行 bun run scripts/index.ts 生成这些文件
+    // 尝试从缓存文件读取 rest_id
     const cachePath = path.join(process.cwd(), "accounts", `${screenName}.json`);
     if (fs.existsSync(cachePath)) {
       const cache = fs.readJSONSync(cachePath);
-      // 兼容不同位置的 rest_id
-      const restId = cache.rest_id || get(cache, "data.user.result.rest_id");
+      
+      // 🔥 核心修复：增加 cache.result.rest_id 路径兼容
+      const restId = cache.rest_id || 
+                     get(cache, "result.rest_id") || 
+                     get(cache, "data.user.result.rest_id");
+
       if (restId) {
         targets.push({ screenName, restId });
       } else {
-        console.warn(`⚠️ [Warning] No ID found for ${screenName}. Run 'bun run scripts/index.ts' first.`);
+        console.warn(`⚠️ [Warning] No ID found in cache for ${screenName}. (Path check failed)`);
+        // 调试用：打印一下结构看看
+        // console.log("Cache structure keys:", Object.keys(cache));
       }
     } else {
       console.warn(`⚠️ [Warning] Cache missing for ${screenName}. Run 'bun run scripts/index.ts' first.`);
@@ -55,7 +60,7 @@ for (const target of targets) {
   try {
     const resp = await client.getTweetApi().getUserTweets({
       userId: target.restId,
-      count: 40, // 抓最近40条，足够覆盖几天了
+      count: 40, 
       includePromotedContent: false 
     });
 
@@ -63,23 +68,19 @@ for (const target of targets) {
     
     // 过滤 + 提取
     const userTweets = timeline.filter((item: any) => {
-      const legacy = get(item, "content.itemContent.tweet_results.result.legacy") || // UserTweets 接口结构可能略有不同
+      const legacy = get(item, "content.itemContent.tweet_results.result.legacy") || 
                      get(item, "tweet.legacy"); 
       
-      // 兼容 getUserTweets 的复杂返回结构 (它返回的是 Timeline 指令)
       if (!legacy && item.content) return false; 
       
-      // 有些返回是单纯的 tweet 对象
       const finalLegacy = legacy || item; 
       if (!finalLegacy.created_at && !finalLegacy.createdAt) return false;
 
       const fullText = finalLegacy.fullText || finalLegacy.full_text || "";
       return !fullText.startsWith("RT @");
     }).map((item: any) => {
-       // 统一提取逻辑 (UserTweets 接口返回的数据结构很深)
        let tweetData = get(item, "content.itemContent.tweet_results.result") || item;
        
-       // 如果是引用推文，结构可能在 tweet 字段里
        if (!tweetData.legacy && item.tweet) tweetData = item.tweet;
 
        const legacy = tweetData.legacy;
@@ -95,8 +96,8 @@ for (const target of targets) {
 
     // 处理每一条推文
     userTweets.forEach((data: any) => {
-      const { legacy, userResult, restId } = data;
-      const createdAt = legacy.created_at; // UserTweets 接口通常是下划线
+      const { legacy, userResult } = data; // restId 未使用可省略
+      const createdAt = legacy.created_at; 
       
       // 7天限制
       if (dayjs().diff(dayjs(createdAt), "day") > 7) return;
@@ -110,14 +111,7 @@ for (const target of targets) {
         followersCount: userResult.followers_count,
       };
 
-      // 提取引用
-      let quoted = null;
-      if (legacy.is_quote_status) {
-        const quotedResult = tweetData.quoted_status_result; // 注意作用域，这里简化处理
-        // UserTweets 里的引用提取较复杂，暂且略过或复用之前的逻辑
-      }
-
-      // 媒体 (兼容)
+      // 媒体
       const mediaArr = legacy.extended_entities?.media || legacy.entities?.media || [];
       const images = mediaArr.filter((m:any) => m.type === 'photo').map((m:any) => m.media_url_https);
       
@@ -127,14 +121,14 @@ for (const target of targets) {
         replies: legacy.reply_count || 0,
         quotes: legacy.quote_count || 0,
         bookmarks: legacy.bookmark_count || 0,
-        views: parseInt(get(tweetData, "views.count", "0")) || 0
+        views: parseInt(get(data, "views.count", "0")) || 0 // 注意这里的 views 路径可能需要根据实际数据调整，暂且这么写
       };
 
       newRows.push({
         // @ts-ignore
         user,
         images,
-        videos: [], // 简化，暂不提取视频
+        videos: [],
         tweetUrl,
         fullText: legacy.full_text,
         createdAt,
@@ -142,7 +136,6 @@ for (const target of targets) {
       });
     });
 
-    // 稍微休息一下，对服务器友好点
     await new Promise(r => setTimeout(r, 2000));
 
   } catch (e) {
@@ -150,7 +143,7 @@ for (const target of targets) {
   }
 }
 
-// 3. 保存逻辑 (复用之前的)
+// 3. 保存逻辑
 const outputPath = `./tweets/${dayjs().format("YYYY-MM-DD")}.json`;
 let existingMap = new Map();
 
@@ -171,7 +164,6 @@ newRows.forEach(newTweet => {
   if (oldTweet && oldTweet.peakGrowth) peakGrowth = oldTweet.peakGrowth;
 
   if (oldTweet && oldTweet.metrics) {
-    // 计算增量逻辑同上...
     growth = {
         likes: newTweet.metrics.likes - (oldTweet.metrics.likes || 0),
         views: newTweet.metrics.views - (oldTweet.metrics.views || 0),
@@ -180,7 +172,6 @@ newRows.forEach(newTweet => {
         quotes: newTweet.metrics.quotes - (oldTweet.metrics.quotes || 0),
         bookmarks: newTweet.metrics.bookmarks - (oldTweet.metrics.bookmarks || 0),
     };
-    // 修正负数
     Object.keys(growth).forEach(k => { if ((growth as any)[k] < 0) (growth as any)[k] = 0; });
     
     if (growth.views > peakGrowth.views) {
@@ -194,7 +185,10 @@ newRows.forEach(newTweet => {
 });
 
 const sortedRows = Array.from(existingMap.values()).sort((a: any, b: any) => {
-    return b.createdAt.localeCompare(a.createdAt);
+    // 兼容 created_at (下划线) 和 createdAt (驼峰)
+    const timeA = a.createdAt || a.created_at;
+    const timeB = b.createdAt || b.created_at;
+    return dayjs(timeB).diff(dayjs(timeA));
 });
 
 fs.writeFileSync(outputPath, JSON.stringify(sortedRows, null, 2));
