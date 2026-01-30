@@ -4,6 +4,26 @@ import dayjs from "dayjs";
 import fs from "fs-extra";
 import path from "path";
 
+// 🛠️ 工具函数：递归查找 JSON 中的 rest_id 或 restId
+// 不管它藏在第几层，也不管是驼峰还是下划线，只要有就能找到
+const findRestId = (obj: any): string | undefined => {
+  if (!obj || typeof obj !== 'object') return undefined;
+  
+  // 1. 优先检查当前层级
+  if (obj.restId) return obj.restId;
+  if (obj.rest_id) return obj.rest_id;
+  
+  // 2. 递归查找子属性
+  for (const k of Object.keys(obj)) {
+    // 避免死循环，只处理对象
+    if (typeof obj[k] === 'object') {
+      const found = findRestId(obj[k]);
+      if (found) return found;
+    }
+  }
+  return undefined;
+};
+
 // 1. 读取目标名单
 const loadTargets = () => {
   const accountPath = path.join(process.cwd(), "dev-accounts.json");
@@ -15,24 +35,22 @@ const loadTargets = () => {
   accounts.forEach((acc: any) => {
     if (!acc.twitter_url) return;
     const urlParts = acc.twitter_url.split('/');
-    const screenName = urlParts[urlParts.length - 1].trim(); // Trim 一下防止空格
+    const screenName = urlParts[urlParts.length - 1].trim();
     
-    // 尝试从缓存文件读取 rest_id
+    // 读取缓存文件
     const cachePath = path.join(process.cwd(), "accounts", `${screenName}.json`);
     if (fs.existsSync(cachePath)) {
       const cache = fs.readJSONSync(cachePath);
       
-      // 🔥 核心修复：增加 cache.result.rest_id 路径兼容
-      const restId = cache.rest_id || 
-                     get(cache, "result.rest_id") || 
-                     get(cache, "data.user.result.rest_id");
+      // 🔥 核心修复：使用智能查找函数
+      const restId = findRestId(cache);
 
       if (restId) {
         targets.push({ screenName, restId });
       } else {
-        console.warn(`⚠️ [Warning] No ID found in cache for ${screenName}. (Path check failed)`);
-        // 调试用：打印一下结构看看
-        // console.log("Cache structure keys:", Object.keys(cache));
+        console.error(`❌ [Error] File 'accounts/${screenName}.json' exists but no ID found.`);
+        // 调试用：如果找不到，打印文件内容前100个字符
+        console.log("👇 File preview:", JSON.stringify(cache).substring(0, 100));
       }
     } else {
       console.warn(`⚠️ [Warning] Cache missing for ${screenName}. Run 'bun run scripts/index.ts' first.`);
@@ -73,6 +91,7 @@ for (const target of targets) {
       
       if (!legacy && item.content) return false; 
       
+      // 兼容直接返回 tweet 对象的情况
       const finalLegacy = legacy || item; 
       if (!finalLegacy.created_at && !finalLegacy.createdAt) return false;
 
@@ -89,14 +108,14 @@ for (const target of targets) {
        const userResult = get(tweetData, "core.user_results.result.legacy");
        if (!userResult) return null;
 
-       return { legacy, userResult, restId: get(tweetData, "rest_id") };
+       return { legacy, userResult };
     }).filter(Boolean);
 
     console.log(`   ✅ Got ${userTweets.length} tweets from @${target.screenName}`);
 
     // 处理每一条推文
     userTweets.forEach((data: any) => {
-      const { legacy, userResult } = data; // restId 未使用可省略
+      const { legacy, userResult } = data;
       const createdAt = legacy.created_at; 
       
       // 7天限制
@@ -121,7 +140,7 @@ for (const target of targets) {
         replies: legacy.reply_count || 0,
         quotes: legacy.quote_count || 0,
         bookmarks: legacy.bookmark_count || 0,
-        views: parseInt(get(data, "views.count", "0")) || 0 // 注意这里的 views 路径可能需要根据实际数据调整，暂且这么写
+        views: parseInt(get(data, "views.count", "0")) || 0 
       };
 
       newRows.push({
@@ -136,6 +155,7 @@ for (const target of targets) {
       });
     });
 
+    // 稍微休息一下
     await new Promise(r => setTimeout(r, 2000));
 
   } catch (e) {
@@ -185,7 +205,7 @@ newRows.forEach(newTweet => {
 });
 
 const sortedRows = Array.from(existingMap.values()).sort((a: any, b: any) => {
-    // 兼容 created_at (下划线) 和 createdAt (驼峰)
+    // 兼容可能的时间格式差异
     const timeA = a.createdAt || a.created_at;
     const timeB = b.createdAt || b.created_at;
     return dayjs(timeB).diff(dayjs(timeA));
