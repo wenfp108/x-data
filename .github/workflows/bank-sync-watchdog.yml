@@ -1,55 +1,55 @@
-name: Bank Sync Watchdog
+name: Sniper Elite (Fetch Target Tweets)
 
 on:
-  # 1. 监听模式：当 Sniper 跑完，我自动运行
-  workflow_run:
-    workflows: ["Sniper Action"] # ⚠️这里必须填 sniper-action.yml 里第一行的 name 值
-    types:
-      - completed
-  # 2. 手动模式：允许你点按钮触发
-  workflow_dispatch:
+  schedule:
+    - cron: '17 */4 * * *'   # 每4小时运行一次
+  workflow_dispatch:       # 允许手动触发
 
 jobs:
-  sync-job:
-    # 只有当 Sniper 成功跑完才同步，失败了就不搬运垃圾数据
-    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+  snipe:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      
     steps:
-      # 1. 下载 X-Kit (包含了刚才 Sniper 新生成的 Commit)
-      - name: Checkout Source
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
         with:
           token: ${{ secrets.GH_TOKEN }}
-          path: source_code
-
-      # 2. 下载 Central Bank
-      - name: Checkout Central Bank
-        uses: actions/checkout@v3
-        with:
-          repository: ${{ secrets.CENTRAL_BANK_REPO }}
-          token: ${{ secrets.MY_PAT }}
-          path: central_bank
-
+          
+      - name: Setup Git
+        run: |
+          git config --global user.name 'Sniper Bot'
+          git config --global user.email 'bot@sniper.alpha'
+          
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
-
-      # 3. 安装依赖 (为了运行同步脚本)
+        
       - name: Install dependencies
-        working-directory: ./source_code
         run: bun install
+        
+      - name: Update Account IDs
+        env:
+          GET_ID_X_TOKEN: ${{ secrets.GET_ID_X_TOKEN }}
+        run: bun run scripts/index.ts
 
-      # 4. 运行同步脚本 (搬运工)
-      - name: Run Sync Script
-        working-directory: ./source_code
-        run: bun run scripts/sync-to-bank.ts
-
-      # 5. 推送到中央银行
-      - name: Push to Central Bank
-        working-directory: ./central_bank
+      - name: Run Sniper
+        env:
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+        run: bun run scripts/fetch-sniper.ts
+        
+      - name: Commit and push changes
         run: |
-          git config --global user.name 'Watchdog Bot'
-          git config --global user.email 'bot@watchdog.alpha'
+          git config --local user.email "bot@sniper.alpha"
+          git config --local user.name "Sniper Bot"
           
+          # 1. 暂存所有更改
           git add .
-          git commit -m "Watchdog: synced from x-kit $(date +%H:%M)" || echo "No new data to sync"
-          git push
+          
+          # 2. 提交（如果无变化则退出，防止报错）
+          git commit -m "🎯 Sniper hit: updated tweets [skip ci]" || exit 0
+          
+          # 3. 拉取远程更新并自动解决冲突 (使用 -X theirs 策略)
+          git pull --rebase -X theirs origin main
+          
+          # 4. 推送
+          git push origin main
